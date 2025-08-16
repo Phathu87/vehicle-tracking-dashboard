@@ -37,7 +37,7 @@ VITE_API_URL=http://localhost:5000/api
 2. Tiles: OpenStreetMap (no API key required).
 3. To add clustering: use react-leaflet-cluster.
 
-# Mockup image (for reference)
+## Mockup image (for reference)
 
 [The mockup image](src/assets/vehicle-dashboard-mockup.png)
 
@@ -45,7 +45,7 @@ VITE_API_URL=http://localhost:5000/api
 
 ## Run it
 
-# in one terminal
+### in one terminal
 cd vehicle-tracking-dashboard/server && npm i && npm start
-# in another
+### in another
 cd vehicle-tracking-dashboard/app && npm i && npm run dev
