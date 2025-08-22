@@ -6,6 +6,8 @@ import SearchFilter from './components/SearchFilter.jsx';
 import KpiCards from './components/KpiCards.jsx';
 import Loader from './components/Loader.jsx';
 import ErrorBanner from './components/ErrorBanner.jsx';
+import Sidebar from './components/Sidebar.jsx';
+
 
 const REFRESH_MS = 30_000;
 
