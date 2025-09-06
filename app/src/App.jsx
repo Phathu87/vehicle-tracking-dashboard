@@ -1,13 +1,14 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { fetchVehicles, fetchVehicleHistory } from './api';
-import MapView from './components/MapView.jsx';
-import VehicleList from './components/VehicleList.jsx';
-import SearchFilter from './components/SearchFilter.jsx';
-import KpiCards from './components/KpiCards.jsx';
-import Loader from './components/Loader.jsx';
-import ErrorBanner from './components/ErrorBanner.jsx';
+import { Routes, Route } from "react-router-dom";
 import Sidebar from './components/Sidebar.jsx';
-
+import Footer from './components/Footer.jsx';
+import DashboardPage from "./pages/Dashboard.jsx";
+import Vehicles from "./pages/Vehicles";
+import Drivers from "./pages/Drivers";
+import Alerts from "./pages/Alerts";
+import Reports from "./pages/Reports";
+import Settings from "./pages/Settings";
+import { fetchVehicles, fetchVehicleHistory } from './api';
 
 const REFRESH_MS = 30_000;
 
@@ -18,6 +19,7 @@ export default function App() {
   const [q, setQ] = useState('');
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const filtered = useMemo(
     () => vehicles.filter(v => v.id.toLowerCase().includes(q.trim().toLowerCase())),
@@ -28,7 +30,7 @@ export default function App() {
     const total = vehicles.length;
     const online = vehicles.filter(v => v.status === 'Online').length;
     const alerts = vehicles.filter(v => v.status === 'Offline' || v.speed > 80).length;
-    const avgFuel = 7.3; // placeholder
+    const avgFuel = 7.3;
     return { total, online, alerts, avgFuel };
   }, [vehicles]);
 
@@ -67,53 +69,38 @@ export default function App() {
   }, [selected]);
 
   return (
-    <div className="layout">
-      <aside className="sidebar">
-        <div className="brand">FleetTrack</div>
-        <nav>
-          <a className="active">Dashboard</a>
-          <a>Vehicles</a>
-          <a>Drivers</a>
-          <a>Alerts</a>
-          <a>Reports</a>
-          <a>Settings</a>
-        </nav>
-      </aside>
+    <div className="app-wrapper flex flex-col min-h-screen">
 
-      <main className="content">
-        <header className="topbar">
-          <h1>Vehicle Tracking Dashboard</h1>
-          <div className="topbar-right">
-            <span className="muted">Auto-Refresh: 30s</span>
-            <span className="pill on">ON</span>
-          </div>
-        </header>
+      <div className="layout flex flex-1">
+        <Sidebar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-        <KpiCards kpis={kpis} />
+        <main className="content flex-1">
+          <Routes>
+            <Route path="/" element={
+              <DashboardPage
+                kpis={kpis}
+                vehicles={vehicles}
+                filtered={filtered}
+                q={q}
+                setQ={setQ}
+                err={err}
+                loading={loading}
+                selected={selected}
+                setSelected={setSelected}
+                history={history}
+              />
+            }/>
+            <Route path="/vehicles" element={<Vehicles />} />
+            <Route path="/drivers" element={<Drivers />} />
+            <Route path="/alerts" element={<Alerts />} />
+            <Route path="/reports" element={<Reports />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </main>
+      </div>
 
-        <div className="controls">
-          <SearchFilter value={q} onChange={setQ} />
-        </div>
-
-        {err && <ErrorBanner message={err} />}
-        {loading ? (
-          <Loader />
-        ) : (
-          <div className="grid">
-            <MapView
-              vehicles={filtered}
-              selected={selected}
-              onSelect={setSelected}
-              history={history}
-            />
-            <VehicleList
-              vehicles={filtered}
-              selected={selected}
-              onSelect={setSelected}
-            />
-          </div>
-        )}
-      </main>
+      <Footer />
     </div>
   );
 }
+

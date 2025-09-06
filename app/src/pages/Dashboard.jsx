@@ -1,70 +1,50 @@
-import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
-import Vehicles from "./pages/Vehicles";
-import Drivers from "./pages/Drivers";
-import Alerts from "./pages/Alerts";
-import Reports from "./pages/Reports";
-import Settings from "./pages/Settings";
+import React from 'react';
+import MapView from '../components/MapView.jsx';
+import VehicleList from '../components/VehicleList.jsx';
+import SearchFilter from '../components/SearchFilter.jsx';
+import KpiCards from '../components/KpiCards.jsx';
+import Loader from '../components/Loader.jsx';
+import ErrorBanner from '../components/ErrorBanner.jsx';
+import TopbarCarousel from '../components/TopbarCarousel.jsx';
 
-export default function App() {
+
+export default function DashboardPage({ kpis, filtered, q, setQ, err, loading, selected, setSelected, history }) {
   return (
-    <Router>
-      <div className="flex h-screen bg-gray-900 text-white">
-        {/* Sidebar */}
-        <aside className="w-64 bg-gray-800 p-6">
-          <h1 className="text-2xl font-bold mb-8">FleetTrack</h1>
-          <nav className="flex flex-col space-y-4">
-            <NavLink 
-              to="/" 
-              end
-              className={({ isActive }) =>
-                `block px-4 py-2 rounded ${
-                  isActive ? "bg-blue-500 text-white" : "hover:text-blue-400"
-                }`
-              }
-            >
-              Dashboard
-            </NavLink>
-            <NavLink to="/vehicles" className={({ isActive }) =>
-                `block px-4 py-2 rounded ${
-                  isActive ? "bg-blue-500 text-white" : "hover:text-blue-400"
-                }`
-              }>Vehicles</NavLink>
-            <NavLink to="/drivers" className={({ isActive }) =>
-                `block px-4 py-2 rounded ${
-                  isActive ? "bg-blue-500 text-white" : "hover:text-blue-400"
-                }`
-              }>Drivers</NavLink>
-            <NavLink to="/alerts" className={({ isActive }) =>
-                `block px-4 py-2 rounded ${
-                  isActive ? "bg-blue-500 text-white" : "hover:text-blue-400"
-                }`
-              }>Alerts</NavLink>
-            <NavLink to="/reports" className={({ isActive }) =>
-                `block px-4 py-2 rounded ${
-                  isActive ? "bg-blue-500 text-white" : "hover:text-blue-400"
-                }`
-              }>Reports</NavLink>
-            <NavLink to="/settings" className={({ isActive }) =>
-                `block px-4 py-2 rounded ${
-                  isActive ? "bg-blue-500 text-white" : "hover:text-blue-400"
-                }`
-              }>Settings</NavLink>
-          </nav>
-        </aside>
+    <div className="content">
+      {/* Mobile carousel */}
+  <TopbarCarousel />
+      <header className="topbar flex justify-between items-center">
+        <h1>Vehicle Tracking Dashboard</h1>
+        <div className="topbar-right flex gap-2 items-center">
+          <span className="muted">Auto-Refresh: 30s</span>
+          <span className="pill on">ON</span>
+        </div>
+      </header>
 
-        {/* Main content */}
-        <main className="flex-1 p-8 overflow-y-auto">
-          <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/vehicles" element={<Vehicles />} />
-            <Route path="/drivers" element={<Drivers />} />
-            <Route path="/alerts" element={<Alerts />} />
-            <Route path="/reports" element={<Reports />} />
-            <Route path="/settings" element={<Settings />} />
-          </Routes>
-        </main>
+      <KpiCards kpis={kpis} />
+
+      <div className="controls my-4">
+        <SearchFilter value={q} onChange={setQ} />
       </div>
-    </Router>
+
+      {err && <ErrorBanner message={err} />}
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className="grid gap-4 md:grid-cols-2">
+          <MapView
+            vehicles={filtered}
+            selected={selected}
+            onSelect={setSelected}
+            history={history}
+          />
+          <VehicleList
+            vehicles={filtered}
+            selected={selected}
+            onSelect={setSelected}
+          />
+        </div>
+      )}
+    </div>
   );
 }
