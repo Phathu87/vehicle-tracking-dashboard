@@ -1018,7 +1018,8 @@ body {
 .card {
   background: var(--panel);
   border-radius: 12px;
-  padding: 20px;
+  margin: 15px 40px;   /* vertical space between cards */
+  padding: 15px 20px;  /* inner spacing */
   position: relative;
   border: 1px solid var(--border);
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
