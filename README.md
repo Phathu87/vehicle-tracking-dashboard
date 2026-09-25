@@ -2,7 +2,7 @@
 
 Fleet Drive AI is the intended commercial fleet-management product. Fleet Drive AI Demo is its working full-stack demonstration environment. The Demo uses transparent simulated fleet telemetry while authentication, persistence, APIs and operational workflows run through the real application stack.
 
-Base44 is the primary design reference. The Legacy Vehicle Tracking Dashboard is a technical predecessor. Neither Base44 entities nor frontend fixtures are the authoritative backend; current Express behavior is.
+The Legacy Vehicle Tracking Dashboard is a technical predecessor. The current React frontend and Express API are the authoritative Fleet Drive AI Demo application.
 
 ## Current capabilities
 
@@ -116,7 +116,6 @@ This repository now contains the normalized release candidate. Deployment remain
 
 - Legacy Vehicle Tracking Dashboard: original React and Leaflet technical predecessor.
 - Vehicle Maintenance API v2: historical API contract and testing reference.
-- Base44 Fleet Drive AI Prototype: primary modern UI/UX design pathway.
 - Fleet Drive AI Demo: reconciled working full-stack demonstration.
 - Fleet Drive AI: commercial product direction requiring separate discovery and production architecture decisions.
 
