@@ -4,19 +4,22 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "node scripts/runTests.js",
+    "start": "node server.js",
+    "telemetry": "node scripts/telemetryProducer.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.11.0",
+    "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
+    "dotenv": "^18.0.1",
     "express": "^5.1.0",
-    "nodemon": "^3.1.10",
-    "npm": "^11.5.2",
-    "start": "^5.1.0"
+    "jsonwebtoken": "^9.0.3"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "supertest": "^7.2.2"
+  }
 }

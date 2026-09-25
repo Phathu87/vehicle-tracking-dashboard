@@ -1,0 +1,13 @@
+import { Router } from "express";
+import { authenticate } from "../middleware/authenticate.js";
+import { requireSharedDemoMutation } from "../middleware/demoMutationPolicy.js";
+import { check, create, index, remove, show, update } from "../controllers/geofenceController.js";
+const router = Router();
+router.use(authenticate);
+router.get("/", index);
+router.post("/", requireSharedDemoMutation, create);
+router.get("/:id/check", check);
+router.get("/:id", show);
+router.put("/:id", requireSharedDemoMutation, update);
+router.delete("/:id", requireSharedDemoMutation, remove);
+export default router;

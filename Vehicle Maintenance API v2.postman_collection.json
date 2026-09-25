@@ -1,0 +1,1291 @@
+{
+  "info": {
+    "_postman_id": "de033675-4da0-45cb-97d6-30a2d82b63c0",
+    "name": "Vehicle Maintenance API v2",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "41989300"
+  },
+  "item": [
+    {
+      "name": "🔐 Authentication",
+      "item": [
+        {
+          "name": "Register User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"{{username}}\",\n  \"password\": \"{{password}}\",\n  \"name\": \"Demo User\",\n  \"role\": \"user\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/auth/register",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login User",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"{{username}}\",\n  \"password\": \"{{password}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/auth/login",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Current User",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/auth/me",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "me"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "🚗 Vehicle Management",
+      "item": [
+        {
+          "name": "Get All Vehicles",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/vehicles?city=Johannesburg&status=online&speed_gt=80",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles"
+              ],
+              "query": [
+                {
+                  "key": "city",
+                  "value": "Johannesburg"
+                },
+                {
+                  "key": "status",
+                  "value": "online"
+                },
+                {
+                  "key": "speed_gt",
+                  "value": "80"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Vehicle",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"V001\",\n  \"make\": \"Toyota\",\n  \"model\": \"Hilux\",\n  \"plate\": \"BX23GZ\",\n  \"city\": \"Johannesburg\",\n  \"province\": \"Gauteng\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Vehicle by ID",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/V001",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "V001"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Vehicle",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"city\": \"Pretoria\",\n  \"province\": \"Gauteng\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/V001",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "V001"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Vehicle",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/VH-KI-125",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "VH-KI-125"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Telemetry (record history)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"lat\": -26.2041,\n  \"lng\": 28.0473,\n  \"speed\": 92,\n  \"mileage\": 45123,\n  \"fuel\": 56\n}\n"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/VH-JO-106/telemetry",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "VH-JO-106",
+                "telemetry"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Vehicle Status",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// Visualization Script",
+                  "// Visualization Script",
+                  "const template = `",
+                  "<div style=\"font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; padding: 12px;\">",
+                  "  <h3 style=\"margin: 0 0 12px 0; font-weight: 600;\">Vehicle Status Visualization</h3>",
+                  "  {{#if error}}",
+                  "    <div style=\"padding:10px; background:#fff4e5; color:#8a6100; border:1px solid #ffe0b3; border-radius:6px;\">{{error}}</div>",
+                  "  {{else}}",
+                  "    <div style=\"display:flex; gap:20px; flex-wrap:wrap; align-items:flex-start;\">",
+                  "      <div style=\"flex:1 1 380px; min-width:300px;\">",
+                  "        <canvas id=\"speedChart\" height=\"160\"></canvas>",
+                  "      </div>",
+                  "      <div style=\"flex:1 1 260px; min-width:220px;\">",
+                  "        <div style=\"margin-bottom:8px; font-size:14px; color:#555;\">Vehicle: <strong>{{vehicleId}}</strong></div>",
+                  "        <div style=\"display:flex; flex-direction:column; gap:8px;\">",
+                  "          {{#each flags}}",
+                  "            <div style=\"display:flex; align-items:center; gap:10px;\">",
+                  "              <span style=\"width:110px; color:#333; font-size:13px; text-transform:capitalize;\">{{label}}</span>",
+                  "              {{#if isBoolean}}",
+                  "                <span style=\"display:inline-block; padding:4px 10px; border-radius:12px; font-size:12px; font-weight:600; color: {{colorText}}; background: {{colorBg}}; border: 1px solid {{colorBorder}};\">{{valueText}}</span>",
+                  "              {{else}}",
+                  "                <div style=\"flex:1; height:10px; background:#eee; border-radius:6px; position:relative;\">",
+                  "                  <div style=\"position:absolute; left:0; top:0; bottom:0; width: {{percent}}%; background: #4a90e2; border-radius:6px;\"></div>",
+                  "                </div>",
+                  "                <span style=\"min-width:36px; text-align:right; font-size:12px; color:#555;\">{{rawValue}}</span>",
+                  "              {{/if}}",
+                  "            </div>",
+                  "          {{/each}}",
+                  "        </div>",
+                  "      </div>",
+                  "    </div>",
+                  "  {{/if}}",
+                  "</div>",
+                  "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js\"></script>",
+                  "<script>",
+                  "  pm.getData(function (err, data) {",
+                  "    if (err || !data || data.error) { return; }",
+                  "    var ctx = document.getElementById('speedChart');",
+                  "    if (!ctx) { return; }",
+                  "    var chart = new Chart(ctx, {",
+                  "      type: 'bar',",
+                  "      data: {",
+                  "        labels: data.chart.labels,",
+                  "        datasets: [{",
+                  "          label: 'Value',",
+                  "          data: data.chart.values,",
+                  "          backgroundColor: ['#4a90e2', '#7ed321'],",
+                  "          borderColor: ['#2f6fbf', '#5aa80f'],",
+                  "          borderWidth: 1",
+                  "        }]",
+                  "      },",
+                  "      options: {",
+                  "        legend: { display: false },",
+                  "        title: { display: true, text: 'Speed vs Limit' },",
+                  "        scales: {",
+                  "          yAxes: [{ ticks: { beginAtZero: true } }]",
+                  "        },",
+                  "        tooltips: { enabled: true }",
+                  "      }",
+                  "    });",
+                  "  });",
+                  "</script>`;",
+                  "",
+                  "function coerceBoolean(value) {",
+                  "    if (value === true) return { text: 'true', bg: '#e6f4ea', border: '#a3d9b1', textColor: '#1b5e20' };",
+                  "    if (value === false) return { text: 'false', bg: '#fdecea', border: '#f5c6cb', textColor: '#7f1d1d' };",
+                  "    return { text: 'unknown', bg: '#eef2ff', border: '#c7d2fe', textColor: '#1e3a8a' };",
+                  "}",
+                  "",
+                  "function safeNumber(n, fallback) {",
+                  "    return (typeof n === 'number' && isFinite(n)) ? n : fallback;",
+                  "}",
+                  "",
+                  "function createPayload() {",
+                  "    let json = null;",
+                  "    try { json = pm.response.json(); } catch (e) { }",
+                  "",
+                  "    if (!json || typeof json !== 'object') {",
+                  "        return { error: 'Response is not valid JSON. Cannot render visualization.' };",
+                  "    }",
+                  "",
+                  "    // Extract values with fallbacks",
+                  "    const vehicleId = (json && json.vehicleId) ? String(json.vehicleId) : 'N/A';",
+                  "    const speed = safeNumber(json && json.speed, null);",
+                  "    const flags = (json && json.statusFlags) ? json.statusFlags : {};",
+                  "    const speedLimitFromFlags = safeNumber(flags && flags.speedLimit, null);",
+                  "",
+                  "    // Chart data for numeric values",
+                  "    const labels = [];",
+                  "    const values = [];",
+                  "    if (speed !== null) { labels.push('speed'); values.push(speed); }",
+                  "    if (speedLimitFromFlags !== null) { labels.push('speedLimit'); values.push(speedLimitFromFlags); }",
+                  "",
+                  "    // If no numeric data, give a message",
+                  "    if (labels.length === 0) {",
+                  "        return { error: 'Missing numeric fields (speed/speedLimit) in response. Nothing to chart.' };",
+                  "    }",
+                  "",
+                  "    // Build flag view models",
+                  "    const flagModels = [];",
+                  "",
+                  "    // online",
+                  "    const onlineMeta = coerceBoolean(flags && Object.prototype.hasOwnProperty.call(flags, 'online') ? flags.online : undefined);",
+                  "    flagModels.push({",
+                  "        label: 'online',",
+                  "        isBoolean: true,",
+                  "        valueText: onlineMeta.text,",
+                  "        colorBg: onlineMeta.bg,",
+                  "        colorBorder: onlineMeta.border,",
+                  "        colorText: onlineMeta.textColor",
+                  "    });",
+                  "",
+                  "    // overspeed",
+                  "    const overspeedMeta = coerceBoolean(flags && Object.prototype.hasOwnProperty.call(flags, 'overspeed') ? flags.overspeed : undefined);",
+                  "    flagModels.push({",
+                  "        label: 'overspeed',",
+                  "        isBoolean: true,",
+                  "        valueText: overspeedMeta.text,",
+                  "        colorBg: overspeedMeta.bg,",
+                  "        colorBorder: overspeedMeta.border,",
+                  "        colorText: overspeedMeta.textColor",
+                  "    });",
+                  "",
+                  "    // gpsOk",
+                  "    const gpsOkMeta = coerceBoolean(flags && Object.prototype.hasOwnProperty.call(flags, 'gpsOk') ? flags.gpsOk : undefined);",
+                  "    flagModels.push({",
+                  "        label: 'gpsOk',",
+                  "        isBoolean: true,",
+                  "        valueText: gpsOkMeta.text,",
+                  "        colorBg: gpsOkMeta.bg,",
+                  "        colorBorder: gpsOkMeta.border,",
+                  "        colorText: gpsOkMeta.textColor",
+                  "    });",
+                  "",
+                  "    // speedLimit as numeric bar (secondary indicator)",
+                  "    if (speedLimitFromFlags !== null) {",
+                  "        const maxForBar = Math.max(1, speedLimitFromFlags);",
+                  "        const percent = Math.max(0, Math.min(100, (speedLimitFromFlags / maxForBar) * 100));",
+                  "        flagModels.push({",
+                  "            label: 'speedLimit',",
+                  "            isBoolean: false,",
+                  "            percent: percent,",
+                  "            rawValue: String(speedLimitFromFlags)",
+                  "        });",
+                  "    }",
+                  "",
+                  "    // speed as numeric bar",
+                  "    if (speed !== null) {",
+                  "        const maxForBar = Math.max(1, speedLimitFromFlags !== null ? speedLimitFromFlags : Math.max(1, speed));",
+                  "        const percent = Math.max(0, Math.min(100, (speed / maxForBar) * 100));",
+                  "        flagModels.push({",
+                  "            label: 'speed',",
+                  "            isBoolean: false,",
+                  "            percent: percent,",
+                  "            rawValue: String(speed)",
+                  "        });",
+                  "    }",
+                  "",
+                  "    return {",
+                  "        vehicleId: vehicleId,",
+                  "        flags: flagModels,",
+                  "        chart: { labels: labels, values: values }",
+                  "    };",
+                  "}",
+                  "",
+                  "pm.visualizer.set(template, createPayload());"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/VH-JO-106/status",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "VH-JO-106",
+                "status"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "🧰 Maintenance",
+      "item": [
+        {
+          "name": "Get Maintenance Tasks",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/VH-JO-100/maintenance",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "VH-JO-100",
+                "maintenance"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Maintenance Task",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"Wipers Fix\",\n  \"due\": true\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/VH-JO-100/maintenance",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "VH-JO-100",
+                "maintenance"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Complete Maintenance Task",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"Oil Change\",\n  \"mileage\": 18000\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/VH-JO-100/maintenance/complete",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "VH-JO-100",
+                "maintenance",
+                "complete"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Maintenance Task",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/VH-JO-100/maintenance/0",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "VH-JO-100",
+                "maintenance",
+                "0"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Maintenance Status (All Vehicles)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/maintenance",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "maintenance"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "🚨 Alerts",
+      "item": [
+        {
+          "name": "Trigger Overspeed Alert",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"alertType\": \"overspeed\" }"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/VH-JO-100/alerts",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "VH-JO-100",
+                "alerts"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Trigger Geofence Alert",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"alertType\": \"geofence\" }"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/VH-JO-100/alerts",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "VH-JO-100",
+                "alerts"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "geofence",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Test Zone A\",\r\n  \"coordinates\": [\r\n    { \"lat\": -26.2050, \"lng\": 28.0470 },\r\n    { \"lat\": -26.2050, \"lng\": 28.0490 },\r\n    { \"lat\": -26.2070, \"lng\": 28.0490 },\r\n    { \"lat\": -26.2070, \"lng\": 28.0470 }\r\n  ],\r\n  \"alertType\": \"enter_exit\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/geofences",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "geofences"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "telemetry that enters the zone",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \r\n\"lat\": -26.2060,\r\n\"lng\": 28.0480,\r\n\"speed\": 40 \r\n}\r\n"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/VH-JO-106/telemetry",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "VH-JO-106",
+                "telemetry"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "🗺️ Route Optimization",
+      "item": [
+        {
+          "name": "Optimize Route",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"stops\": [\n    { \"lat\": -26.2041, \"lng\": 28.0473, \"name\": \"Johannesburg\" },\n    { \"lat\": -25.7479, \"lng\": 28.2293, \"name\": \"Pretoria\" },\n    { \"lat\": -27.4698, \"lng\": 26.7056, \"name\": \"Klerksdorp\" }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/routes/optimize",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "routes",
+                "optimize"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "🧾 Reports",
+      "item": [
+        {
+          "name": "Maintenance Report",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/maintenance/VH-JO-100/report",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "maintenance",
+                "VH-JO-100",
+                "report"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Trip Report",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/reports/VH-JO-100/trips",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "reports",
+                "VH-JO-100",
+                "trips"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Vehicle History",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/VH-JO-106/history?limit=100",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "VH-JO-106",
+                "history"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "100"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "👨‍✈️ Driver Management",
+      "item": [
+        {
+          "name": "Drivers",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// Visualization Script",
+                  "// Visualization Script",
+                  "const template = `",
+                  "<div style=\"max-width: 700px; margin: 0 auto;\">",
+                  "  <h3 style=\"text-align:center;\">Assigned Vehicles per Driver</h3>",
+                  "  <canvas id=\"barChart\" height=\"300\"></canvas>",
+                  "  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js\"></script>",
+                  "  <script>",
+                  "    pm.getData(function (err, data) {",
+                  "      if (err || !data || !data.drivers) return;",
+                  "      var ctx = document.getElementById('barChart').getContext('2d');",
+                  "      var chart = new Chart(ctx, {",
+                  "        type: 'bar',",
+                  "        data: {",
+                  "          labels: data.drivers.map(d => d.name),",
+                  "          datasets: [{",
+                  "            label: 'Number of Assigned Vehicles',",
+                  "            data: data.drivers.map(d => d.assignedVehiclesCount),",
+                  "            backgroundColor: 'rgba(54, 162, 235, 0.6)',",
+                  "            borderColor: 'rgba(54, 162, 235, 1)',",
+                  "            borderWidth: 1",
+                  "          }]",
+                  "        },",
+                  "        options: {",
+                  "          scales: {",
+                  "            yAxes: [{",
+                  "              ticks: {",
+                  "                beginAtZero: true,",
+                  "                precision: 0",
+                  "              },",
+                  "              scaleLabel: {",
+                  "                display: true,",
+                  "                labelString: 'Assigned Vehicles'",
+                  "              }",
+                  "            }],",
+                  "            xAxes: [{",
+                  "              scaleLabel: {",
+                  "                display: true,",
+                  "                labelString: 'Driver Name'",
+                  "              }",
+                  "            }]",
+                  "          },",
+                  "          legend: { display: false },",
+                  "          responsive: true,",
+                  "          maintainAspectRatio: false",
+                  "        }",
+                  "      });",
+                  "    });",
+                  "  <\\/script>",
+                  "</div>`;",
+                  "",
+                  "function createPayload() {",
+                  "  var drivers = pm.response.json();",
+                  "  return {",
+                  "    drivers: drivers.map(function(driver) {",
+                  "      return {",
+                  "        name: driver.name,",
+                  "        assignedVehiclesCount: Array.isArray(driver.assignedVehicles) ? driver.assignedVehicles.length : 0",
+                  "      };",
+                  "    })",
+                  "  };",
+                  "}",
+                  "pm.visualizer.set(template, createPayload());"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/drivers",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "drivers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Driver",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id\": \"D001\",\r\n  \"name\": \"John Doe\",\r\n  \"license\": \"B12345\",\r\n  \"contact\": \"john.doe@gmail.com\",\r\n  \"assignedVehicle\": \"VH-DU-116\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/drivers",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "drivers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Driver by ID",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/drivers/D023",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "drivers",
+                "D023"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Driver",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/drivers/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "drivers",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Driver",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/drivers/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "drivers",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:5000"
+    },
+    {
+      "key": "token",
+      "value": ""
+    },
+    {
+      "key": "username",
+      "value": ""
+    },
+    {
+      "key": "password",
+      "value": ""
+    }
+  ]
+}

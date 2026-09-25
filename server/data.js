@@ -1,5 +1,3 @@
-import axios from "axios";
-
 export const CITIES = [ 
   { name: "Johannesburg", lat: -26.2041, lng: 28.0473, province: "Gauteng" },
   { name: "Cape Town", lat: -33.9249, lng: 18.4241, province: "Western Cape" },
@@ -11,7 +9,7 @@ export const CITIES = [
   { name: "Bloemfontein", lat: -29.1129, lng: 26.2149, province: "Free State" },
   { name: "Phalaborwa", lat: -23.9386, lng: 31.1440, province: "Limpopo" },
   { name: "Mahikeng", lat: -25.8570, lng: 25.6393, province: "North West" },
-  { name: "Mafikeng", lat: -25.8522, lng: 25.6386, province: "North West" },
+  { name: "Mafikeng", code: "MF", lat: -25.8522, lng: 25.6386, province: "North West" },
   { name: "Louis Trichardt", lat: -23.0955, lng: 29.9000, province: "Limpopo" },
   { name: "Rustenburg", lat: -25.6670, lng: 27.2420, province: "North West" },
   { name: "Kimberley", lat: -28.7294, lng: 24.7706, province: "Northern Cape" },
@@ -88,7 +86,8 @@ export const vehicles = [];
 CITIES.forEach(city => {
   const roads = DUMMY_ROADS[city.name];
   for (let i = 0; i < VEHICLES_PER_CITY; i++) {
-    const id = `VH-${city.name.slice(0,2).toUpperCase()}-${100+i}`;
+    const cityCode = city.code || city.name.slice(0, 2).toUpperCase();
+    const id = `VH-${cityCode}-${100+i}`;
     const driver = DRIVER_NAMES[Math.floor(Math.random() * DRIVER_NAMES.length)];
     const { make, model } = getRandomVehicle();
     const plate = generatePlate(city.province);

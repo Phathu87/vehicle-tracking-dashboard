@@ -1,51 +1,125 @@
-# Vehicle Tracking Dashboard 
+# Fleet Drive AI Demo
 
-React + Leaflet dashboard with a mock Express API. Features:
-- Map + list, click row to zoom
-- Auto-refresh every 30s
-- Filter by Vehicle ID
-- Historical route (last hour)
-- KPI cards, loading/error states
-- Dark, responsive UI
+Fleet Drive AI is the intended commercial fleet-management product. Fleet Drive AI Demo is its working full-stack demonstration environment. The Demo uses transparent simulated fleet telemetry while authentication, persistence, APIs and operational workflows run through the real application stack.
 
-## Quick Start
+Base44 is the primary design reference. The Legacy Vehicle Tracking Dashboard is a technical predecessor. Neither Base44 entities nor frontend fixtures are the authoritative backend; current Express behavior is.
 
-### (1) API
+## Current capabilities
+
+- Registration, login, session restoration, logout and protected routes.
+- Vehicle CRUD, telemetry ingestion, latest status and bounded history.
+- Driver CRUD, licence state and vehicle assignments.
+- Persistent maintenance tasks with deterministic mileage/date rules.
+- Persisted overspeed, low-fuel and geofence entry/exit alerts.
+- Circle/polygon geofences and current vehicle containment checks.
+- Demo nearest-neighbour route ordering and JSON maintenance/trip reports.
+- API-derived dashboard KPIs and Leaflet/OpenStreetMap views.
+- Opt-in deterministic fleet simulator that posts through Express.
+
+The Demo does not claim production GPS hardware, customer contracts, published mobile apps, commercial uptime, trained AI/ML, traffic-aware routing, billing, enterprise SSO or genuine testimonials.
+
+## Stack
+
+Frontend: React 18, Vite 6, React Router, TanStack Query, Tailwind CSS, Radix primitives, Recharts and React Leaflet.
+
+Backend: Node 22, Express 5, SQLite through `node:sqlite`, bcrypt, JWT and Supertest.
+
+## Setup
+
+Prerequisites: Node 22 and npm 11.
+
+Backend:
+
+```powershell
 cd server
-npm i
+npm ci
+Copy-Item .env.example .env
 npm start
-# -> http://localhost:5000/api
+```
 
-### (2) Frontend
-cd app
-npm i
+Frontend, in another terminal:
+
+```powershell
+cd frontend
+npm ci
+$env:VITE_API_URL='http://localhost:3001/api'
 npm run dev
-# -> http://localhost:3000
+```
 
-### If your API URL differs, create app/.env (or set env when running):
-VITE_API_URL=http://localhost:5000/api
+Local URLs:
 
-### Endpoints
+- Frontend: `http://localhost:5173`
+- Backend: `http://localhost:3001`
+- Health: `http://localhost:3001/api/health`
 
-1. GET /api/vehicles – list with latest lat/lng/speed/status/lastSeen
-2. GET /api/vehicles/:id – single vehicle
-3. GET /api/vehicles/:id/history – last hour of points for route
+## Environment
 
-### Notes
+Frontend:
 
-1. Auto-refresh interval in src/App.jsx (REFRESH_MS).
-2. Tiles: OpenStreetMap (no API key required).
-3. To add clustering: use react-leaflet-cluster.
+| Variable | Class | Purpose |
+| --- | --- | --- |
+| `VITE_API_URL` | Required for split-origin deployment | Public Express API base; production fallback is same-origin `/api` |
+| `VITE_DEMO_ALLOW_USER_MUTATIONS` | Optional; default `false` | Mirrors an explicitly approved isolated Demo mutation policy in the UI |
 
-## Mockup image (for reference)
+Backend:
 
-[The mockup image](src/assets/vehicle-dashboard-mockup.png)
+| Variable | Class | Purpose |
+| --- | --- | --- |
+| `JWT_SECRET` | Required in production | Strong JWT signing secret |
+| `PORT` | Optional | HTTP port, default `3001` |
+| `DATABASE_PATH` | Optional | SQLite path; defaults inside the server workspace |
+| `ALLOWED_ORIGINS` | Required for browser production use | Comma-separated allowed frontend origins |
+| `TRUST_PROXY` | Optional | Set `true` only behind a trusted single proxy |
+| `AUTH_RATE_LIMIT_MAX`, `AUTH_RATE_LIMIT_WINDOW_MS` | Optional | Login/register limits |
+| `TELEMETRY_OFFLINE_AFTER_MS` | Optional | Offline status threshold |
+| `TELEMETRY_ALERT_COOLDOWN_MS` | Optional | Duplicate alert cooldown |
+| `TELEMETRY_HISTORY_RETENTION_POINTS` | Optional | Per-vehicle history bound |
+| `DEMO_SIMULATION_ENABLED` | Demo-only | Explicit simulator enable switch |
+| `DEMO_SIMULATION_TOKEN` | Demo-only secret | Auth token used by the producer |
+| `DEMO_ALLOW_USER_MUTATIONS` | Optional; default `false` | Allows normal users to mutate shared state only for an intentionally isolated/resettable Demo |
+| `DEMO_SIMULATION_INTERVAL_MS`, `DEMO_SIMULATION_VEHICLE_LIMIT`, `DEMO_SIMULATION_SPEED_MULTIPLIER`, `DEMO_SIMULATION_SEED`, `DEMO_SIMULATION_SCENARIO` | Demo-only | Bounded simulator configuration |
+| `API_BASE_URL` | Demo-only | Producer target, default `http://localhost:3001/api` |
 
----
+Never put backend secrets in a `VITE_*` variable. Do not commit `.env` files or simulator tokens.
 
-## Run it
+## Public Demo access
 
-### in one terminal
-cd vehicle-tracking-dashboard/server && npm i && npm start
-### in another
-cd vehicle-tracking-dashboard/app && npm i && npm run dev
+In production, normal registered users can inspect the operational application and run safe route optimisation but cannot change shared fleet state. Administrators retain supported CRUD, and the Fleet Demo Simulator can submit telemetry only through its service token. Local/test environments retain CRUD for development. See [Public Demo policy](docs/security/PUBLIC_DEMO_POLICY.md).
+
+## Simulation
+
+Simulation is opt-in. Set `DEMO_SIMULATION_ENABLED=true` and supply an authenticated `DEMO_SIMULATION_TOKEN`, then start the backend or run `npm run telemetry` in the server directory. Data flows producer -> Express -> SQLite -> API -> frontend. See [WP11 simulation](docs/demo/WP11_FLEET_SIMULATION.md).
+
+## Verification
+
+```powershell
+# frontend
+cd frontend
+npm test
+npm run lint
+npm run build
+
+# backend
+cd ..\server
+npm test
+```
+
+The safe Postman collection is `Fleet Drive AI Demo.postman_collection.json`. Set `{{base_url}}`, register/login, and the login test stores the returned JWT in `{{token}}`. The collection contains no credentials.
+
+## Deployment readiness
+
+`netlify.toml` builds `frontend/` and supplies SPA fallback. Configure `VITE_API_URL` to the hosted API unless `/api` is reverse-proxied. The Express host needs Node 22, a writable `DATABASE_PATH`, `JWT_SECRET`, `ALLOWED_ORIGINS`, `PORT`, and an explicit simulation policy. `GET /api/health` is the liveness check.
+
+This repository now contains the normalized release candidate. Deployment remains blocked until the historical map credential is confirmed rotated/revoked, the proposed source changes are committed, and a real clean checkout reproduces the candidate. See [WP13 topology](docs/release/WP13_REPOSITORY_TOPOLOGY.md).
+
+## Project evolution
+
+- Legacy Vehicle Tracking Dashboard: original React and Leaflet technical predecessor.
+- Vehicle Maintenance API v2: historical API contract and testing reference.
+- Base44 Fleet Drive AI Prototype: primary modern UI/UX design pathway.
+- Fleet Drive AI Demo: reconciled working full-stack demonstration.
+- Fleet Drive AI: commercial product direction requiring separate discovery and production architecture decisions.
+
+## Documentation
+
+Start with the [documentation index](docs/README.md), [API reference](docs/api/API_REFERENCE.md), [architecture](docs/architecture/DEMO_ARCHITECTURE.md), and [WP13 release report](docs/release/WP13_RELEASE_REPORT.md).

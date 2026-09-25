@@ -1,0 +1,1065 @@
+{
+  "info": {
+    "_postman_id": "7cb95d81-fda7-4c62-bf16-fda100000012",
+    "name": "Fleet Drive AI Demo",
+    "description": "Verified requests for the current Fleet Drive AI Demo Express API. No credentials or bearer tokens are stored.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3001",
+      "type": "string"
+    },
+    {
+      "key": "token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "username",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "password",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "vehicle_id",
+      "value": "VH-JO-100",
+      "type": "string"
+    },
+    {
+      "key": "driver_id",
+      "value": "DRV-001",
+      "type": "string"
+    },
+    {
+      "key": "maintenance_id",
+      "value": "1",
+      "type": "string"
+    },
+    {
+      "key": "geofence_id",
+      "value": "GF-DEMO-JHB",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Health",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/health",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "health"
+              ]
+            },
+            "description": "IMPLEMENTED. Safe service readiness response."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"{{username}}\",\n  \"password\": \"{{password}}\",\n  \"name\": \"Demo User\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/auth/register",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "register"
+              ]
+            },
+            "description": "IMPLEMENTED. Creates a persisted Demo user; role cannot be self-assigned."
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.code >= 200 && pm.response.code < 300) {",
+                  "  const body = pm.response.json();",
+                  "  const token = body.token || body.access_token || (body.data && body.data.token);",
+                  "  if (token) {",
+                  "    pm.collectionVariables.set(\"token\", token);",
+                  "    if (pm.environment) pm.environment.set(\"token\", token);",
+                  "  }",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"{{username}}\",\n  \"password\": \"{{password}}\",\n  \"rememberMe\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/auth/login",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            },
+            "description": "IMPLEMENTED. Returns a JWT and saves it as token."
+          },
+          "response": []
+        },
+        {
+          "name": "Current User",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/auth/me",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "me"
+              ]
+            },
+            "description": "IMPLEMENTED. Returns the authenticated public user shape."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Vehicles",
+      "item": [
+        {
+          "name": "List Vehicles",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/vehicles",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles"
+              ]
+            },
+            "description": "IMPLEMENTED. Lists current vehicles; supports search, city, status and make."
+          },
+          "response": []
+        },
+        {
+          "name": "Create Vehicle",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"DEMO-001\",\n  \"plate\": \"DEMO 001 GP\",\n  \"make\": \"Toyota\",\n  \"model\": \"Hilux\",\n  \"city\": \"Johannesburg\",\n  \"lat\": -26.2041,\n  \"lng\": 28.0473,\n  \"mileage\": 1000,\n  \"fuel\": 80\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles"
+              ]
+            },
+            "description": "IMPLEMENTED. Creates a vehicle."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Vehicle",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "{{vehicle_id}}"
+              ]
+            },
+            "description": "IMPLEMENTED. Returns vehicle detail with maintenance and alerts."
+          },
+          "response": []
+        },
+        {
+          "name": "Update Vehicle",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fuel\": 75\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "{{vehicle_id}}"
+              ]
+            },
+            "description": "IMPLEMENTED. Updates validated vehicle fields."
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Vehicle",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "{{vehicle_id}}"
+              ]
+            },
+            "description": "IMPLEMENTED. Deletes a vehicle and cascades related records."
+          },
+          "response": []
+        },
+        {
+          "name": "Submit Telemetry",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"lat\": -26.2041,\n  \"lng\": 28.0473,\n  \"speed\": 45,\n  \"mileage\": 1001,\n  \"fuel\": 79,\n  \"recordedAt\": \"2026-09-23T10:00:00.000Z\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}/telemetry",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "{{vehicle_id}}",
+                "telemetry"
+              ]
+            },
+            "description": "IMPLEMENTED. Persists telemetry and invokes existing alert/geofence/maintenance processing."
+          },
+          "response": []
+        },
+        {
+          "name": "Vehicle Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}/status",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "{{vehicle_id}}",
+                "status"
+              ]
+            },
+            "description": "IMPLEMENTED. Returns current backend-derived status."
+          },
+          "response": []
+        },
+        {
+          "name": "Vehicle History",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}/history?limit=100",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "{{vehicle_id}}",
+                "history"
+              ]
+            },
+            "description": "IMPLEMENTED. Returns bounded telemetry history."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Drivers",
+      "item": [
+        {
+          "name": "List Drivers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/drivers",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "drivers"
+              ]
+            },
+            "description": "IMPLEMENTED. Lists drivers and assignment summaries."
+          },
+          "response": []
+        },
+        {
+          "name": "Create Driver",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"DRV-DEMO\",\n  \"name\": \"Demo Driver\",\n  \"licenceNumber\": \"DEMO-123\",\n  \"licenceExpiry\": \"2027-12-31\",\n  \"phone\": \"+27 00 000 0000\",\n  \"email\": \"driver@fleetdrive.demo\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/drivers",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "drivers"
+              ]
+            },
+            "description": "IMPLEMENTED. Creates a driver."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Driver",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/drivers/{{driver_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "drivers",
+                "{{driver_id}}"
+              ]
+            },
+            "description": "IMPLEMENTED. Returns driver detail and assigned vehicles."
+          },
+          "response": []
+        },
+        {
+          "name": "Update Driver",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"phone\": \"+27 00 000 0001\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/drivers/{{driver_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "drivers",
+                "{{driver_id}}"
+              ]
+            },
+            "description": "IMPLEMENTED. Updates driver fields."
+          },
+          "response": []
+        },
+        {
+          "name": "Assign Vehicles",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"vehicleIds\": [\n    \"{{vehicle_id}}\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/drivers/{{driver_id}}/vehicles",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "drivers",
+                "{{driver_id}}",
+                "vehicles"
+              ]
+            },
+            "description": "IMPLEMENTED. Replaces verified vehicle assignments."
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Driver",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/drivers/{{driver_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "drivers",
+                "{{driver_id}}"
+              ]
+            },
+            "description": "IMPLEMENTED. Deletes an unassigned driver."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Maintenance",
+      "item": [
+        {
+          "name": "List Maintenance",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/maintenance",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "maintenance"
+              ]
+            },
+            "description": "IMPLEMENTED. Lists tasks; supports status."
+          },
+          "response": []
+        },
+        {
+          "name": "Vehicle Maintenance",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}/maintenance",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "{{vehicle_id}}",
+                "maintenance"
+              ]
+            },
+            "description": "IMPLEMENTED. Lists tasks for one vehicle."
+          },
+          "response": []
+        },
+        {
+          "name": "Add Maintenance",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"Oil and filter service\",\n  \"dueMileage\": 25000,\n  \"dueDate\": \"2027-01-31\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}/maintenance",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "{{vehicle_id}}",
+                "maintenance"
+              ]
+            },
+            "description": "IMPLEMENTED. Creates a rule-based maintenance task."
+          },
+          "response": []
+        },
+        {
+          "name": "Update Maintenance",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"Brake and tyre inspection\",\n  \"dueMileage\": 26000\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}/maintenance/{{maintenance_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "{{vehicle_id}}",
+                "maintenance",
+                "{{maintenance_id}}"
+              ]
+            },
+            "description": "IMPLEMENTED. Updates a maintenance task."
+          },
+          "response": []
+        },
+        {
+          "name": "Complete Maintenance",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"mileage\": 25000\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}/maintenance/{{maintenance_id}}/complete",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "{{vehicle_id}}",
+                "maintenance",
+                "{{maintenance_id}}",
+                "complete"
+              ]
+            },
+            "description": "IMPLEMENTED. Completes a task and records service mileage."
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Maintenance",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}/maintenance/{{maintenance_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "vehicles",
+                "{{vehicle_id}}",
+                "maintenance",
+                "{{maintenance_id}}"
+              ]
+            },
+            "description": "IMPLEMENTED. Deletes a maintenance task."
+          },
+          "response": []
+        },
+        {
+          "name": "Maintenance Report",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/maintenance/{{vehicle_id}}/report",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "maintenance",
+                "{{vehicle_id}}",
+                "report"
+              ]
+            },
+            "description": "IMPLEMENTED. Returns rule-derived maintenance summary."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Alerts",
+      "item": [
+        {
+          "name": "List Alerts",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/alerts",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "alerts"
+              ]
+            },
+            "description": "IMPLEMENTED. Lists persisted supported telemetry/geofence alerts."
+          },
+          "response": []
+        },
+        {
+          "name": "Alert Types",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/alerts/types",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "alerts",
+                "types"
+              ]
+            },
+            "description": "IMPLEMENTED. Lists supported alert types."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Geofences",
+      "item": [
+        {
+          "name": "List Geofences",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/geofences",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "geofences"
+              ]
+            },
+            "description": "IMPLEMENTED. Lists persisted boundaries."
+          },
+          "response": []
+        },
+        {
+          "name": "Create Geofence",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Demo Boundary\",\n  \"shapeType\": \"circle\",\n  \"center\": {\n    \"lat\": -26.2041,\n    \"lng\": 28.0473\n  },\n  \"radiusMeters\": 1000\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/geofences",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "geofences"
+              ]
+            },
+            "description": "IMPLEMENTED. Creates a circle or polygon boundary."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Geofence",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/geofences/{{geofence_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "geofences",
+                "{{geofence_id}}"
+              ]
+            },
+            "description": "IMPLEMENTED. Returns one boundary."
+          },
+          "response": []
+        },
+        {
+          "name": "Update Geofence",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Updated Demo Boundary\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/geofences/{{geofence_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "geofences",
+                "{{geofence_id}}"
+              ]
+            },
+            "description": "IMPLEMENTED. Updates a boundary."
+          },
+          "response": []
+        },
+        {
+          "name": "Check Vehicles",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/geofences/{{geofence_id}}/check?vehicleId={{vehicle_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "geofences",
+                "{{geofence_id}}",
+                "check"
+              ]
+            },
+            "description": "IMPLEMENTED. Calculates current inside/outside state."
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Geofence",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/geofences/{{geofence_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "geofences",
+                "{{geofence_id}}"
+              ]
+            },
+            "description": "IMPLEMENTED. Deletes a boundary and its state rows."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Routes",
+      "item": [
+        {
+          "name": "Optimise Stops",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"stops\": [\n    {\n      \"name\": \"Start\",\n      \"lat\": -26.2041,\n      \"lng\": 28.0473\n    },\n    {\n      \"name\": \"Stop 2\",\n      \"lat\": -26.1076,\n      \"lng\": 28.0567\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/routes/optimize",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "routes",
+                "optimize"
+              ]
+            },
+            "description": "IMPLEMENTED. Runs deterministic Demo nearest-neighbour ordering; not traffic-aware or AI routing."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Reports",
+      "item": [
+        {
+          "name": "Trip Report",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/reports/{{vehicle_id}}/trips",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "reports",
+                "{{vehicle_id}}",
+                "trips"
+              ]
+            },
+            "description": "IMPLEMENTED. Derives trips from persisted telemetry history."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Demo Simulation",
+      "item": [
+        {
+          "name": "Simulation Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/demo/status",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "demo",
+                "status"
+              ]
+            },
+            "description": "IMPLEMENTED. Returns safe authenticated simulator runtime status. No mutation controls are exposed."
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
