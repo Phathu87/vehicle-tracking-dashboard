@@ -7,8 +7,8 @@ Scope: Frontend architecture and shared runtime foundation only
 ## 1. Outcome
 
 The workspace-root React application is now the implementation frontend for
-Fleet Drive AI Demo. It retains the Base44 prototype's visual language while
-removing Base44 SDK and Vite-plugin runtime coupling.
+Fleet Drive AI Demo. It retains the original design prototype prototype's visual language while
+removing original design prototype SDK and Vite-plugin runtime coupling.
 
 This package did not implement every product screen and did not change Express
 behavior. Existing prototype pages remain available as design and interaction
@@ -18,7 +18,7 @@ references while later work packages connect them to real API data.
 
 | Source | Use in WP4 |
 | --- | --- |
-| Base44 prototype | Primary source for color, typography, spacing, navigation, page composition, theme behavior, and existing UI primitives |
+| original design prototype prototype | Primary source for color, typography, spacing, navigation, page composition, theme behavior, and existing UI primitives |
 | Legacy React app | Reference for central API access, vehicle polling, Leaflet markers, marker/list selection, popups, and fly-to behavior |
 | Current Express API | Runtime API authority and default local endpoint |
 | WP3 API contract | Route, auth, response, and limitation authority |
@@ -51,20 +51,20 @@ the route tree.
 ### PublicLayout
 
 - Provides the public route boundary.
-- Leaves the existing Base44-derived landing composition intact.
+- Leaves the existing original design prototype-derived landing composition intact.
 
 ### AuthLayout
 
 - Provides a separate route shell for account pages.
 - `AuthPanel` is the reusable compact authentication panel.
-- Login and registration preserve the Base44 visual direction but now submit to
-  the Express contract rather than Base44 or a fake timer.
+- Login and registration preserve the original design prototype visual direction but now submit to
+  the Express contract rather than original design prototype or a fake timer.
 - Password recovery pages state that no authoritative endpoint exists and do not
   simulate a successful reset.
 
 ### DashboardLayout
 
-- Preserves the Base44 sidebar/header composition.
+- Preserves the original design prototype sidebar/header composition.
 - Uses a desktop collapse mode and a modal mobile drawer.
 - Mobile navigation closes on route change, overlay click, or Escape.
 - Body scrolling is locked while the drawer is open.
@@ -75,7 +75,7 @@ the route tree.
 
 ## 5. Design tokens and primitives
 
-The Base44-derived HSL token set remains authoritative in `src/index.css`:
+The original design prototype-derived HSL token set remains authoritative in `src/index.css`:
 
 - background, card, popover, foreground, muted, border, and input
 - primary, success, warning, danger, info, and chart colors
@@ -151,23 +151,23 @@ all connected in this foundation package.
 - cross-application `401` handling
 - logout and route-boundary state
 
-No hard-coded JWT, Base44 token, OAuth provider, or simulated registration
+No hard-coded JWT, original design prototype token, OAuth provider, or simulated registration
 success remains in the active authentication flow. Public registration sends
 only `name`, `username`, and `password`; it cannot request an administrator role.
 
-## 9. Base44 dependency boundary
+## 9. original design prototype dependency boundary
 
 Removed from the active frontend runtime:
 
-- `@base44/sdk`
-- `@base44/vite-plugin`
-- Base44 client construction
-- Base44 public-settings bootstrap
-- Base44 login, registration-adjacent, reset, user-update, and logout calls
-- Base44-specific Vite instrumentation
+- `@design-prototype/sdk`
+- `@design-prototype/vite-plugin`
+- original design prototype client construction
+- original design prototype public-settings bootstrap
+- original design prototype login, registration-adjacent, reset, user-update, and logout calls
+- original design prototype-specific Vite instrumentation
 
 `vite.config.js` now uses the React plugin and an explicit `@` alias only.
-Base44-hosted design images still appear in the supplied prototype UI; these are
+original design prototype-hosted design images still appear in the supplied prototype UI; these are
 visual assets, not backend/API dependencies. Localising those assets is deferred.
 
 ## 10. Configuration
@@ -204,7 +204,7 @@ Build warning:
 ## 12. Deferred work and limitations
 
 - Existing dashboard, vehicle, driver, maintenance, chart, and map content still
-  uses Base44 prototype data. WP4 deliberately did not connect every screen.
+  uses original design prototype prototype data. WP4 deliberately did not connect every screen.
 - Express currently supports only `GET /api/vehicles`; login and registration
   will return a standard API error until WP3 contract routes are implemented.
 - Dashboard access remains optional-auth Demo access until backend auth exists.
@@ -213,7 +213,7 @@ Build warning:
   are the preferred reference for a later Express-backed implementation.
 - Alerts, geofences, and reports remain unimplemented modules and do not fabricate
   responses.
-- Base44-hosted image URLs should eventually be localised if the Demo must operate
+- original design prototype-hosted image URLs should eventually be localised if the Demo must operate
   without that asset host.
 - No frontend test runner exists. This package used the required lint and
   production-build verification only.

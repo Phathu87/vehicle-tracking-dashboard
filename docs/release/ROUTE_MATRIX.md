@@ -6,7 +6,7 @@ Verified against `src/routes/AppRoutes.jsx` and Chromium on 2026-09-23.
 
 | Routes | Classification | Notes |
 | --- | --- | --- |
-| `/` | WORKING | Complete Base44-aligned landing page; API-derived public stats |
+| `/` | WORKING | Complete original design prototype-aligned landing page; API-derived public stats |
 | `/features`, `/pricing`, `/mobile-apps`, `/changelog`, `/roadmap` | WORKING | Product information; commercial boundaries stated |
 | `/solutions`, `/solutions/fleet-tracking`, `/solutions/driver-management`, `/solutions/maintenance`, `/solutions/geofencing`, `/solutions/reports` | WORKING | Informational pages |
 | `/about`, `/careers`, `/blog`, `/contact`, `/partners` | WORKING | Informational; no fake form submission |

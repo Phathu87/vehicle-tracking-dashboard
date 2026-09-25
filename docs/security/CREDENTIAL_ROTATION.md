@@ -15,7 +15,7 @@ Date: 2026-09-23
 | Current application dependency on old token | **NONE** |
 | Current map implementation | Leaflet / OpenStreetMap |
 
-The token value is intentionally omitted. Current source contains only an empty legacy `app/.env.example` variable name.
+The token value is intentionally omitted. The active application contains no replacement token and does not require one.
 
 ## Closure
 

@@ -94,7 +94,7 @@ milliseconds and status values are title-cased (`Online`, `Idle`, `Offline`).
 }
 ```
 
-The API uses the Postman spelling `license`. Base44 screens currently use
+The API uses the Postman spelling `license`. original design prototype screens currently use
 `licence`; a frontend adapter will be required when those screens are connected.
 
 ### Telemetry point
@@ -262,7 +262,7 @@ Unknown routes outside the documented API still return Express's default HTML
 - **Success:** `201` with `Vehicle`.
 - **Errors:** `400` invalid body, `401`, `409` duplicate ID or plate.
 - **Known limitations:** no vehicle-create UI is exposed in WP8.
-- **Frontend consumers:** future Base44 Vehicles create action.
+- **Frontend consumers:** future original design prototype Vehicles create action.
 
 ### `GET /api/vehicles/:id` - IMPLEMENTED
 
@@ -283,7 +283,7 @@ Unknown routes outside the documented API still return Express's default HTML
 - **Success:** `200` with updated `Vehicle`.
 - **Errors:** `401`, `404`, `409` duplicate plate.
 - **Known limitations:** no vehicle-edit UI is exposed in WP8.
-- **Frontend consumers:** future Base44 VehicleDetail edit action.
+- **Frontend consumers:** future original design prototype VehicleDetail edit action.
 
 ### `DELETE /api/vehicles/:id` - IMPLEMENTED
 
@@ -293,7 +293,7 @@ Unknown routes outside the documented API still return Express's default HTML
 - **Errors:** `401`, `404`.
 - **Known limitations:** no delete UI is exposed in WP8. Telemetry,
   maintenance, and alerts cascade when a vehicle is deleted.
-- **Frontend consumers:** future Base44 Vehicles delete action.
+- **Frontend consumers:** future original design prototype Vehicles delete action.
 
 ### `POST /api/vehicles/:id/telemetry` - IMPLEMENTED
 

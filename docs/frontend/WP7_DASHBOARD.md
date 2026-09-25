@@ -2,7 +2,7 @@
 
 ## Outcome
 
-The Fleet Drive AI Demo dashboard now uses the Base44 visual direction with a
+The Fleet Drive AI Demo dashboard now uses the original design prototype visual direction with a
 real Express data path. Vehicle data is fetched through the central API client
 and React Query, normalized once, and then used to derive every supported KPI
 and widget. The dashboard refreshes the vehicle response every 30 seconds.
@@ -80,10 +80,10 @@ are available.
 - Mobile sidebar open and close behavior was verified.
 - Frontend lint and production build were run after implementation.
 
-## Base44 visual alignment correction
+## original design prototype visual alignment correction
 
 The authenticated application shell and dashboard were tightened to match the
-approved Base44 reference more closely: compact dark navigation, a 52-pixel
+approved original design prototype reference more closely: compact dark navigation, a 52-pixel
 header, six dense KPI tiles on wide screens, a two-to-one tracking and alerts
 layout, and the selected-driver map overlay. The map uses keyless
 OpenStreetMap tiles with a scoped dark treatment, so it does not display a

@@ -33,3 +33,7 @@ pnpm-debug.log*
 Thumbs.db
 *.swp
 *.swo
+
+# Local topology recovery and release-proof workspaces
+.topology-recovery/
+.wp13-*/

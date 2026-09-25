@@ -16,7 +16,7 @@ Fleet Drive AI is the intended commercial product. Fleet Drive AI Demo is the wo
 
 ## 4. Source-of-Truth Summary
 
-Express and its tests define backend behavior; the current API reference and safe Postman collection describe it. Base44 defines visual direction. The legacy dashboard contributes proven Leaflet patterns. SQLite/Express state, not React fixtures, is runtime truth.
+Express and its tests define backend behavior; the current API reference and safe Postman collection describe it. original design prototype defines visual direction. The legacy dashboard contributes proven Leaflet patterns. SQLite/Express state, not React fixtures, is runtime truth.
 
 ## 5. Git State
 
@@ -24,7 +24,7 @@ Nested repository: branch `master`, commit `d597435c583b8486dd7f401e96020c7188f9
 
 ## 6. Frontend Status
 
-React 18/Vite 6 builds and lints. Base44 styling is retained. API loading, empty and error states exist. Network session restoration now distinguishes backend outage from invalid authentication and preserves the stored token.
+React 18/Vite 6 builds and lints. original design prototype styling is retained. API loading, empty and error states exist. Network session restoration now distinguishes backend outage from invalid authentication and preserves the stored token.
 
 ## 7. Backend Status
 

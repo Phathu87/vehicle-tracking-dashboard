@@ -3,7 +3,7 @@
 Final verification: 2026-09-25
 Release commit: `ca0661690f0a36ca5b5597db7140426f7ff52853`
 
-This record is completed after cloning the release commit into a new directory with no reused `node_modules`, `dist`, runtime database or local `.env`. The checkout was not patched and no source files were copied from outside Git.
+This record covers the earlier WP13 release commit before the repository-root correction. That commit was cloned into a new directory with no reused `node_modules`, `dist`, runtime database or local `.env`; the checkout was not patched and no source files were copied from outside Git. The corrected root now has a dedicated topology commit and must receive a fresh clean-checkout proof before release approval.
 
 ## Isolation
 
@@ -35,4 +35,19 @@ The backend process was stopped after verification. The generated database and b
 
 ## Limitation
 
-Release commit plus the documented environment produces a working Fleet Drive AI Demo. Repository reproducibility P0 is **RESOLVED**.
+The recorded release commit plus its documented environment produced a working Fleet Drive AI Demo. That result remains historical evidence; corrected-root verification is recorded below.
+
+## Corrected-root verification
+
+On 2026-09-25, the dedicated repository-topology commit was cloned into the ignored local recovery area without reusing `node_modules`, `dist`, a runtime database or `.env` file.
+
+| Gate | Result |
+| --- | --- |
+| Frontend `npm ci` | PASS |
+| Frontend lint | PASS |
+| Frontend tests | PASS: 2 |
+| Frontend production build | PASS: Vite 6.4.3, 2,825 modules |
+| Backend `npm ci` | PASS: 105 packages, 0 advisories |
+| Backend tests | PASS: 38 |
+
+The corrected repository root is independently reproducible. The first sandboxed frontend install attempt was blocked by Windows npm-cache permissions; the approved elevated retry completed successfully without source changes.

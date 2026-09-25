@@ -199,7 +199,7 @@ export const PUBLIC_PAGES = [
     summary: 'The repository contains implementation audits, backend stabilization notes, the API contract and frontend work-package records.',
     status: 'Available in Repository',
     sections: [
-      ['Repository audit', 'Documents the Base44 reference, legacy application, Express backend and historical Postman contract.'],
+      ['Repository audit', 'Documents the original design reference, legacy application, Express backend and historical Postman contract.'],
       ['API reference', 'Defines implemented and contract-only endpoints, authentication, request shapes and limitations.'],
       ['Implementation records', 'Each completed work package records behavior, validation and unresolved boundaries.'],
     ],

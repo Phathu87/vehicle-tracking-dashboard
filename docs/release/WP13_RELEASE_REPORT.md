@@ -16,7 +16,7 @@ WP13 normalized the complete Demo into one Git boundary, removed 3,391 tracked d
 
 ## 3. Repository Normalization
 
-The selected root is `C:\Users\Admin\vehicle-tracking-dashboard\vehicle-tracking-dashboard`. Current React source is in `frontend/`; Express/SQLite is in `server/`; docs, scripts, CI, Postman and Netlify configuration are inside the same boundary. `app/` remains the Legacy Vehicle Tracking Dashboard reference.
+The selected root is `C:\Users\Admin\vehicle-tracking-dashboard`. Current React source is in root `src/`; Express/SQLite is in `server/`; docs, scripts, CI, Postman and Netlify configuration are inside the same boundary. `legacy/` retains the old Vehicle Tracking Dashboard as reference-only source.
 
 ## 4. Git Hygiene
 
@@ -44,11 +44,11 @@ A fresh clone of release commit `ca0661690f0a36ca5b5597db7140426f7ff52853` start
 
 ## 10. CI Verification
 
-GitHub Actions paths target `frontend/` and `server/`. The workflow runs exact installs, frontend tests/lint/build and backend tests with no production secrets and no deploy step. Equivalent commands passed from the release commit; hosted CI cannot run before push.
+GitHub Actions runs frontend commands at the repository root and backend commands in `server/`. The workflow runs exact installs, frontend tests/lint/build and backend tests with no production secrets and no deploy step. Equivalent commands passed from the prior release commit; hosted CI must be revalidated after the topology correction is pushed.
 
 ## 11. Deployment Configuration
 
-Netlify builds `frontend/` and publishes `dist` with SPA fallback. The backend plan requires an approved Node 22 host, strong JWT secret, exact CORS origin, writable database path and explicit simulation policy. No backend provider is selected in source.
+Netlify builds from the repository root and publishes `dist` with SPA fallback. The backend plan requires an approved Node 22 host, strong JWT secret, exact CORS origin, writable database path and explicit simulation policy. No backend provider is selected in source.
 
 ## 12. Demo Persistence Strategy
 

@@ -12,10 +12,10 @@ Status: Prepared, not executed
 
 ## Frontend
 
-- Base directory: `frontend`
+- Base directory: repository root
 - Install: `npm ci`
 - Build: `npm run build`
-- Publish: `frontend/dist`
+- Publish: `dist`
 - Required production variable: `VITE_API_URL=https://<approved-api-host>/api`
 - Optional policy mirror: `VITE_DEMO_ALLOW_USER_MUTATIONS=false`
 - SPA fallback: configured in `netlify.toml`

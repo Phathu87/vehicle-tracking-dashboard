@@ -40,7 +40,6 @@ npm start
 Frontend, in another terminal:
 
 ```powershell
-cd frontend
 npm ci
 $env:VITE_API_URL='http://localhost:3001/api'
 npm run dev
@@ -94,13 +93,12 @@ Simulation is opt-in. Set `DEMO_SIMULATION_ENABLED=true` and supply an authentic
 
 ```powershell
 # frontend
-cd frontend
 npm test
 npm run lint
 npm run build
 
 # backend
-cd ..\server
+cd server
 npm test
 ```
 
@@ -108,7 +106,7 @@ The safe Postman collection is `Fleet Drive AI Demo.postman_collection.json`. Se
 
 ## Deployment readiness
 
-`netlify.toml` builds `frontend/` and supplies SPA fallback. Configure `VITE_API_URL` to the hosted API unless `/api` is reverse-proxied. The Express host needs Node 22, a writable `DATABASE_PATH`, `JWT_SECRET`, `ALLOWED_ORIGINS`, `PORT`, and an explicit simulation policy. `GET /api/health` is the liveness check.
+`netlify.toml` builds the root React application and supplies SPA fallback. Configure `VITE_API_URL` to the hosted API unless `/api` is reverse-proxied. The Express host needs Node 22, a writable `DATABASE_PATH`, `JWT_SECRET`, `ALLOWED_ORIGINS`, `PORT`, and an explicit simulation policy. `GET /api/health` is the liveness check.
 
 This repository now contains the normalized release candidate. Deployment remains blocked until the historical map credential is confirmed rotated/revoked, the proposed source changes are committed, and a real clean checkout reproduces the candidate. See [WP13 topology](docs/release/WP13_REPOSITORY_TOPOLOGY.md).
 

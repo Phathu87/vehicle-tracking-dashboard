@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, LayoutDashboard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const CTA_IMAGE = 'https://media.base44.com/images/public/6a71a0e6e236bf9b6b0c3134/8802cc267_generated_image.png';
+const CTA_IMAGE = '/assets/fleet-operations.png';
 
 export default function LandingFinalCTA() {
   return (

@@ -15,7 +15,7 @@ The React application never mutates mock vehicle movement locally. Simulated dat
 
 ## Components
 
-- **React/Vite frontend:** Base44-aligned public and protected UI, route boundaries, central API client, React Query polling and Leaflet/OpenStreetMap rendering.
+- **React/Vite frontend:** original design prototype-aligned public and protected UI, route boundaries, central API client, React Query polling and Leaflet/OpenStreetMap rendering.
 - **Express backend:** authentication, validation, fleet services, rule alerts, geofences, reports and safe JSON errors.
 - **SQLite:** persistent users, vehicles, drivers, telemetry history, alerts, maintenance and geofences. Tests and QA can use `:memory:`.
 - **Simulator:** deterministic, opt-in data-source process. Lifecycle is controlled by environment/startup, not an exposed public mutation API.

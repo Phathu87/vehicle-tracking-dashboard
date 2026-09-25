@@ -6,7 +6,7 @@ Status: release candidate; no tag created
 
 ## Included
 
-- React/Vite public site and Base44-aligned authenticated operations UI.
+- React/Vite public site and original design prototype-aligned authenticated operations UI.
 - Express REST API, JWT authentication and SQLite Demo persistence.
 - Vehicle, driver, maintenance, alert, geofence, route and report workflows.
 - Leaflet/OpenStreetMap fleet maps.

@@ -6,6 +6,16 @@ import pluginUnusedImports from "eslint-plugin-unused-imports";
 
 export default [
   {
+    ignores: [
+      ".topology-recovery/**",
+      ".wp13-*/**",
+      "legacy/**",
+      "server/**",
+      "dist/**",
+      "node_modules/**",
+    ],
+  },
+  {
     files: ["src/**/*.{js,mjs,cjs,jsx}"],
     ignores: ["src/components/ui/**/*"],
     ...pluginJs.configs.recommended,

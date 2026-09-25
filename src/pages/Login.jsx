@@ -8,7 +8,7 @@ import { useAuth } from '@/lib/AuthContext';
 import GoogleIcon from '@/components/GoogleIcon';
 import MicrosoftIcon from '@/components/MicrosoftIcon';
 
-const BG_IMG = 'https://media.base44.com/images/public/6a71a0e6e236bf9b6b0c3134/8802cc267_generated_image.png';
+const BG_IMG = '/assets/fleet-operations.png';
 const inputClass = 'w-full h-12 pl-10 pr-3 rounded-lg bg-secondary border border-input text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all';
 
 export default function Login() {

@@ -1,44 +1,50 @@
 # WP13 Repository Topology
 
-Date: 2026-09-23
+Date: 2026-09-25
 
-## Forensic result
+## Corrected forensic result
 
-The only Git repository is `C:\Users\Admin\vehicle-tracking-dashboard\vehicle-tracking-dashboard`. The surrounding workspace is not a repository and contains the authoritative React frontend, documentation, CI, Postman collection and Netlify configuration. No second nested `.git` repository was identified.
+The repository had been initialized one directory too deep at `C:\Users\Admin\vehicle-tracking-dashboard\vehicle-tracking-dashboard`. That made the old container appear to be the product root while the intended React application and its root configuration lived outside Git.
+
+The Git metadata and release source have now been consolidated at `C:\Users\Admin\vehicle-tracking-dashboard`. The configured GitHub remote and existing commit history were preserved.
 
 ```text
-C:\Users\Admin\vehicle-tracking-dashboard\          WORKSPACE (not Git)
-|-- src/                                               AUTHORITATIVE FRONTEND SOURCE
-|-- docs/                                              AUTHORITATIVE DOCUMENTATION
-|-- scripts/                                           RELEASE SCRIPTS
-|-- .github/workflows/ci.yml                           CI
-|-- package.json / package-lock.json                   FRONTEND DEPENDENCIES
-|-- netlify.toml                                       FRONTEND DEPLOYMENT
-|-- Fleet Drive AI Demo.postman_collection.json        OPERATIONAL POSTMAN
-`-- vehicle-tracking-dashboard\                        GIT ROOT
-    |-- .git/
-    |-- app/                                           LEGACY REACT/LEAFLET PREDECESSOR
-    `-- server/                                        AUTHORITATIVE EXPRESS BACKEND
+C:\Users\Admin\vehicle-tracking-dashboard\          AUTHORITATIVE GIT ROOT
+|-- .git/
+|-- src/                                               CURRENT REACT/VITE APP
+|-- public/
+|-- server/                                            CURRENT EXPRESS/SQLITE BACKEND
+|-- legacy/                                            LEGACY PREDECESSOR (REFERENCE ONLY)
+|-- docs/
+|-- scripts/
+|-- .github/workflows/
+|-- Fleet Drive AI Demo.postman_collection.json
+|-- Vehicle Maintenance API v2.postman_collection.json
+|-- package.json / package-lock.json
+|-- netlify.toml
+`-- README.md
 ```
 
 ## Findings
 
-- Git root: `C:\Users\Admin\vehicle-tracking-dashboard\vehicle-tracking-dashboard`.
-- Required source outside Git: current React frontend, docs, scripts, CI, Netlify config and Postman collection.
-- Required untracked backend source: controllers, routes, services, middleware, tests and scripts, including all four WP11 files.
-- Tracked dependency output: 3,391 `server/node_modules` files out of 3,431 tracked paths.
-- Tracked secret-bearing legacy file: `app/.env` is deleted in the working tree but exists in history.
-- Runtime SQLite files are local output and must remain ignored; `server/database.js` is JavaScript source and must be tracked.
+- Git root: `C:\Users\Admin\vehicle-tracking-dashboard`.
+- Current frontend source: root `src/` and `public/`.
+- Current backend source: `server/`.
+- Legacy frontend source: `legacy/`, retained for implementation reference only.
+- Local recovery copies: `.topology-recovery/`, ignored by Git.
+- Release-proof workspaces: `.wp13-*/`, ignored by Git.
+- Dependency output, environment files and runtime SQLite files remain ignored.
 
 ## Selected release boundary
 
-Keep the existing nested Git repository as the single authoritative release root. Normalize it to:
+Use the outer project directory as the single authoritative release root:
 
 ```text
 vehicle-tracking-dashboard/                            AUTHORITATIVE GIT ROOT
-|-- frontend/                                          CURRENT REACT/VITE APP
+|-- src/                                               CURRENT REACT/VITE APP
+|-- public/
 |-- server/                                            CURRENT EXPRESS/SQLITE BACKEND
-|-- app/                                               LEGACY PREDECESSOR (REFERENCE ONLY)
+|-- legacy/                                            LEGACY PREDECESSOR (REFERENCE ONLY)
 |-- docs/
 |-- scripts/
 |-- .github/workflows/
@@ -49,13 +55,13 @@ vehicle-tracking-dashboard/                            AUTHORITATIVE GIT ROOT
 `-- README.md
 ```
 
-`frontend/` is used instead of replacing `app/` so historical source remains intact and the release source is unambiguous. The outer workspace remains untouched as a verification fallback until the normalized candidate passes.
+The former nested repository and design-reference metadata are preserved locally under `.topology-recovery/`. They are not release inputs and are excluded from Git.
 
 ## Required path adjustments
 
-- CI frontend working directory becomes `frontend`.
-- Netlify base becomes `frontend`; publish remains `dist` relative to that base.
-- README and documentation commands use `frontend/` and `server/`.
+- CI runs frontend commands from the repository root.
+- Netlify builds from the repository root and publishes `dist`.
+- README and documentation commands use the repository root for frontend tasks and `server/` for backend tasks.
 - Backend source paths remain unchanged.
 
-No topology change, commit, push, tag or history rewrite had occurred when this document was first created.
+The consolidation preserves history and does not rewrite commits. It is recorded in a dedicated topology correction commit; pushing remains a separate owner-directed action.

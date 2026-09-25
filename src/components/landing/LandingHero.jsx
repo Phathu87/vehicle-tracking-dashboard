@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle2, LayoutDashboard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const HERO_IMAGE = 'https://media.base44.com/images/public/6a71a0e6e236bf9b6b0c3134/9de1b5629_generated_image.png';
+const HERO_IMAGE = '/assets/fleet-hero.png';
 
 export default function LandingHero() {
   return (

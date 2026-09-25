@@ -5,7 +5,7 @@
 Fleet Drive AI Demo now has real username/password authentication backed by the
 current Express application. Registration, login, current-user restoration,
 logout, route protection, and authenticated/unauthenticated redirects all use
-the documented API contract. No Base44 data services or fabricated auth state
+the documented API contract. No original design prototype data services or fabricated auth state
 were introduced.
 
 ## Backend implementation
@@ -28,7 +28,7 @@ error envelope.
 
 ## Frontend implementation
 
-- The login and registration pages retain the Base44-derived visual language
+- The login and registration pages retain the original design prototype-derived visual language
   while calling the Express API through the central client.
 - Both forms include browser and application validation, pending states,
   backend error messages, and password visibility controls.
