@@ -6,7 +6,7 @@ Owner: Phathutshedzo Rakhunwana
 
 ## 1. Executive Summary
 
-WP13 normalized the complete Demo into one Git boundary, removed 3,391 tracked dependency files, remediated dependency advisories, enforced a production public read-only policy and proved the staged candidate from an isolated source export. Release remains blocked because no owner-authorized commit exists and the historical Mapbox credential revocation is unconfirmed.
+WP13 normalized the complete Demo into one Git boundary, removed 3,391 tracked dependency files, remediated dependency advisories and enforced a production public read-only policy. Release commit `ca0661690f0a36ca5b5597db7140426f7ff52853` was reproduced from a clean checkout, and the repository owner confirmed revocation of the historical Mapbox credential. Both P0 release controls are resolved.
 
 ## 2. WP12 Blockers Entering WP13
 
@@ -24,7 +24,7 @@ The selected root is `C:\Users\Admin\vehicle-tracking-dashboard\vehicle-tracking
 
 ## 5. Credential Rotation
 
-The historical credential is a Mapbox public token formerly in `app/.env`. Current source does not require it and the file is deleted/ignored. Provider-side revocation is **USER ACTION REQUIRED**. No history rewrite was performed.
+The historical credential is a Mapbox public token formerly in `app/.env`. The repository owner confirmed that it was revoked or disabled and that its replacement was not committed. Current source uses Leaflet/OpenStreetMap and has no dependency on either token. The repeated staged-tree secret scan passed. No history rewrite was performed.
 
 ## 6. Dependency Review
 
@@ -40,11 +40,11 @@ Typecheck remains non-blocking P2 with 168 JavaScript inference/declaration erro
 
 ## 9. Clean Checkout Verification
 
-An isolated final staged-index export started with 293 files and no dependencies, build, database or local environment. Both installs, frontend lint/tests/build, 38 backend tests, backend startup, health and critical API reads/auth passed. A true checkout of a release commit awaits commit approval.
+A fresh clone of release commit `ca0661690f0a36ca5b5597db7140426f7ff52853` started with 293 files and no dependencies, build, database or local environment. Both installs, frontend lint/tests/build, 38 backend tests, backend startup, health and critical API reads/auth passed. No file from outside Git was added and the checkout was not patched.
 
 ## 10. CI Verification
 
-GitHub Actions paths now target `frontend/` and `server/`. The workflow runs exact installs, frontend tests/lint/build and backend tests with no production secrets and no deploy step. Equivalent commands passed locally; hosted CI cannot run before commit/push.
+GitHub Actions paths target `frontend/` and `server/`. The workflow runs exact installs, frontend tests/lint/build and backend tests with no production secrets and no deploy step. Equivalent commands passed from the release commit; hosted CI cannot run before push.
 
 ## 11. Deployment Configuration
 
@@ -88,16 +88,16 @@ Proposed tag: `v1.0.0-demo`. Proposed title: **Fleet Drive AI Demo - Initial Pub
 
 ## 21. Remaining P0/P1/P2/P3 Items
 
-- P0: authorize and create the release commit, then prove a real checkout; confirm Mapbox credential revocation.
+- P0: none. Credential rotation and repository reproducibility are resolved.
 - P1: hosted CI/deployment security and policy verification await commit and deployment approval.
 - P2: two moderate Router advisories, 168 typecheck errors, Firefox/WebKit unavailable, experimental `node:sqlite`, no alert acknowledgement/PDF/CSV export, hosted performance untested.
 - P3: production telematics, AI, billing, mobile, SSO, multi-tenancy, managed data and commercial operations remain future product work.
 
 ## 22. Final Release Decision
 
-**DEMO RELEASE BLOCKED**
+**READY FOR PUSH/DEPLOYMENT APPROVAL**
 
-Functional and staged-candidate gates pass, but both P0 closure actions require owner action.
+Both P0 release controls are resolved. Push, tag and deployment remain separate owner-approved actions and were not performed.
 
 ## 23. Commercial Handoff Boundary
 
@@ -119,14 +119,14 @@ The Demo proves full-stack workflows, simulated telemetry flow and product direc
 | Deployment config inside release boundary | PASS |
 | node_modules not tracked | PASS |
 | Runtime database handled correctly | PASS |
-| Required source files tracked/ready to track | PASS |
+| Required source files tracked in release commit | PASS |
 
 ### Credentials
 
 | Item | Status |
 | --- | --- |
 | Historical map credential identified | PASS |
-| Historical map credential rotated/revoked | AWAITING USER ACTION |
+| Historical map credential rotated/revoked | PASS - OWNER CONFIRMED |
 | Current source does not use old credential | PASS |
 | Replacement secret not committed | PASS |
 | .env safe | PASS |
@@ -158,7 +158,7 @@ The Demo proves full-stack workflows, simulated telemetry flow and product direc
 | Item | Status |
 | --- | --- |
 | Clean staged-source export succeeds | PASS |
-| Clean checkout of release commit succeeds | AWAITING USER ACTION |
+| Clean checkout of release commit succeeds | PASS |
 | Frontend npm ci succeeds | PASS |
 | Frontend lint succeeds | PASS |
 | Frontend tests succeed | PASS |
@@ -207,10 +207,11 @@ All hosted deployment, HTTPS, health, authentication, dashboard, vehicles, map, 
 | WP13 release report | PASS |
 | README current | PASS |
 
-## Proposed Commit Plan
+## Release Commit
 
-1. Repository normalization: `.gitignore`, `frontend/**`, `server/node_modules/**` index removals, `server/*.js`, `server/controllers/**`, `server/routes/**`, `server/services/**`, `server/middleware/**`, `server/scripts/**`, `server/test/**`.
-2. Release configuration and contracts: `.github/workflows/ci.yml`, `netlify.toml`, `Fleet Drive AI Demo.postman_collection.json`, `Vehicle Maintenance API v2.postman_collection.json`, `scripts/build-postman.mjs`, `server/.env.example`, `frontend/.env.example`.
-3. Documentation: `README.md`, `docs/**`.
-
-The existing staged candidate may also be committed once as `release: prepare Fleet Drive AI Demo v1.0.0 candidate` because it represents one coherent normalization from a previously non-reproducible repository. No commit, push or tag occurred in WP13.
+- Commit: `ca0661690f0a36ca5b5597db7140426f7ff52853`
+- Message: `release: prepare Fleet Drive AI Demo v1.0.0`
+- Clean-checkout proof: PASS
+- Push: not performed
+- Tag: not created
+- Deployment: not performed

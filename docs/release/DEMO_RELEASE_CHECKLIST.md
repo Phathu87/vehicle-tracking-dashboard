@@ -7,9 +7,9 @@
 - [x] CORS, security headers, JSON limits, auth rate limiting and JSON errors are configured.
 - [x] `.env.example` files contain names/safe examples only; runtime databases and server env files are ignored.
 - [x] Postman stores no JWT or credentials.
-- [ ] Rotate the legacy map credential found in Git history.
-- [ ] Resolve the canonical Git root and track all release source.
-- [ ] Review and remediate frontend dependency advisories.
+- [x] Legacy map credential revocation is owner-confirmed; no replacement credential is committed.
+- [x] Canonical Git root and release source are captured in commit `ca0661690f0a36ca5b5597db7140426f7ff52853`.
+- [x] Frontend dependency advisories are reviewed, safely remediated where possible and documented.
 
 ## Product flows
 
@@ -18,7 +18,7 @@
 - [x] Drivers, maintenance, alerts, geofences, route optimisation and reports connect to Express.
 - [x] Simulation is environment controlled and disclosed.
 - [x] Missing exports, analytics, fuel management and user management are labelled honestly.
-- [ ] Approve a resettable shared-Demo mutation policy or restrict public mutations.
+- [x] Shared-Demo mutations are restricted server-side and the resettable persistence policy is documented.
 
 ## UX and deployment
 
@@ -30,4 +30,4 @@
 - [x] Backend health/startup/environment contract is documented.
 - [ ] Validate Firefox/WebKit and the deployed Netlify/backend pair after blockers are cleared.
 
-Release gate: **DEMO RELEASE BLOCKED** until both P0 items are closed.
+Release gate: **READY FOR PUSH/DEPLOYMENT APPROVAL**. Hosted checks remain pending and are not marked as passed.
