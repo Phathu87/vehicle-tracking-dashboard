@@ -1,4 +1,11 @@
 import { db } from "../database.js";
+import {
+  clearCurrentVehicle,
+  getAssignedVehicles,
+  getCurrentVehicle,
+  replaceAssignedVehicles,
+  setCurrentVehicle,
+} from "./assignmentService.js";
 
 function licenceState(expiry) {
   const expiryTime = Date.parse(`${expiry}T23:59:59Z`);
@@ -8,13 +15,10 @@ function licenceState(expiry) {
   return { licenceStatus: "valid", renewalState: "not_due", daysUntilExpiry: days };
 }
 
-function assignedVehicles(id) {
-  return db.prepare("SELECT id, plate, make, model, status, city FROM vehicles WHERE driver_id = ? ORDER BY id").all(id);
-}
-
 function mapDriver(row, { detail = false } = {}) {
   if (!row) return null;
-  const assignments = assignedVehicles(row.id);
+  const assignments = getAssignedVehicles(row.id);
+  const currentVehicle = getCurrentVehicle(row.id);
   const state = licenceState(row.licence_expiry);
   const driver = {
     id: row.id,
@@ -26,6 +30,15 @@ function mapDriver(row, { detail = false } = {}) {
     ...state,
     assignedVehicleCount: assignments.length,
     assignedPlates: assignments.map((vehicle) => vehicle.plate),
+    currentVehicle,
+    currentLocation: currentVehicle ? {
+      lat: currentVehicle.lat,
+      lng: currentVehicle.lng,
+      heading: currentVehicle.heading,
+      city: currentVehicle.city,
+      province: currentVehicle.province,
+      lastSeen: currentVehicle.lastSeen,
+    } : null,
     createdAt: row.created_at,
     updatedAt: row.updated_at,
   };
@@ -76,36 +89,30 @@ export function updateDriver(id, input) {
 
 export function deleteDriver(id) {
   if (!db.prepare("SELECT 1 FROM drivers WHERE id = ?").get(id)) return { deleted: false, assigned: false };
-  if (db.prepare("SELECT 1 FROM vehicles WHERE driver_id = ? LIMIT 1").get(id)) return { deleted: false, assigned: true };
+  if (db.prepare("SELECT 1 FROM driver_vehicle_assignments WHERE driver_id = ? AND is_active_assignment = 1 LIMIT 1").get(id)) {
+    return { deleted: false, assigned: true };
+  }
   db.prepare("DELETE FROM drivers WHERE id = ?").run(id);
   return { deleted: true, assigned: false };
 }
 
 export function assignVehicles(id, vehicleIds) {
-  const driver = db.prepare("SELECT id, name FROM drivers WHERE id = ?").get(id);
-  if (!driver) return null;
-  const uniqueIds = [...new Set(vehicleIds)];
-  if (uniqueIds.length) {
-    const placeholders = uniqueIds.map(() => "?").join(",");
-    const existing = db.prepare(`SELECT id FROM vehicles WHERE id IN (${placeholders})`).all(...uniqueIds);
-    if (existing.length !== uniqueIds.length) {
-      const found = new Set(existing.map((vehicle) => vehicle.id));
-      const error = new Error("One or more vehicles do not exist.");
-      error.code = "VEHICLE_NOT_FOUND";
-      error.missing = uniqueIds.filter((vehicleId) => !found.has(vehicleId));
-      throw error;
-    }
-  }
-  const now = new Date().toISOString();
-  db.exec("BEGIN");
-  try {
-    db.prepare("UPDATE vehicles SET driver_id = NULL, driver_name = NULL, updated_at = ? WHERE driver_id = ?").run(now, id);
-    const assign = db.prepare("UPDATE vehicles SET driver_id = ?, driver_name = ?, updated_at = ? WHERE id = ?");
-    uniqueIds.forEach((vehicleId) => assign.run(id, driver.name, now, vehicleId));
-    db.exec("COMMIT");
-  } catch (error) {
-    db.exec("ROLLBACK");
+  if (typeof id !== "string" || !/^DRV-[A-Z0-9-]+$/.test(id)) {
+    const error = new Error("Driver ID is malformed.");
+    error.code = "INVALID_DRIVER_ID";
     throw error;
   }
+  if (!db.prepare("SELECT 1 FROM drivers WHERE id = ?").get(id)) return null;
+  replaceAssignedVehicles(id, vehicleIds);
+  return findDriver(id);
+}
+
+export function updateCurrentVehicle(id, vehicleId) {
+  setCurrentVehicle(id, vehicleId);
+  return findDriver(id);
+}
+
+export function removeCurrentVehicle(id) {
+  clearCurrentVehicle(id);
   return findDriver(id);
 }

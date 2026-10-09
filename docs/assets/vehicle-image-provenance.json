@@ -1,0 +1,432 @@
+[
+  {
+    "assetId": "VEHICLE_2D_2023-mercedes-benz-c-class",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2023-mercedes-benz-c-class",
+    "vehicleIds": [
+      "VH-BL-113"
+    ],
+    "file": "/assets/vehicles/images/2023-mercedes-benz-c-class.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3B_GENERATION_SPECIFICATIONS.json#2023-mercedes-benz-c-class",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-07",
+    "licenseReference": "https://openai.com/policies/terms-of-use/",
+    "sourceMaster": "exec-617a0182-b6e7-4a97-9870-f73c2c033129.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 107032,
+    "sha256": "ade2ca9d437f16e10db1bde3895d9d3dab8db1f6f6e397f45f083a929421eec2",
+    "notes": "Owner-authorized generated Demo asset, not manufacturer photography or an exact derivative. Output ownership under provider terms does not grant third-party trademark/design rights or imply manufacturer endorsement. No external image inputs. Colour, wheels, bumpers and equipment are visual presentation only; trim/engine/transmission/SA package remain unknown. Empty unlettered plate recess, no registration. Alpha preserved; resize and WebP encoding only."
+  },
+  {
+    "assetId": "VEHICLE_2D_2020-mercedes-benz-c-class",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2020-mercedes-benz-c-class",
+    "vehicleIds": [
+      "VH-PO-110"
+    ],
+    "file": "/assets/vehicles/images/2020-mercedes-benz-c-class.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3B_GENERATION_SPECIFICATIONS.json#2020-mercedes-benz-c-class",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-07",
+    "licenseReference": "https://openai.com/policies/terms-of-use/",
+    "sourceMaster": "exec-b66c6ca8-3f62-4d51-901a-f91a9cb6c785.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 116820,
+    "sha256": "9abb7d11c2755026c846ccf88370b3d58217390624ec8faa41199b4ad54160cb",
+    "notes": "Owner-authorized generated Demo asset, not manufacturer photography or an exact derivative. Output ownership under provider terms does not grant third-party trademark/design rights or imply manufacturer endorsement. No external image inputs. Colour, wheels, bumpers and equipment are visual presentation only; trim/engine/transmission/SA package remain unknown. Empty unlettered plate recess, no registration. Alpha preserved; resize and WebP encoding only."
+  },
+  {
+    "assetId": "VEHICLE_2D_2023-volkswagen-polo",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2023-volkswagen-polo",
+    "vehicleIds": [
+      "VH-PR-103"
+    ],
+    "file": "/assets/vehicles/images/2023-volkswagen-polo.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3B_GENERATION_SPECIFICATIONS.json#2023-volkswagen-polo",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-07",
+    "licenseReference": "https://openai.com/policies/terms-of-use/",
+    "sourceMaster": "exec-da7fda54-e482-499e-8614-7c163293fd76.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 113484,
+    "sha256": "fc26016c2ca0a764004b211e9ced5fdbed1ad298c043bb867b783767b4d25220",
+    "notes": "Owner-authorized generated Demo asset, not manufacturer photography or an exact derivative. Output ownership under provider terms does not grant third-party trademark/design rights or imply manufacturer endorsement. No external image inputs. Colour, wheels, bumpers and equipment are visual presentation only; trim/engine/transmission/SA package remain unknown. Empty unlettered plate recess, no registration. Alpha preserved; resize and WebP encoding only. Same generated model-family master reused for the two Polo year keys, not a claim of identical actual equipment."
+  },
+  {
+    "assetId": "VEHICLE_2D_2022-volkswagen-polo",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2022-volkswagen-polo",
+    "vehicleIds": [
+      "VH-TH-112"
+    ],
+    "file": "/assets/vehicles/images/2022-volkswagen-polo.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3B_GENERATION_SPECIFICATIONS.json#2022-volkswagen-polo",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-07",
+    "licenseReference": "https://openai.com/policies/terms-of-use/",
+    "sourceMaster": "exec-da7fda54-e482-499e-8614-7c163293fd76.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 113484,
+    "sha256": "fc26016c2ca0a764004b211e9ced5fdbed1ad298c043bb867b783767b4d25220",
+    "notes": "Owner-authorized generated Demo asset, not manufacturer photography or an exact derivative. Output ownership under provider terms does not grant third-party trademark/design rights or imply manufacturer endorsement. No external image inputs. Colour, wheels, bumpers and equipment are visual presentation only; trim/engine/transmission/SA package remain unknown. Empty unlettered plate recess, no registration. Alpha preserved; resize and WebP encoding only. Same generated model-family master reused for the two Polo year keys, not a claim of identical actual equipment."
+  },
+  {
+    "assetId": "VEHICLE_2D_2020-volkswagen-passat",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2020-volkswagen-passat",
+    "vehicleIds": [
+      "VH-CA-115"
+    ],
+    "file": "/assets/vehicles/images/2020-volkswagen-passat.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3B_GENERATION_SPECIFICATIONS.json#2020-volkswagen-passat",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-07",
+    "licenseReference": "https://openai.com/policies/terms-of-use/",
+    "sourceMaster": "exec-5c130a01-e315-4f8b-9af1-cda83d4253d1.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 97172,
+    "sha256": "88686b2be87180d30936c3dd97da32ef11fae449067a287ec32117b6bb0c9841",
+    "notes": "Owner-authorized generated Demo asset, not manufacturer photography or an exact derivative. Output ownership under provider terms does not grant third-party trademark/design rights or imply manufacturer endorsement. No external image inputs. Colour, wheels, bumpers and equipment are visual presentation only; trim/engine/transmission/SA package remain unknown. Empty unlettered plate recess, no registration. Alpha preserved; resize and WebP encoding only."
+  },
+  {
+    "assetId": "VEHICLE_2D_2021-hyundai-h1",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2021-hyundai-h1",
+    "vehicleIds": [
+      "VH-CA-101"
+    ],
+    "file": "/assets/vehicles/images/2021-hyundai-h1.webp",
+    "assetPath": "/assets/vehicles/images/2021-hyundai-h1.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3C_GENERATION_SPECIFICATIONS.json#2021-hyundai-h1",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-08",
+    "licenseReference": "https://openai.com/policies/terms-of-use/",
+    "sourceMaster": "exec-38935dc3-c148-4345-8715-3969fbc87a61.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 123806,
+    "sha256": "e18c8dd624ab6aaff432f24f6de616f45cfef5ed9592f159c2a6b97f241b8bf9",
+    "notes": "Owner-authorized generated Demo artwork, not manufacturer photography or exact derivative. Provider output ownership does not grant third-party trademark/design rights or imply endorsement. No external image inputs. Silver, wheels, lamps, bumpers and equipment are presentation only; authoritative colour/trim/engine/transmission/market package unknown. No registration characters or trim lettering; empty unlettered mounting recess. Alpha retained; resize/WebP encoding only. Shared H1 passenger-minibus family master for 2020/2021, not Staria; exact seating capacity/derivative unknown."
+  },
+  {
+    "assetId": "VEHICLE_2D_2022-toyota-hilux",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2022-toyota-hilux",
+    "vehicleIds": [
+      "VH-DU-102"
+    ],
+    "file": "/assets/vehicles/images/2022-toyota-hilux.webp",
+    "assetPath": "/assets/vehicles/images/2022-toyota-hilux.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3C_GENERATION_SPECIFICATIONS.json#2022-toyota-hilux",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-08",
+    "licenseReference": "https://openai.com/policies/terms-of-use/",
+    "sourceMaster": "exec-e02cffdc-9fde-47fc-b4c8-d89fe5b8f658.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 113392,
+    "sha256": "a8b217c39b0fb3f73edf144191534c47c89fa41d282be723df41375e7435292e",
+    "notes": "Owner-authorized generated Demo artwork, not manufacturer photography or exact derivative. Provider output ownership does not grant third-party trademark/design rights or imply endorsement. No external image inputs. Silver, wheels, lamps, bumpers and equipment are presentation only; authoritative colour/trim/engine/transmission/market package unknown. No registration characters or trim lettering; empty unlettered mounting recess. Alpha retained; resize/WebP encoding only. Double-cab is visual presentation only; canonical cab configuration and drivetrain unknown."
+  },
+  {
+    "assetId": "VEHICLE_2D_2020-hyundai-h1",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2020-hyundai-h1",
+    "vehicleIds": [
+      "VH-JO-100"
+    ],
+    "file": "/assets/vehicles/images/2020-hyundai-h1.webp",
+    "assetPath": "/assets/vehicles/images/2020-hyundai-h1.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3C_GENERATION_SPECIFICATIONS.json#2020-hyundai-h1",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-08",
+    "licenseReference": "https://openai.com/policies/terms-of-use/",
+    "sourceMaster": "exec-38935dc3-c148-4345-8715-3969fbc87a61.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 123806,
+    "sha256": "e18c8dd624ab6aaff432f24f6de616f45cfef5ed9592f159c2a6b97f241b8bf9",
+    "notes": "Owner-authorized generated Demo artwork, not manufacturer photography or exact derivative. Provider output ownership does not grant third-party trademark/design rights or imply endorsement. No external image inputs. Silver, wheels, lamps, bumpers and equipment are presentation only; authoritative colour/trim/engine/transmission/market package unknown. No registration characters or trim lettering; empty unlettered mounting recess. Alpha retained; resize/WebP encoding only. Shared H1 passenger-minibus family master for 2020/2021, not Staria; exact seating capacity/derivative unknown."
+  },
+  {
+    "assetId": "VEHICLE_2D_2020-hyundai-elantra",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2020-hyundai-elantra",
+    "vehicleIds": [
+      "VH-KI-105"
+    ],
+    "file": "/assets/vehicles/images/2020-hyundai-elantra.webp",
+    "assetPath": "/assets/vehicles/images/2020-hyundai-elantra.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3C_GENERATION_SPECIFICATIONS.json#2020-hyundai-elantra",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-08",
+    "licenseReference": "https://openai.com/policies/terms-of-use/",
+    "sourceMaster": "exec-8b45a9ef-e36a-4198-a507-265964d90e6f.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 110558,
+    "sha256": "1957cac47109efd5514f535d6f246f86d06761de1f9a3b6f9583b37b419ce280",
+    "notes": "Owner-authorized generated Demo artwork, not manufacturer photography or exact derivative. Provider output ownership does not grant third-party trademark/design rights or imply endorsement. No external image inputs. Silver, wheels, lamps, bumpers and equipment are presentation only; authoritative colour/trim/engine/transmission/market package unknown. No registration characters or trim lettering; empty unlettered mounting recess. Alpha retained; resize/WebP encoding only. AD sixth-generation facelift-era representative; exact South African facelift derivative not established."
+  },
+  {
+    "assetId": "VEHICLE_2D_2023-toyota-fortuner",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2023-toyota-fortuner",
+    "vehicleIds": [
+      "VH-PH-123"
+    ],
+    "file": "/assets/vehicles/images/2023-toyota-fortuner.webp",
+    "assetPath": "/assets/vehicles/images/2023-toyota-fortuner.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3C_GENERATION_SPECIFICATIONS.json#2023-toyota-fortuner",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-08",
+    "licenseReference": "https://openai.com/policies/terms-of-use/",
+    "sourceMaster": "exec-26190185-e92f-4fe3-a591-e57ea26e6c95.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 121098,
+    "sha256": "a1e64031bc687bc3e067e34d001ff3f955ad0c83b0f90f48f0e99f2834842326",
+    "notes": "Owner-authorized generated Demo artwork, not manufacturer photography or exact derivative. Provider output ownership does not grant third-party trademark/design rights or imply endorsement. No external image inputs. Silver, wheels, lamps, bumpers and equipment are presentation only; authoritative colour/trim/engine/transmission/market package unknown. No registration characters or trim lettering; empty unlettered mounting recess. Alpha retained; resize/WebP encoding only. Fortuner second-generation SA 2023 facelift-oriented family representative; not a VX/GR/engine claim."
+  },
+  {
+    "assetId": "VEHICLE_2D_2023-chevrolet-spark",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2023-chevrolet-spark",
+    "vehicleIds": [
+      "VH-GQ-118"
+    ],
+    "file": "/assets/vehicles/images/2023-chevrolet-spark.webp",
+    "assetPath": "/assets/vehicles/images/2023-chevrolet-spark.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3D_GENERATION_SPECIFICATIONS.json#2023-chevrolet-spark",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-08",
+    "licenseReference": "https://openai.com/policies/row-terms-of-use/",
+    "sourceMaster": "exec-a154ca93-e687-4f6d-bdc6-6a52e16836bb.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 130990,
+    "sha256": "930d42cea0f1967e7a761805acefea9697eba351b41d21b0d76d9ed6cff83c82",
+    "notes": "Owner-authorized generated Demo artwork, not manufacturer photography, endorsement or exact derivative. Provider output rights are subject to applicable law and third-party rights, not trademark/design clearance or guaranteed exclusive copyright. Text-only generation; no external image input. Silver, wheels and equipment are presentation only; actual colour/trim/engine unknown. Empty unlettered mounting surface, no registration characters or trim labels. RGBA resize/WebP encoding only; no crop, alpha retained. Spark last-generation M400-oriented compact hatchback family; canonical Demo year 2023 retained. Exact 2023 production/model-year and South African market fit unverified; no invented 2023 redesign. Detailed lamps and body fidelity approximate."
+  },
+  {
+    "assetId": "VEHICLE_2D_2021-nissan-x-trail",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2021-nissan-x-trail",
+    "vehicleIds": [
+      "VH-LO-106"
+    ],
+    "file": "/assets/vehicles/images/2021-nissan-x-trail.webp",
+    "assetPath": "/assets/vehicles/images/2021-nissan-x-trail.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3D_GENERATION_SPECIFICATIONS.json#2021-nissan-x-trail",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-08",
+    "licenseReference": "https://openai.com/policies/row-terms-of-use/",
+    "sourceMaster": "exec-1071f4c1-f51c-43e5-a899-aeebd543ae1f.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 132832,
+    "sha256": "439780fa6defa8f0d8ee20e00d5855d1745fbb025c531808dc78cd59a2fce937",
+    "notes": "Owner-authorized generated Demo artwork, not manufacturer photography, endorsement or exact derivative. Provider output rights are subject to applicable law and third-party rights, not trademark/design clearance or guaranteed exclusive copyright. Text-only generation; no external image input. Silver, wheels and equipment are presentation only; actual colour/trim/engine unknown. Empty unlettered mounting surface, no registration characters or trim labels. RGBA resize/WebP encoding only; no crop, alpha retained. T32 third-generation facelift-oriented SUV family. Precise South African 2021 derivative unknown; not T33."
+  },
+  {
+    "assetId": "VEHICLE_2D_2022-nissan-np200",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2022-nissan-np200",
+    "vehicleIds": [
+      "VH-MA-107"
+    ],
+    "file": "/assets/vehicles/images/2022-nissan-np200.webp",
+    "assetPath": "/assets/vehicles/images/2022-nissan-np200.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3D_GENERATION_SPECIFICATIONS.json#2022-nissan-np200",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-08",
+    "licenseReference": "https://openai.com/policies/row-terms-of-use/",
+    "sourceMaster": "exec-6efb8b5b-7a88-4da7-852e-08353a6bb810.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 110342,
+    "sha256": "c3d9f704aed322fe5c48dfb795ed5ed2cca26fff9f18a6f7af0c452176f39b85",
+    "notes": "Owner-authorized generated Demo artwork, not manufacturer photography, endorsement or exact derivative. Provider output rights are subject to applicable law and third-party rights, not trademark/design clearance or guaranteed exclusive copyright. Text-only generation; no external image input. Silver, wheels and equipment are presentation only; actual colour/trim/engine unknown. Empty unlettered mounting surface, no registration characters or trim labels. RGBA resize/WebP encoding only; no crop, alpha retained. NP200 small single-cab open-bed light pickup family, not Navara. Precise 2022 equipment unknown."
+  },
+  {
+    "assetId": "VEHICLE_2D_2021-ford-focus",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2021-ford-focus",
+    "vehicleIds": [
+      "VH-RU-111"
+    ],
+    "file": "/assets/vehicles/images/2021-ford-focus.webp",
+    "assetPath": "/assets/vehicles/images/2021-ford-focus.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3D_GENERATION_SPECIFICATIONS.json#2021-ford-focus",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-08",
+    "licenseReference": "https://openai.com/policies/row-terms-of-use/",
+    "sourceMaster": "exec-658654df-87cc-4f4b-b56e-1f6c5d68ed8f.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 100984,
+    "sha256": "0f19287add03fa31f52b2e2d173cfc895aaeff7459d120cb89453eb88483eeb3",
+    "notes": "Owner-authorized generated Demo artwork, not manufacturer photography, endorsement or exact derivative. Provider output rights are subject to applicable law and third-party rights, not trademark/design clearance or guaranteed exclusive copyright. Text-only generation; no external image input. Silver, wheels and equipment are presentation only; actual colour/trim/engine unknown. Empty unlettered mounting surface, no registration characters or trim labels. RGBA resize/WebP encoding only; no crop, alpha retained. C2 fourth-generation pre-late-2021-facelift-oriented five-door hatchback chosen as representative. South African 2021 market availability/generation not verified; not an exact local specification."
+  },
+  {
+    "assetId": "VEHICLE_2D_2021-scania-r-series",
+    "assetType": "VEHICLE_IMAGE",
+    "visualKey": "2021-scania-r-series",
+    "vehicleIds": [
+      "VH-DU-116"
+    ],
+    "file": "/assets/vehicles/images/2021-scania-r-series.webp",
+    "assetPath": "/assets/vehicles/images/2021-scania-r-series.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "V1_1_PHASE_3_3D_GENERATION_SPECIFICATIONS.json#2021-scania-r-series",
+    "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "attribution": null,
+    "exactness": "GENERATED_REPRESENTATIVE",
+    "createdAt": "2026-10-08",
+    "licenseReference": "https://openai.com/policies/row-terms-of-use/",
+    "sourceMaster": "exec-3ebce6fb-7277-45eb-a94e-c10c1ee02677.png",
+    "finalDimensions": [
+      1200,
+      800
+    ],
+    "finalBytes": 94530,
+    "sha256": "b61b4d4e5e030114a8a2920a373e4b16fec8a13a04839c45735b42d5459e6cf7",
+    "notes": "Owner-authorized generated Demo artwork, not manufacturer photography, endorsement or exact derivative. Provider output rights are subject to applicable law and third-party rights, not trademark/design clearance or guaranteed exclusive copyright. Text-only generation; no external image input. Silver, wheels and equipment are presentation only; actual colour/trim/engine unknown. Empty unlettered mounting surface, no registration characters or trim labels. RGBA resize/WebP encoding only; no crop, alpha retained. 2016-new-generation R-series-oriented heavy cab-over truck. Two-axle tractor/fifth-wheel/no-trailer and cab height are visual presentation only; actual chassis, axles, engine and cargo body unknown. Selected regenerated master keeps aerials inside frame."
+  }
+]

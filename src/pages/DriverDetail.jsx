@@ -3,6 +3,7 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { AlertCircle, ArrowLeft, Award, CalendarClock, Car, Mail, Pencil, Phone, Save, Trash2 } from 'lucide-react';
 import AssignedVehicles from '@/components/drivers/AssignedVehicles';
+import DriverAvatar from '@/components/drivers/DriverAvatar';
 import { driversApi } from '@/api/drivers';
 import { getVehicles } from '@/api/vehicles';
 import { Button } from '@/components/ui/button';
@@ -45,12 +46,11 @@ export default function DriverDetail() {
   const openAssignments = () => { setSelectedVehicles(new Set(driver.assignedVehicles.map((vehicle) => vehicle.id))); setAssignOpen(true); };
   const toggleVehicle = (vehicleId) => setSelectedVehicles((current) => { const next = new Set(current); if (next.has(vehicleId)) next.delete(vehicleId); else next.add(vehicleId); return next; });
   const removeDriver = () => { if (window.confirm(`Delete ${driver.name}? This cannot be undone.`)) deleteMutation.mutate(); };
-  const initials = driver.name.split(/\s+/).map((part) => part[0]).join('').slice(0, 2).toUpperCase();
 
   return (
     <div className="space-y-4 pb-8">
       <Link to="/app/drivers" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-white"><ArrowLeft className="h-4 w-4" />Back to drivers</Link>
-      <div className="flex flex-wrap items-center justify-between gap-3"><div className="flex items-center gap-3"><div className="grid h-12 w-12 place-items-center rounded-full bg-primary text-sm font-semibold text-white">{initials}</div><div><h1 className="font-heading text-xl font-bold">{driver.name}</h1><p className="text-xs text-muted-foreground">{driver.id} · {driver.assignedVehicleCount} assigned vehicle{driver.assignedVehicleCount === 1 ? '' : 's'}</p></div></div>{canMutateSharedDemo && <div className="flex gap-2"><Button size="sm" variant="outline" onClick={() => setEditOpen(true)}><Pencil className="h-4 w-4" />Edit</Button><Button size="sm" variant="destructive" disabled={driver.assignedVehicleCount > 0 || deleteMutation.isPending} title={driver.assignedVehicleCount ? 'Unassign all vehicles before deleting' : undefined} onClick={removeDriver}><Trash2 className="h-4 w-4" />Delete</Button></div>}</div>
+      <div className="flex flex-wrap items-center justify-between gap-3"><div className="flex items-center gap-3"><DriverAvatar driver={driver} className="h-12 w-12" /><div><h1 className="font-heading text-xl font-bold">{driver.name}</h1><p className="text-xs text-muted-foreground">{driver.id} · {driver.assignedVehicleCount} assigned vehicle{driver.assignedVehicleCount === 1 ? '' : 's'}</p></div></div>{canMutateSharedDemo && <div className="flex gap-2"><Button size="sm" variant="outline" onClick={() => setEditOpen(true)}><Pencil className="h-4 w-4" />Edit</Button><Button size="sm" variant="destructive" disabled={driver.assignedVehicleCount > 0 || deleteMutation.isPending} title={driver.assignedVehicleCount ? 'Unassign all vehicles before deleting' : undefined} onClick={removeDriver}><Trash2 className="h-4 w-4" />Delete</Button></div>}</div>
 
       <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
         <div className="rounded-lg border border-[#1b3551] bg-[#091a2e] p-4"><p className="flex items-center gap-2 text-xs text-[#8298b2]"><Award className="h-4 w-4 text-primary" />Licence</p><p className="mt-2 font-semibold">{driver.licenceNumber}</p><span className={cn('mt-2 inline-flex rounded-full px-2 py-0.5 text-[10px] font-medium capitalize', licenceStyle[driver.licenceStatus])}>{driver.licenceStatus}</span></div>

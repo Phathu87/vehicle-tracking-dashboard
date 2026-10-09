@@ -105,7 +105,10 @@ export function createVehicleSimulationState(vehicle, config, index = 0) {
 }
 
 export function nextSimulatedTelemetry(vehicle, state, config, index = 0, now = new Date()) {
-  const operationalState = simulationStateFor(index, state.tick, config.scenario);
+  const scheduledState = simulationStateFor(index, state.tick, config.scenario);
+  const operationalState = vehicle.currentDriver?.id
+    ? scheduledState
+    : (scheduledState === "offline" ? "offline" : "stopped");
   state.tick += 1;
   state.movementState = operationalState;
   state.lastUpdateTime = now.toISOString();
@@ -118,7 +121,8 @@ export function nextSimulatedTelemetry(vehicle, state, config, index = 0, now = 
       ? 88 + seededFraction(`${config.seed}:${vehicle.id}:${state.tick}`) * 10
       : 38 + seededFraction(`${config.seed}:${vehicle.id}:${state.tick}`) * 39;
     const requestedKm = speed * (config.intervalMs / 3_600_000) * config.speedMultiplier;
-    const movement = moveToward({ lat: state.lat, lng: state.lng }, state.route[state.routeIndex], requestedKm);
+    const previous = { lat: state.lat, lng: state.lng };
+    const movement = moveToward(previous, state.route[state.routeIndex], requestedKm);
     state.lat = movement.point.lat;
     state.lng = movement.point.lng;
     travelledKm = movement.distanceKm;
@@ -167,7 +171,7 @@ export function createDemoApiAdapter({ baseUrl, token, fetchImpl = fetch }) {
   };
 }
 
-export function selectSimulationVehicles(vehicles, limit, scenario = "NORMAL_FLEET") {
+function geographicallyBalancedSelection(vehicles, limit, scenario) {
   const groups = new Map();
   vehicles
     .filter((vehicle) => Number.isFinite(Number(vehicle.lat)) && Number.isFinite(Number(vehicle.lng)))
@@ -193,6 +197,16 @@ export function selectSimulationVehicles(vehicles, limit, scenario = "NORMAL_FLE
   return selected;
 }
 
+export function selectSimulationVehicles(vehicles, limit, scenario = "NORMAL_FLEET") {
+  const driverOperated = vehicles.filter((vehicle) => vehicle.currentDriver?.id);
+  const vehicleOnly = vehicles.filter((vehicle) => !vehicle.currentDriver?.id);
+  const selected = geographicallyBalancedSelection(driverOperated, limit, scenario);
+  if (selected.length < limit) {
+    selected.push(...geographicallyBalancedSelection(vehicleOnly, limit - selected.length, scenario));
+  }
+  return selected;
+}
+
 export async function startDemoFleetSimulator(options = {}) {
   if (activeSimulator) return getDemoSimulationStatus();
   const config = options.config || readDemoSimulationConfig();
@@ -210,15 +224,20 @@ export async function startDemoFleetSimulator(options = {}) {
   const setTimer = options.setTimer || setInterval;
   const clearTimer = options.clearTimer || clearInterval;
   const now = options.now || (() => new Date());
-  const simulator = { config, adapter, logger, clearTimer, timer: null, states: new Map(), participantIds: [], offlineVehicleIds: [], lastTickAt: null, tickCount: 0, acceptedTelemetryCount: 0, inFlight: false, lastWarning: null };
+  const simulator = { config, adapter, logger, clearTimer, timer: null, states: new Map(), participants: [], participantIds: [], offlineVehicleIds: [], lastTickAt: null, tickCount: 0, acceptedTelemetryCount: 0, inFlight: false, lastWarning: null };
   activeSimulator = simulator;
 
   async function tick() {
     if (simulator.inFlight) return;
     simulator.inFlight = true;
     try {
-      const vehicles = selectSimulationVehicles(await adapter.listVehicles(), config.vehicleLimit, config.scenario);
+      const candidates = await adapter.listVehicles();
+      const vehicles = selectSimulationVehicles(candidates, config.vehicleLimit, config.scenario);
       simulator.participantIds = vehicles.map((vehicle) => vehicle.id);
+      simulator.participants = vehicles.map((vehicle) => ({
+        vehicleId: vehicle.id,
+        currentDriverId: vehicle.currentDriver?.id ?? null,
+      }));
       simulator.offlineVehicleIds = [];
       let attempted = 0;
       let accepted = 0;
@@ -299,6 +318,7 @@ export function getDemoSimulationStatus() {
     intervalMs: lastConfig.intervalMs,
     vehicleLimit: lastConfig.vehicleLimit,
     participatingVehicles: activeSimulator?.participantIds || [],
+    participants: activeSimulator?.participants || [],
     offlineVehicles: activeSimulator?.offlineVehicleIds || [],
     tickCount: activeSimulator?.tickCount || 0,
     acceptedTelemetryCount: activeSimulator?.acceptedTelemetryCount || 0,

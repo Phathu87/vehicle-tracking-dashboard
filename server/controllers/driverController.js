@@ -1,4 +1,7 @@
-import { assignVehicles, createDriver, deleteDriver, findDriver, listDrivers, updateDriver } from "../services/driverService.js";
+import {
+  assignVehicles, createDriver, deleteDriver, findDriver, listDrivers,
+  removeCurrentVehicle, updateCurrentVehicle, updateDriver,
+} from "../services/driverService.js";
 
 function apiError(res, status, code, message, details = {}) {
   return res.status(status).json({ error: { code, message, details } });
@@ -61,6 +64,41 @@ export function assignments(req, res, next) {
     return driver ? res.json(driver) : apiError(res, 404, "DRIVER_NOT_FOUND", "Driver not found.");
   } catch (error) {
     if (error.code === "VEHICLE_NOT_FOUND") return apiError(res, 404, error.code, error.message, { vehicleIds: error.missing });
+    if (error.code === "INVALID_DRIVER_ID" || error.code === "INVALID_VEHICLE_ID") {
+      return apiError(res, 400, error.code, error.message);
+    }
+    return next(error);
+  }
+}
+
+export function currentVehicle(req, res, next) {
+  if (typeof req.body?.vehicleId !== "string" || !req.body.vehicleId.trim()) {
+    return apiError(res, 400, "VALIDATION_ERROR", "vehicleId is required.", { vehicleId: "Required." });
+  }
+  try {
+    return res.json(updateCurrentVehicle(req.params.id, req.body.vehicleId));
+  } catch (error) {
+    if (error.code === "INVALID_DRIVER_ID" || error.code === "INVALID_VEHICLE_ID") {
+      return apiError(res, 400, error.code, error.message);
+    }
+    if (error.code === "DRIVER_NOT_FOUND" || error.code === "VEHICLE_NOT_FOUND") {
+      return apiError(res, 404, error.code, error.message);
+    }
+    if (error.code === "CURRENT_VEHICLE_NOT_ASSIGNED" || error.code === "VEHICLE_ALREADY_CURRENT") {
+      return apiError(res, 409, error.code, error.message, {
+        currentDriverId: error.currentDriverId,
+      });
+    }
+    return next(error);
+  }
+}
+
+export function clearCurrent(req, res, next) {
+  try {
+    return res.json(removeCurrentVehicle(req.params.id));
+  } catch (error) {
+    if (error.code === "INVALID_DRIVER_ID") return apiError(res, 400, error.code, error.message);
+    if (error.code === "DRIVER_NOT_FOUND") return apiError(res, 404, error.code, error.message);
     return next(error);
   }
 }

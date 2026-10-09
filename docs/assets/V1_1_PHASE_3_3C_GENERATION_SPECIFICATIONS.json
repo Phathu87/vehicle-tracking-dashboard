@@ -1,0 +1,66 @@
+{
+  "phase": "3.3C",
+  "canvas": {
+    "width": 1200,
+    "height": 800
+  },
+  "specifications": [
+    {
+      "visualKeys": [
+        "2020-hyundai-h1",
+        "2021-hyundai-h1"
+      ],
+      "prompt": "Use case: product-mockup. Fleet Drive AI Demo catalog asset. Create ONE photorealistic generated representative 2020/2021 Hyundai H1 H-1 TQ second-generation 2018-facelift PASSENGER MINIBUS with full side passenger windows and sliding side door, short sloping hood, broad chrome-bar facelift grille and horizontal upper headlamps. NOT Staria futuristic light bar, NOT cargo panel van, NOT Toyota Hiace. Silver paint, wheels and equipment are presentation choices only; actual trim/seating capacity/colour UNKNOWN, no Elite or engine badges. Entire vehicle and tires visible, nose toward left, front three-quarter camera at headlamp height, centered landscape 1536x1024 3:2 composition with generous 8 percent margins. Match restrained Batch 1 clean photorealistic studio vehicle catalog presentation: soft illumination, realistic materials, subtle contact shadow, genuinely transparent alpha background for dark navy UI. NO TEXT ANYWHERE, no captions/watermarks/people/dealership/pricing/scenery. No license or registration plate and no plate characters; empty unlettered mounting recess. Manufacturer emblem may appear without lettering. Not manufacturer photography or exact trim evidence.",
+      "sourceMaster": "exec-38935dc3-c148-4345-8715-3969fbc87a61.png",
+      "tool": "BUILT_IN_IMAGEGEN",
+      "sourceType": "GENERATED",
+      "exactness": "GENERATED_REPRESENTATIVE",
+      "createdAt": "2026-10-08",
+      "colourRole": "VISUAL_PRESENTATION",
+      "colourExactness": "UNKNOWN",
+      "variant": null
+    },
+    {
+      "visualKeys": [
+        "2020-hyundai-elantra"
+      ],
+      "prompt": "Use case: product-mockup. Create ONE photorealistic generated representative 2020 Hyundai Elantra AD sixth-generation facelift-era FOUR-DOOR SEDAN, 2019/2020 model-family exterior with angular triangular front headlights, restrained cascading grille and compact sedan proportions. NOT new 2021 CN7 angular-side-crease body, not hatchback GT, not Sonata, not N or Sport. Silver paint and modest factory-style wheels are presentation only, exact SA trim/facelift/colour UNKNOWN; no trim/engine letters. Entire vehicle and tires, nose left, consistent front three-quarter camera at headlamp height, centered 1536x1024 3:2 landscape with generous margins. Clean restrained photorealistic studio catalog lighting, soft reflections and subtle contact shadow, genuinely transparent alpha background suitable for dark navy Fleet Drive UI. NO TEXT ANYWHERE, no captions/people/watermarks/dealer/pricing/scenery. No registration/license plate and no characters; empty unlettered recess. Hyundai emblem acceptable without text. This is GENERATED_REPRESENTATIVE artwork, not manufacturer photography or verified equipment.",
+      "sourceMaster": "exec-8b45a9ef-e36a-4198-a507-265964d90e6f.png",
+      "tool": "BUILT_IN_IMAGEGEN",
+      "sourceType": "GENERATED",
+      "exactness": "GENERATED_REPRESENTATIVE",
+      "createdAt": "2026-10-08",
+      "colourRole": "VISUAL_PRESENTATION",
+      "colourExactness": "UNKNOWN",
+      "variant": null
+    },
+    {
+      "visualKeys": [
+        "2022-toyota-hilux"
+      ],
+      "prompt": "Use case: product-mockup. Fleet Drive AI Demo generated representative vehicle catalog image. ONE 2022 Toyota Hilux eighth-generation 2020-facelift-era PICKUP TRUCK, ordinary factory stance and recognizable Hilux front/grille/hood with open cargo bed. Use four-door double-cab as a VISUAL PRESENTATION choice only because actual cab configuration is UNKNOWN, do not imply database has double-cab or 4x4. Restrained non-sport body, modest ordinary wheels, no roof tent/canopy/rollbar/bullbar/accessories. NOT Tacoma, Tundra, SUV, GR Sport, or newer 2026 Hilux. No engine/trim/4x4/Hilux lettering or invented trim badges. Silver paint is presentation only, actual colour UNKNOWN. Front three-quarter camera at headlamp height, nose left, entire vehicle and tires visible, landscape 1536x1024 3:2 centered with generous margins. Match Batch1 photorealistic studio lighting and soft reflections, subtle contact shadow, genuinely transparent alpha background for dark navy fleet UI. NO TEXT ANYWHERE, no people/captions/dealership/pricing/scenery/watermarks, no registration/license plate or characters; empty unlettered recess. Toyota emblem acceptable. Not manufacturer photography or exact variant evidence.",
+      "sourceMaster": "exec-e02cffdc-9fde-47fc-b4c8-d89fe5b8f658.png",
+      "tool": "BUILT_IN_IMAGEGEN",
+      "sourceType": "GENERATED",
+      "exactness": "GENERATED_REPRESENTATIVE",
+      "createdAt": "2026-10-08",
+      "colourRole": "VISUAL_PRESENTATION",
+      "colourExactness": "UNKNOWN",
+      "variant": null
+    },
+    {
+      "visualKeys": [
+        "2023-toyota-fortuner"
+      ],
+      "prompt": "Use case: product-mockup. Create ONE photorealistic generated representative 2023 Toyota Fortuner second-generation South African facelift-era five-door closed-body SUV. Recognizable tall Fortuner family proportions, narrow headlamps and 2023 SA catamaran-inspired front bumper shape with restrained grille, modest factory-style silver wheels, stock ride height. NOT Hilux pickup, Prado, Land Cruiser, RAV4, GR Sport, or Lexus. No VX/GD6/engine/4x4/trim lettering or badges, no aftermarket accessories. Exact trim/engine/colour unknown: silver is VISUAL_PRESENTATION only, no bi-tone or sporty-package claim. Entire vehicle and tires visible, nose left, consistent front three-quarter camera at headlamp height, centered 1536x1024 3:2 landscape with generous margins. Match Batch1 clean photorealistic studio catalog, soft lights, realistic reflections, subtle contact shadow, genuinely transparent alpha background for dark navy Fleet Drive UI. NO TEXT ANYWHERE, no captions/people/watermarks/dealer/prices/environment. No registration/license plate or any characters; empty unlettered mounting recess. Toyota emblem permitted without lettering. This is GENERATED_REPRESENTATIVE imagery, not manufacturer photography or exact derivative.",
+      "sourceMaster": "exec-26190185-e92f-4fe3-a591-e57ea26e6c95.png",
+      "tool": "BUILT_IN_IMAGEGEN",
+      "sourceType": "GENERATED",
+      "exactness": "GENERATED_REPRESENTATIVE",
+      "createdAt": "2026-10-08",
+      "colourRole": "VISUAL_PRESENTATION",
+      "colourExactness": "UNKNOWN",
+      "variant": null
+    }
+  ]
+}

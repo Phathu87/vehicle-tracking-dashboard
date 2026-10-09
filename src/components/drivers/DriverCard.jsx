@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Award, CalendarClock, Car, ChevronRight, Mail, Phone } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import DriverAvatar from '@/components/drivers/DriverAvatar';
 
 const licenceStyle = {
   valid: 'bg-success/10 text-success',
@@ -8,15 +9,11 @@ const licenceStyle = {
   expired: 'bg-danger/10 text-danger',
 };
 
-function initials(name) {
-  return name.split(/\s+/).map((part) => part[0]).join('').slice(0, 2).toUpperCase();
-}
-
 export default function DriverCard({ driver }) {
   return (
-    <Link to={`/app/drivers/${driver.id}`} className="group block rounded-lg border border-[#1b3551] bg-[#091a2e] p-4 transition-colors hover:border-primary/60">
+    <Link to={`/app/drivers/${driver.id}`} className="group block min-w-0 rounded-lg border border-[#1b3551] bg-[#091a2e] p-4 transition-colors hover:border-primary/60">
       <div className="flex items-start gap-3">
-        <div className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary text-sm font-semibold text-white">{initials(driver.name)}</div>
+        <DriverAvatar driver={driver} />
         <div className="min-w-0 flex-1"><h2 className="truncate text-sm font-semibold text-white">{driver.name}</h2><p className="mt-0.5 text-[11px] text-[#8298b2]">{driver.id}</p></div>
         <ChevronRight className="h-4 w-4 text-[#60748d] transition-transform group-hover:translate-x-0.5 group-hover:text-primary" />
       </div>

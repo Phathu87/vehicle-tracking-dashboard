@@ -1,0 +1,677 @@
+{
+  "results": [
+    {
+      "route": "/app/drivers",
+      "width": 375,
+      "overflow": false,
+      "portraits": 15,
+      "clippedCards": 0,
+      "images": [
+        {
+          "path": "/assets/drivers/DRV-005.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-001.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-013.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-011.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-007.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-009.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-004.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-014.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-010.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-012.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-006.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-002.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-003.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-015.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-008.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "route": "/app/drivers/DRV-015",
+      "width": 375,
+      "overflow": false,
+      "portraits": 1,
+      "clippedCards": 0,
+      "images": [
+        {
+          "path": "/assets/drivers/DRV-015.webp",
+          "width": 48,
+          "height": 48,
+          "objectFit": "cover",
+          "alt": ""
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "route": "/app/drivers",
+      "width": 430,
+      "overflow": false,
+      "portraits": 15,
+      "clippedCards": 0,
+      "images": [
+        {
+          "path": "/assets/drivers/DRV-005.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-001.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-013.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-011.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-007.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-009.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-004.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-014.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-010.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-012.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-006.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-002.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-003.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-015.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-008.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "route": "/app/drivers/DRV-015",
+      "width": 430,
+      "overflow": false,
+      "portraits": 1,
+      "clippedCards": 0,
+      "images": [
+        {
+          "path": "/assets/drivers/DRV-015.webp",
+          "width": 48,
+          "height": 48,
+          "objectFit": "cover",
+          "alt": ""
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "route": "/app/drivers",
+      "width": 768,
+      "overflow": false,
+      "portraits": 15,
+      "clippedCards": 0,
+      "images": [
+        {
+          "path": "/assets/drivers/DRV-005.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-001.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-013.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-011.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-007.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-009.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-004.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-014.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-010.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-012.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-006.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-002.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-003.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-015.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-008.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "route": "/app/drivers/DRV-015",
+      "width": 768,
+      "overflow": false,
+      "portraits": 1,
+      "clippedCards": 0,
+      "images": [
+        {
+          "path": "/assets/drivers/DRV-015.webp",
+          "width": 48,
+          "height": 48,
+          "objectFit": "cover",
+          "alt": ""
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "route": "/app/drivers",
+      "width": 1024,
+      "overflow": false,
+      "portraits": 15,
+      "clippedCards": 0,
+      "images": [
+        {
+          "path": "/assets/drivers/DRV-005.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-001.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-013.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-011.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-007.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-009.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-004.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-014.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-010.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-012.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-006.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-002.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-003.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-015.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-008.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "route": "/app/drivers/DRV-015",
+      "width": 1024,
+      "overflow": false,
+      "portraits": 1,
+      "clippedCards": 0,
+      "images": [
+        {
+          "path": "/assets/drivers/DRV-015.webp",
+          "width": 48,
+          "height": 48,
+          "objectFit": "cover",
+          "alt": ""
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "route": "/app/drivers",
+      "width": 1440,
+      "overflow": false,
+      "portraits": 15,
+      "clippedCards": 0,
+      "images": [
+        {
+          "path": "/assets/drivers/DRV-005.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-001.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-013.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-011.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-007.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-009.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-004.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-014.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-010.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-012.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-006.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-002.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-003.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-015.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        },
+        {
+          "path": "/assets/drivers/DRV-008.webp",
+          "width": 40,
+          "height": 40,
+          "objectFit": "cover",
+          "alt": ""
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "route": "/app/drivers/DRV-015",
+      "width": 1440,
+      "overflow": false,
+      "portraits": 1,
+      "clippedCards": 0,
+      "images": [
+        {
+          "path": "/assets/drivers/DRV-015.webp",
+          "width": 48,
+          "height": 48,
+          "objectFit": "cover",
+          "alt": ""
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "scenario": "unsupplied portrait initials",
+      "status": "PASS"
+    },
+    {
+      "scenario": "broken portrait initials and accessible adjacent name",
+      "status": "PASS"
+    },
+    {
+      "scenario": "dashboard shared avatar",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

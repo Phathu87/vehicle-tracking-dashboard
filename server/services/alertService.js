@@ -12,15 +12,18 @@ export function listAlerts({ severity, type, state, vehicleId } = {}) {
   const where = clauses.length ? `WHERE ${clauses.join(" AND ")}` : "";
   return db.prepare(`
     SELECT a.id, a.vehicle_id, a.type, a.severity, a.message, a.state, a.recorded_at,
-      v.plate, v.driver_id, v.driver_name
-    FROM alerts a JOIN vehicles v ON v.id = a.vehicle_id
+      v.plate, d.id AS current_driver_id, d.name AS current_driver_name
+    FROM alerts a
+    JOIN vehicles v ON v.id = a.vehicle_id
+    LEFT JOIN driver_current_vehicles c ON c.vehicle_id = v.id
+    LEFT JOIN drivers d ON d.id = c.driver_id
     ${where} ORDER BY a.recorded_at DESC LIMIT 500
   `).all(...values).map((row) => ({
     id: row.id,
     vehicleId: row.vehicle_id,
     plate: row.plate,
-    driverId: row.driver_id,
-    driver: row.driver_name,
+    driverId: row.current_driver_id ?? null,
+    driver: row.current_driver_name ?? null,
     type: row.type,
     severity: row.severity,
     message: row.message,

@@ -7,7 +7,8 @@ import { resetUsers } from "../services/userService.js";
 process.env.JWT_SECRET = "test-only-secret-with-at-least-32-characters";
 
 let token;
-const vehicleId = "TEST-VEHICLE-001";
+const vehicleId = "VH-TEST-VEHICLE-001";
+const driverId = "DRV-VEHICLE-TEST";
 
 before(async () => {
   resetUsers();
@@ -17,6 +18,12 @@ before(async () => {
     name: "Vehicle Tester",
   }).expect(201);
   token = response.body.token;
+  await authorized("post", "/api/drivers").send({
+    id: driverId,
+    name: "Vehicle Test Driver",
+    licenceNumber: "SA-VEHICLE-TEST",
+    licenceExpiry: "2028-12-31",
+  }).expect(201);
 });
 
 function authorized(method, path) {
@@ -30,7 +37,7 @@ test("vehicle CRUD persists through the Express API", async () => {
     make: "Toyota",
     model: "Hilux",
     year: 2024,
-    driverId: "DRV-TEST",
+    driverId,
     driver: "Test Driver",
     city: "Johannesburg",
     province: "Gauteng",
@@ -63,10 +70,12 @@ test("telemetry ingestion updates current state and appends queryable history", 
     recordedAt,
   }).expect(201);
   assert.equal(ingestion.body.vehicleId, vehicleId);
+  assert.equal(ingestion.body.telemetry.heading, null);
 
   const status = await authorized("get", `/api/vehicles/${vehicleId}/status`).expect(200);
   assert.equal(status.body.speed, 86);
   assert.equal(status.body.geofenceStatus, "outside");
+  assert.equal(status.body.heading, null);
 
   const history = await authorized("get", `/api/vehicles/${vehicleId}/history?limit=10`).expect(200);
   assert.equal(history.body.vehicleId, vehicleId);
@@ -100,4 +109,5 @@ test("telemetry validates coordinates and vehicle deletion cascades history", as
   await authorized("delete", `/api/vehicles/${vehicleId}`).expect(204);
   await authorized("get", `/api/vehicles/${vehicleId}`).expect(404);
   await authorized("get", `/api/vehicles/${vehicleId}/history`).expect(404);
+  await authorized("delete", `/api/drivers/${driverId}`).expect(204);
 });

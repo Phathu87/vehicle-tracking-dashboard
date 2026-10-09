@@ -1,0 +1,1575 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Fleet Drive AI Demo v1.1",
+  "phase": "3.3A",
+  "verifiedAt": "2026-10-07",
+  "status": "PLANNING_ONLY",
+  "verificationStatus": "PASS_RECONCILED",
+  "acquisitionAuthorized": false,
+  "acquisitionBlocked": false,
+  "blockingIssue": null,
+  "authority": {
+    "database": "server/data/fleet-drive-demo.sqlite",
+    "currentDriverRelationship": "driver_current_vehicles",
+    "simulator": {
+      "source": "server/services/demoFleetSimulator.js:selectSimulationVehicles",
+      "scenario": "NORMAL_FLEET",
+      "limit": 15
+    },
+    "vehicleManifest": "docs/assets/vehicle-asset-manifest.json",
+    "driverManifest": "docs/assets/driver-asset-manifest.json",
+    "seedSource": "server/data/fleet.json",
+    "readOnly": true
+  },
+  "counts": {
+    "priorityAVehicles": 15,
+    "priorityADrivers": 15,
+    "priorityAPortraitsAvailable": 15,
+    "exactSpecifications": 15,
+    "makeModelFamilies": 12,
+    "vehicleTypes": 6,
+    "uniqueVisualKeys": 15,
+    "uniqueTargetPaths": 15,
+    "currentOperationVehicles": 21,
+    "maximumExactImagePack": 15,
+    "potentialModelFamilyPack": 12,
+    "recommendedInitialImageCount": 15,
+    "repeatedModelFamilyCandidates": 3,
+    "remainingDriverPortraits": 6
+  },
+  "exactnessModel": {
+    "EXACT": "Correct model/generation visually verified against the database specification; database year alone is insufficient.",
+    "MODEL_FAMILY": "Correct make/model family; exact year/generation fidelity not established.",
+    "GENERATED_REPRESENTATIVE": "Generated representation, not manufacturer-authentic photography.",
+    "VEHICLE_TYPE": "Generic body-type representation.",
+    "GENERIC": "Weaker generic correspondence; not an acceptable acquired Priority A asset.",
+    "NONE": "No visual available."
+  },
+  "modelFamilies": [
+    {
+      "make": "Chevrolet",
+      "model": "Spark",
+      "years": [
+        2023
+      ],
+      "vehicleIds": [
+        "VH-GQ-118"
+      ],
+      "vehicleType": "HATCHBACK",
+      "reuseClassification": "SAFE_REVIEW_CANDIDATE",
+      "reuseReason": "Single Priority A specification; no cross-year reuse proposed. Review identity/body style and licensing before acceptance.",
+      "recommendedAcquisitionMethod": "SEARCH_LICENSED_FIRST"
+    },
+    {
+      "make": "Ford",
+      "model": "Focus",
+      "years": [
+        2021
+      ],
+      "vehicleIds": [
+        "VH-RU-111"
+      ],
+      "vehicleType": "HATCHBACK",
+      "reuseClassification": "SAFE_REVIEW_CANDIDATE",
+      "reuseReason": "Single Priority A specification; no cross-year reuse proposed. Review identity/body style and licensing before acceptance.",
+      "recommendedAcquisitionMethod": "SEARCH_LICENSED_FIRST"
+    },
+    {
+      "make": "Hyundai",
+      "model": "Elantra",
+      "years": [
+        2020
+      ],
+      "vehicleIds": [
+        "VH-KI-105"
+      ],
+      "vehicleType": "SEDAN",
+      "reuseClassification": "SAFE_REVIEW_CANDIDATE",
+      "reuseReason": "Single Priority A specification; no cross-year reuse proposed. Review identity/body style and licensing before acceptance.",
+      "recommendedAcquisitionMethod": "SEARCH_LICENSED_FIRST"
+    },
+    {
+      "make": "Hyundai",
+      "model": "H1",
+      "years": [
+        2020,
+        2021
+      ],
+      "vehicleIds": [
+        "VH-CA-101",
+        "VH-JO-100"
+      ],
+      "vehicleType": "MINIBUS",
+      "reuseClassification": "YEAR_VISUAL_REVIEW_REQUIRED",
+      "reuseReason": "Multiple years share a model name, not proven visual fidelity. Review generation/facelift/body style and licence coverage before any reuse.",
+      "recommendedAcquisitionMethod": "MODEL_FAMILY_REUSE_CANDIDATE"
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "years": [
+        2020,
+        2023
+      ],
+      "vehicleIds": [
+        "VH-BL-113",
+        "VH-PO-110"
+      ],
+      "vehicleType": "SEDAN",
+      "reuseClassification": "NO_REUSE_RECOMMENDED",
+      "reuseReason": "2020/2023 year gap; generation fidelity is unverified. Retain separate images unless a later evidence-based review overturns this conservative recommendation.",
+      "recommendedAcquisitionMethod": "REVIEW_REQUIRED"
+    },
+    {
+      "make": "Nissan",
+      "model": "NP200",
+      "years": [
+        2022
+      ],
+      "vehicleIds": [
+        "VH-MA-107"
+      ],
+      "vehicleType": "PICKUP",
+      "reuseClassification": "SAFE_REVIEW_CANDIDATE",
+      "reuseReason": "Single Priority A specification; no cross-year reuse proposed. Review identity/body style and licensing before acceptance.",
+      "recommendedAcquisitionMethod": "SEARCH_LICENSED_FIRST"
+    },
+    {
+      "make": "Nissan",
+      "model": "X-Trail",
+      "years": [
+        2021
+      ],
+      "vehicleIds": [
+        "VH-LO-106"
+      ],
+      "vehicleType": "SUV",
+      "reuseClassification": "SAFE_REVIEW_CANDIDATE",
+      "reuseReason": "Single Priority A specification; no cross-year reuse proposed. Review identity/body style and licensing before acceptance.",
+      "recommendedAcquisitionMethod": "SEARCH_LICENSED_FIRST"
+    },
+    {
+      "make": "Scania",
+      "model": "R-Series",
+      "years": [
+        2021
+      ],
+      "vehicleIds": [
+        "VH-DU-116"
+      ],
+      "vehicleType": "TRUCK",
+      "reuseClassification": "SAFE_REVIEW_CANDIDATE",
+      "reuseReason": "Single Priority A specification; no cross-year reuse proposed. Review identity/body style and licensing before acceptance.",
+      "recommendedAcquisitionMethod": "SEARCH_LICENSED_FIRST"
+    },
+    {
+      "make": "Toyota",
+      "model": "Fortuner",
+      "years": [
+        2023
+      ],
+      "vehicleIds": [
+        "VH-PH-123"
+      ],
+      "vehicleType": "SUV",
+      "reuseClassification": "SAFE_REVIEW_CANDIDATE",
+      "reuseReason": "Single Priority A specification; no cross-year reuse proposed. Review identity/body style and licensing before acceptance.",
+      "recommendedAcquisitionMethod": "SEARCH_LICENSED_FIRST"
+    },
+    {
+      "make": "Toyota",
+      "model": "Hilux",
+      "years": [
+        2022
+      ],
+      "vehicleIds": [
+        "VH-DU-102"
+      ],
+      "vehicleType": "PICKUP",
+      "reuseClassification": "SAFE_REVIEW_CANDIDATE",
+      "reuseReason": "Single Priority A specification; no cross-year reuse proposed. Review identity/body style and licensing before acceptance.",
+      "recommendedAcquisitionMethod": "SEARCH_LICENSED_FIRST"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Passat",
+      "years": [
+        2020
+      ],
+      "vehicleIds": [
+        "VH-CA-115"
+      ],
+      "vehicleType": "SEDAN",
+      "reuseClassification": "SAFE_REVIEW_CANDIDATE",
+      "reuseReason": "Single Priority A specification; no cross-year reuse proposed. Review identity/body style and licensing before acceptance.",
+      "recommendedAcquisitionMethod": "SEARCH_LICENSED_FIRST"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Polo",
+      "years": [
+        2022,
+        2023
+      ],
+      "vehicleIds": [
+        "VH-PR-103",
+        "VH-TH-112"
+      ],
+      "vehicleType": "HATCHBACK",
+      "reuseClassification": "YEAR_VISUAL_REVIEW_REQUIRED",
+      "reuseReason": "Multiple years share a model name, not proven visual fidelity. Review generation/facelift/body style and licence coverage before any reuse.",
+      "recommendedAcquisitionMethod": "MODEL_FAMILY_REUSE_CANDIDATE"
+    }
+  ],
+  "batches": [
+    {
+      "phase": "3.3B",
+      "name": "Batch 1 - Volkswagen and Mercedes-Benz comparison",
+      "vehicleIds": [
+        "VH-TH-112",
+        "VH-PR-103",
+        "VH-CA-115",
+        "VH-PO-110",
+        "VH-BL-113"
+      ]
+    },
+    {
+      "phase": "3.3C",
+      "name": "Batch 2 - Hyundai and Toyota utility/passenger comparison",
+      "vehicleIds": [
+        "VH-JO-100",
+        "VH-CA-101",
+        "VH-KI-105",
+        "VH-DU-102",
+        "VH-PH-123"
+      ]
+    },
+    {
+      "phase": "3.3D",
+      "name": "Batch 3 - Nissan and remaining distinct families",
+      "vehicleIds": [
+        "VH-MA-107",
+        "VH-LO-106",
+        "VH-RU-111",
+        "VH-GQ-118",
+        "VH-DU-116"
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "driverId": "DRV-014",
+      "driverName": "Lwazi van Wyk",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-014.webp",
+      "vehicleId": "VH-BL-113",
+      "registration": "FS 4032 LK",
+      "year": 2023,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "visualKey": "2023-mercedes-benz-c-class",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2023-mercedes-benz-c-class.webp",
+      "targetPath": "public/assets/vehicles/images/2023-mercedes-benz-c-class.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2023-mercedes-benz-c-class.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SHARE_REJECTED",
+      "batch": "3.3B",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3B_GENERATION_SPECIFICATIONS.json#2023-mercedes-benz-c-class",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_1_ONLY",
+      "createdAt": "2026-10-07",
+      "provenance": "VEHICLE_2D_2023-mercedes-benz-c-class",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 107032,
+      "sha256": "ade2ca9d437f16e10db1bde3895d9d3dab8db1f6f6e397f45f083a929421eec2"
+    },
+    {
+      "driverId": "DRV-002",
+      "driverName": "Siyabonga Naidoo",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-002.webp",
+      "vehicleId": "VH-CA-101",
+      "registration": "WC 1729 AV",
+      "year": 2021,
+      "make": "Hyundai",
+      "model": "H1",
+      "variant": null,
+      "vehicleType": "MINIBUS",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "visualKey": "2021-hyundai-h1",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2021-hyundai-h1.webp",
+      "targetPath": "public/assets/vehicles/images/2021-hyundai-h1.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2021-hyundai-h1.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SHARE_APPROVED",
+      "batch": "3.3C",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3C_GENERATION_SPECIFICATIONS.json#2021-hyundai-h1",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_2_ONLY",
+      "createdAt": "2026-10-08",
+      "provenance": "VEHICLE_2D_2021-hyundai-h1",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 123806,
+      "sha256": "e18c8dd624ab6aaff432f24f6de616f45cfef5ed9592f159c2a6b97f241b8bf9"
+    },
+    {
+      "driverId": "DRV-003",
+      "driverName": "Thandi Mokoena",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-003.webp",
+      "vehicleId": "VH-DU-102",
+      "registration": "KZN 2386 SQ",
+      "year": 2022,
+      "make": "Toyota",
+      "model": "Hilux",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "visualKey": "2022-toyota-hilux",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2022-toyota-hilux.webp",
+      "targetPath": "public/assets/vehicles/images/2022-toyota-hilux.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2022-toyota-hilux.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SINGLE_SPECIFICATION",
+      "batch": "3.3C",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3C_GENERATION_SPECIFICATIONS.json#2022-toyota-hilux",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_2_ONLY",
+      "createdAt": "2026-10-08",
+      "provenance": "VEHICLE_2D_2022-toyota-hilux",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 113392,
+      "sha256": "a8b217c39b0fb3f73edf144191534c47c89fa41d282be723df41375e7435292e"
+    },
+    {
+      "driverId": "DRV-019",
+      "driverName": "Dineo Naidoo",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-019.webp",
+      "vehicleId": "VH-GQ-118",
+      "registration": "EC 5453 FL",
+      "year": 2023,
+      "make": "Chevrolet",
+      "model": "Spark",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "visualKey": "2023-chevrolet-spark",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2023-chevrolet-spark.webp",
+      "targetPath": "public/assets/vehicles/images/2023-chevrolet-spark.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2023-chevrolet-spark.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SAFE_REVIEW_CANDIDATE",
+      "batch": "3.3D",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3D_GENERATION_SPECIFICATIONS.json#2023-chevrolet-spark",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_3_ONLY",
+      "createdAt": "2026-10-08",
+      "provenance": "VEHICLE_2D_2023-chevrolet-spark",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 130990,
+      "sha256": "930d42cea0f1967e7a761805acefea9697eba351b41d21b0d76d9ed6cff83c82"
+    },
+    {
+      "driverId": "DRV-001",
+      "driverName": "Ayanda Dlamini",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-001.webp",
+      "vehicleId": "VH-JO-100",
+      "registration": "GP 2461 YO",
+      "year": 2020,
+      "make": "Hyundai",
+      "model": "H1",
+      "variant": null,
+      "vehicleType": "MINIBUS",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "visualKey": "2020-hyundai-h1",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2020-hyundai-h1.webp",
+      "targetPath": "public/assets/vehicles/images/2020-hyundai-h1.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2020-hyundai-h1.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SHARE_APPROVED",
+      "batch": "3.3C",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3C_GENERATION_SPECIFICATIONS.json#2020-hyundai-h1",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_2_ONLY",
+      "createdAt": "2026-10-08",
+      "provenance": "VEHICLE_2D_2020-hyundai-h1",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 123806,
+      "sha256": "e18c8dd624ab6aaff432f24f6de616f45cfef5ed9592f159c2a6b97f241b8bf9"
+    },
+    {
+      "driverId": "DRV-006",
+      "driverName": "Riyaad Ahmed",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-006.webp",
+      "vehicleId": "VH-KI-105",
+      "registration": "NC 4067 BP",
+      "year": 2020,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "visualKey": "2020-hyundai-elantra",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2020-hyundai-elantra.webp",
+      "targetPath": "public/assets/vehicles/images/2020-hyundai-elantra.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2020-hyundai-elantra.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SINGLE_SPECIFICATION",
+      "batch": "3.3C",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3C_GENERATION_SPECIFICATIONS.json#2020-hyundai-elantra",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_2_ONLY",
+      "createdAt": "2026-10-08",
+      "provenance": "VEHICLE_2D_2020-hyundai-elantra",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 110558,
+      "sha256": "1957cac47109efd5514f535d6f246f86d06761de1f9a3b6f9583b37b419ce280"
+    },
+    {
+      "driverId": "DRV-007",
+      "driverName": "Jenna Smith",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-007.webp",
+      "vehicleId": "VH-LO-106",
+      "registration": "LP 8173 RZ",
+      "year": 2021,
+      "make": "Nissan",
+      "model": "X-Trail",
+      "variant": null,
+      "vehicleType": "SUV",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "visualKey": "2021-nissan-x-trail",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2021-nissan-x-trail.webp",
+      "targetPath": "public/assets/vehicles/images/2021-nissan-x-trail.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2021-nissan-x-trail.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SAFE_REVIEW_CANDIDATE",
+      "batch": "3.3D",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3D_GENERATION_SPECIFICATIONS.json#2021-nissan-x-trail",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_3_ONLY",
+      "createdAt": "2026-10-08",
+      "provenance": "VEHICLE_2D_2021-nissan-x-trail",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 132832,
+      "sha256": "439780fa6defa8f0d8ee20e00d5855d1745fbb025c531808dc78cd59a2fce937"
+    },
+    {
+      "driverId": "DRV-008",
+      "driverName": "Zanele Daniels",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-008.webp",
+      "vehicleId": "VH-MA-107",
+      "registration": "NW 1736 CO",
+      "year": 2022,
+      "make": "Nissan",
+      "model": "NP200",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "city": "Mahikeng",
+      "province": "North West",
+      "visualKey": "2022-nissan-np200",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2022-nissan-np200.webp",
+      "targetPath": "public/assets/vehicles/images/2022-nissan-np200.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2022-nissan-np200.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SAFE_REVIEW_CANDIDATE",
+      "batch": "3.3D",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3D_GENERATION_SPECIFICATIONS.json#2022-nissan-np200",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_3_ONLY",
+      "createdAt": "2026-10-08",
+      "provenance": "VEHICLE_2D_2022-nissan-np200",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 110342,
+      "sha256": "c3d9f704aed322fe5c48dfb795ed5ed2cca26fff9f18a6f7af0c452176f39b85"
+    },
+    {
+      "driverId": "DRV-024",
+      "driverName": "Jared Jacobs",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-024.webp",
+      "vehicleId": "VH-PH-123",
+      "registration": "LP 1029 FY",
+      "year": 2023,
+      "make": "Toyota",
+      "model": "Fortuner",
+      "variant": null,
+      "vehicleType": "SUV",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "visualKey": "2023-toyota-fortuner",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2023-toyota-fortuner.webp",
+      "targetPath": "public/assets/vehicles/images/2023-toyota-fortuner.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2023-toyota-fortuner.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SINGLE_SPECIFICATION",
+      "batch": "3.3C",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3C_GENERATION_SPECIFICATIONS.json#2023-toyota-fortuner",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_2_ONLY",
+      "createdAt": "2026-10-08",
+      "provenance": "VEHICLE_2D_2023-toyota-fortuner",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 121098,
+      "sha256": "a1e64031bc687bc3e067e34d001ff3f955ad0c83b0f90f48f0e99f2834842326"
+    },
+    {
+      "driverId": "DRV-011",
+      "driverName": "Fhulufhelo Makhale",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-011.webp",
+      "vehicleId": "VH-PO-110",
+      "registration": "LP 2562 RR",
+      "year": 2020,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "visualKey": "2020-mercedes-benz-c-class",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2020-mercedes-benz-c-class.webp",
+      "targetPath": "public/assets/vehicles/images/2020-mercedes-benz-c-class.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2020-mercedes-benz-c-class.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SHARE_REJECTED",
+      "batch": "3.3B",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3B_GENERATION_SPECIFICATIONS.json#2020-mercedes-benz-c-class",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_1_ONLY",
+      "createdAt": "2026-10-07",
+      "provenance": "VEHICLE_2D_2020-mercedes-benz-c-class",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 116820,
+      "sha256": "9abb7d11c2755026c846ccf88370b3d58217390624ec8faa41199b4ad54160cb"
+    },
+    {
+      "driverId": "DRV-004",
+      "driverName": "Lerato Nkosi",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-004.webp",
+      "vehicleId": "VH-PR-103",
+      "registration": "GP 9915 XB",
+      "year": 2023,
+      "make": "Volkswagen",
+      "model": "Polo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "visualKey": "2023-volkswagen-polo",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2023-volkswagen-polo.webp",
+      "targetPath": "public/assets/vehicles/images/2023-volkswagen-polo.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2023-volkswagen-polo.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SHARE_APPROVED",
+      "batch": "3.3B",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3B_GENERATION_SPECIFICATIONS.json#2023-volkswagen-polo",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_1_ONLY",
+      "createdAt": "2026-10-07",
+      "provenance": "VEHICLE_2D_2023-volkswagen-polo",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 113484,
+      "sha256": "fc26016c2ca0a764004b211e9ced5fdbed1ad298c043bb867b783767b4d25220"
+    },
+    {
+      "driverId": "DRV-012",
+      "driverName": "Palesa Mthembu",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-012.webp",
+      "vehicleId": "VH-RU-111",
+      "registration": "NW 3062 ML",
+      "year": 2021,
+      "make": "Ford",
+      "model": "Focus",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "city": "Rustenburg",
+      "province": "North West",
+      "visualKey": "2021-ford-focus",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2021-ford-focus.webp",
+      "targetPath": "public/assets/vehicles/images/2021-ford-focus.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2021-ford-focus.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SAFE_REVIEW_CANDIDATE",
+      "batch": "3.3D",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3D_GENERATION_SPECIFICATIONS.json#2021-ford-focus",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_3_ONLY",
+      "createdAt": "2026-10-08",
+      "provenance": "VEHICLE_2D_2021-ford-focus",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 100984,
+      "sha256": "0f19287add03fa31f52b2e2d173cfc895aaeff7459d120cb89453eb88483eeb3"
+    },
+    {
+      "driverId": "DRV-013",
+      "driverName": "Charlene van der Merwe",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-013.webp",
+      "vehicleId": "VH-TH-112",
+      "registration": "LP 8635 VL",
+      "year": 2022,
+      "make": "Volkswagen",
+      "model": "Polo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "visualKey": "2022-volkswagen-polo",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2022-volkswagen-polo.webp",
+      "targetPath": "public/assets/vehicles/images/2022-volkswagen-polo.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2022-volkswagen-polo.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SHARE_APPROVED",
+      "batch": "3.3B",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3B_GENERATION_SPECIFICATIONS.json#2022-volkswagen-polo",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_1_ONLY",
+      "createdAt": "2026-10-07",
+      "provenance": "VEHICLE_2D_2022-volkswagen-polo",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 113484,
+      "sha256": "fc26016c2ca0a764004b211e9ced5fdbed1ad298c043bb867b783767b4d25220"
+    },
+    {
+      "driverId": "DRV-016",
+      "driverName": "Sipho Sithole",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-016.webp",
+      "vehicleId": "VH-CA-115",
+      "registration": "WC 7236 TX",
+      "year": 2020,
+      "make": "Volkswagen",
+      "model": "Passat",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "visualKey": "2020-volkswagen-passat",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2020-volkswagen-passat.webp",
+      "targetPath": "public/assets/vehicles/images/2020-volkswagen-passat.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2020-volkswagen-passat.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SINGLE_SPECIFICATION",
+      "batch": "3.3B",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3B_GENERATION_SPECIFICATIONS.json#2020-volkswagen-passat",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_1_ONLY",
+      "createdAt": "2026-10-07",
+      "provenance": "VEHICLE_2D_2020-volkswagen-passat",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 97172,
+      "sha256": "88686b2be87180d30936c3dd97da32ef11fae449067a287ec32117b6bb0c9841"
+    },
+    {
+      "driverId": "DRV-017",
+      "driverName": "Refilwe Mokoena",
+      "driverPortraitStatus": "AVAILABLE",
+      "driverPortraitPath": "/assets/drivers/DRV-017.webp",
+      "vehicleId": "VH-DU-116",
+      "registration": "KZN 1692 GV",
+      "year": 2021,
+      "make": "Scania",
+      "model": "R-Series",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "visualKey": "2021-scania-r-series",
+      "currentDriverRelationship": "driver_current_vehicles",
+      "simulatorParticipant": true,
+      "priority": "A",
+      "targetFilename": "2021-scania-r-series.webp",
+      "targetPath": "public/assets/vehicles/images/2021-scania-r-series.webp",
+      "targetRuntimePath": "/assets/vehicles/images/2021-scania-r-series.webp",
+      "desiredExactness": "EXACT",
+      "acceptableFallbackExactness": [
+        "MODEL_FAMILY",
+        "GENERATED_REPRESENTATIVE",
+        "VEHICLE_TYPE"
+      ],
+      "actualExactness": "GENERATED_REPRESENTATIVE",
+      "preferredView": "FRONT_THREE_QUARTER",
+      "backgroundPolicy": "TRANSPARENT_IF_LICENSED_AND_TECHNICALLY_SUITABLE_OTHERWISE_CONTROLLED_NEUTRAL",
+      "colourExactness": "UNKNOWN",
+      "colourRole": "VISUAL_PRESENTATION",
+      "masterResolution": {
+        "width": 1600,
+        "height": 1067,
+        "aspectRatio": "3:2 approximately"
+      },
+      "runtimeResolution": {
+        "width": 1200,
+        "height": 800,
+        "aspectRatio": "3:2"
+      },
+      "recommendedAcquisitionMethod": "GENERATION_REQUIRED_COMPLETED",
+      "reuseClassification": "SAFE_REVIEW_CANDIDATE",
+      "batch": "3.3D",
+      "status": "AVAILABLE",
+      "sourceType": "GENERATED",
+      "sourceReference": "V1_1_PHASE_3_3D_GENERATION_SPECIFICATIONS.json#2021-scania-r-series",
+      "creator": "OPENAI_BUILT_IN_IMAGEGEN_OWNER_AUTHORIZED",
+      "license": "PROJECT_ASSET",
+      "commercialUseAllowed": true,
+      "modificationAllowed": true,
+      "attributionRequired": false,
+      "attribution": null,
+      "retrievedAt": null,
+      "acquisitionGate": "OWNER_AUTHORIZED_BATCH_3_ONLY",
+      "createdAt": "2026-10-08",
+      "provenance": "VEHICLE_2D_2021-scania-r-series",
+      "qa": "PASS_REPRESENTATIVE_NOT_EXACT",
+      "backgroundActual": "TRANSPARENT_WITH_SEMITRANSPARENT_STUDIO_LIGHT_AND_SHADOW",
+      "sourceMasterResolution": {
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": "3:2"
+      },
+      "finalBytes": 94530,
+      "sha256": "b61b4d4e5e030114a8a2920a373e4b16fec8a13a04839c45735b42d5459e6cf7"
+    }
+  ],
+  "seedIdentityComparison": {
+    "status": "RESOLVED",
+    "comparedFields": [
+      "year",
+      "make",
+      "model",
+      "vehicleType",
+      "visualKey"
+    ],
+    "mismatchedVehicles": 0,
+    "matchedVehicles": 15,
+    "cleanFleetMatches": 350,
+    "preCorrectionMismatchedVehicles": 15,
+    "preCorrectionDifferences": [
+      {
+        "vehicleId": "VH-BL-113",
+        "differences": [
+          "make",
+          "model",
+          "vehicleType",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2023,
+          "make": "Honda",
+          "model": "CR-V",
+          "vehicleType": "SUV",
+          "visualKey": "2023-honda-cr-v"
+        }
+      },
+      {
+        "vehicleId": "VH-CA-101",
+        "differences": [
+          "make",
+          "model",
+          "vehicleType",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2021,
+          "make": "Volvo",
+          "model": "XC90",
+          "vehicleType": "SUV",
+          "visualKey": "2021-volvo-xc90"
+        }
+      },
+      {
+        "vehicleId": "VH-DU-102",
+        "differences": [
+          "make",
+          "model",
+          "vehicleType",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2022,
+          "make": "Mazda",
+          "model": "3",
+          "vehicleType": "HATCHBACK",
+          "visualKey": "2022-mazda-3"
+        }
+      },
+      {
+        "vehicleId": "VH-GQ-118",
+        "differences": [
+          "make",
+          "model",
+          "vehicleType",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2023,
+          "make": "BMW",
+          "model": "320i",
+          "vehicleType": "SEDAN",
+          "visualKey": "2023-bmw-320i"
+        }
+      },
+      {
+        "vehicleId": "VH-JO-100",
+        "differences": [
+          "make",
+          "model",
+          "vehicleType",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2020,
+          "make": "Scania",
+          "model": "R-Series",
+          "vehicleType": "TRUCK",
+          "visualKey": "2020-scania-r-series"
+        }
+      },
+      {
+        "vehicleId": "VH-KI-105",
+        "differences": [
+          "make",
+          "model",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2020,
+          "make": "Audi",
+          "model": "A4",
+          "vehicleType": "SEDAN",
+          "visualKey": "2020-audi-a4"
+        }
+      },
+      {
+        "vehicleId": "VH-LO-106",
+        "differences": [
+          "make",
+          "model",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2021,
+          "make": "Toyota",
+          "model": "Fortuner",
+          "vehicleType": "SUV",
+          "visualKey": "2021-toyota-fortuner"
+        }
+      },
+      {
+        "vehicleId": "VH-MA-107",
+        "differences": [
+          "make",
+          "model",
+          "vehicleType",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2022,
+          "make": "Mercedes-Benz",
+          "model": "E-Class",
+          "vehicleType": "SEDAN",
+          "visualKey": "2022-mercedes-benz-e-class"
+        }
+      },
+      {
+        "vehicleId": "VH-PH-123",
+        "differences": [
+          "make",
+          "model",
+          "vehicleType",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2023,
+          "make": "Hyundai",
+          "model": "Elantra",
+          "vehicleType": "SEDAN",
+          "visualKey": "2023-hyundai-elantra"
+        }
+      },
+      {
+        "vehicleId": "VH-PO-110",
+        "differences": [
+          "make",
+          "model",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2020,
+          "make": "Volkswagen",
+          "model": "Passat",
+          "vehicleType": "SEDAN",
+          "visualKey": "2020-volkswagen-passat"
+        }
+      },
+      {
+        "vehicleId": "VH-PR-103",
+        "differences": [
+          "make",
+          "model",
+          "vehicleType",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2023,
+          "make": "Nissan",
+          "model": "Navara",
+          "vehicleType": "PICKUP",
+          "visualKey": "2023-nissan-navara"
+        }
+      },
+      {
+        "vehicleId": "VH-RU-111",
+        "differences": [
+          "make",
+          "model",
+          "vehicleType",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2021,
+          "make": "Mazda",
+          "model": "CX-5",
+          "vehicleType": "SUV",
+          "visualKey": "2021-mazda-cx-5"
+        }
+      },
+      {
+        "vehicleId": "VH-TH-112",
+        "differences": [
+          "make",
+          "model",
+          "vehicleType",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2022,
+          "make": "Nissan",
+          "model": "NP200",
+          "vehicleType": "PICKUP",
+          "visualKey": "2022-nissan-np200"
+        }
+      },
+      {
+        "vehicleId": "VH-CA-115",
+        "differences": [
+          "make",
+          "model",
+          "vehicleType",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2020,
+          "make": "Kia",
+          "model": "Seltos",
+          "vehicleType": "CROSSOVER",
+          "visualKey": "2020-kia-seltos"
+        }
+      },
+      {
+        "vehicleId": "VH-DU-116",
+        "differences": [
+          "make",
+          "model",
+          "vehicleType",
+          "visualKey"
+        ],
+        "seed": {
+          "year": 2021,
+          "make": "Ford",
+          "model": "EcoSport",
+          "vehicleType": "CROSSOVER",
+          "visualKey": "2021-ford-ecosport"
+        }
+      }
+    ]
+  },
+  "priorityBBoundary": {
+    "driverId": "DRV-015",
+    "driverName": "Tshifhiwa Netshanda",
+    "priority": "B",
+    "vehicleId": "VH-JO-114",
+    "year": 2024,
+    "make": "Hyundai",
+    "model": "Elantra",
+    "registration": "GP 7973 TB",
+    "vehicleType": "SEDAN",
+    "city": "Johannesburg",
+    "simulatorParticipant": false,
+    "acquireInThisPack": false
+  },
+  "integrityBaseline": {
+    "vehicleIdentitySha256": "2bca1d04259417e5ccb42b9e105a6cc95a41ea4516ecacbd9428a13ae02715d3",
+    "drivers": "108e535055cee7a57d1f1a6b2b6eba0007b6c6cf35fd7a966c94797d3ee85178",
+    "assignments": "7e89d821cb423a4338c047a85d0c7b31edd2fae27991e6059de67bff5e422185",
+    "currentOperations": "c20eac62fa5e0ff7563f16720de1ebb1c8607b702cc5e3e4ddc0d9009f8a374a",
+    "telemetryCount": 28487,
+    "databaseSha256": "ebcb1f25fc34ba43fd0e8231a537374cc18aa9f454d806db817cb7b44640aba4",
+    "src": {
+      "files": 161,
+      "sha256": "51b2282efc03b683725319bd4752f3e225f54905214a45604353c53ed464d4e2"
+    },
+    "server": {
+      "files": 61,
+      "sha256": "045fd69a50b0e2831bc63e13bcbad9c9881b4ef76b7d0c71df215b53f3d14a7e"
+    },
+    "portraits": {
+      "files": 19,
+      "sha256": "67e1c17539baa0d2e381d14bd96f863dedcab335b06ec6bf454e55d98dd2f67c"
+    },
+    "legacy": {
+      "files": 35,
+      "sha256": "fc40b20846991fc410941c9aae989ce5662d992964c2940e38ef576260192d33"
+    },
+    "vehicleAssets": {}
+  },
+  "reconciledBy": "docs/data/V1_1_FLEET_IDENTITY_RECONCILIATION.md",
+  "reconciledAt": "2026-10-07"
+}

@@ -1,0 +1,239 @@
+{
+  "renderer": "Three.js r171 / headless Microsoft Edge",
+  "scope": "ISOLATED_ASSET_QA_NOT_MAP_INTEGRATION",
+  "errors": [],
+  "results": [
+    {
+      "type": "sedan",
+      "view": "front",
+      "nonBackgroundPixels": 263375,
+      "pixelBounds": {
+        "minX": 134,
+        "minY": 180,
+        "maxX": 1062,
+        "maxY": 671
+      },
+      "drawCalls": 4,
+      "triangles": 7268,
+      "bounds": {
+        "min": [
+          -1.0549999475479126,
+          -8.344650304081824e-9,
+          -2.334285020828247
+        ],
+        "max": [
+          1.0549999475479126,
+          1.471916675567627,
+          2.334285020828247
+        ]
+      },
+      "width": 1200,
+      "height": 800,
+      "file": "docs/assets/3d-qa-3-4b/sedan-front.png",
+      "pixelCheck": "PASS"
+    },
+    {
+      "type": "sedan",
+      "view": "side",
+      "nonBackgroundPixels": 204609,
+      "pixelBounds": {
+        "minX": 84,
+        "minY": 222,
+        "maxX": 1115,
+        "maxY": 585
+      },
+      "drawCalls": 4,
+      "triangles": 7268,
+      "bounds": {
+        "min": [
+          -1.0549999475479126,
+          -8.344650304081824e-9,
+          -2.334285020828247
+        ],
+        "max": [
+          1.0549999475479126,
+          1.471916675567627,
+          2.334285020828247
+        ]
+      },
+      "width": 1200,
+      "height": 800,
+      "file": "docs/assets/3d-qa-3-4b/sedan-side.png",
+      "pixelCheck": "PASS"
+    },
+    {
+      "type": "sedan",
+      "view": "rear",
+      "nonBackgroundPixels": 241550,
+      "pixelBounds": {
+        "minX": 134,
+        "minY": 202,
+        "maxX": 1062,
+        "maxY": 671
+      },
+      "drawCalls": 4,
+      "triangles": 7268,
+      "bounds": {
+        "min": [
+          -1.0549999475479126,
+          -8.344650304081824e-9,
+          -2.334285020828247
+        ],
+        "max": [
+          1.0549999475479126,
+          1.471916675567627,
+          2.334285020828247
+        ]
+      },
+      "width": 1200,
+      "height": 800,
+      "file": "docs/assets/3d-qa-3-4b/sedan-rear.png",
+      "pixelCheck": "PASS"
+    },
+    {
+      "type": "sedan",
+      "view": "top",
+      "nonBackgroundPixels": 176156,
+      "pixelBounds": {
+        "minX": 444,
+        "minY": 56,
+        "maxX": 755,
+        "maxY": 743
+      },
+      "drawCalls": 4,
+      "triangles": 7268,
+      "bounds": {
+        "min": [
+          -1.0549999475479126,
+          -8.344650304081824e-9,
+          -2.334285020828247
+        ],
+        "max": [
+          1.0549999475479126,
+          1.471916675567627,
+          2.334285020828247
+        ]
+      },
+      "width": 1200,
+      "height": 800,
+      "file": "docs/assets/3d-qa-3-4b/sedan-top.png",
+      "pixelCheck": "PASS"
+    },
+    {
+      "type": "hatchback",
+      "view": "front",
+      "nonBackgroundPixels": 312869,
+      "pixelBounds": {
+        "minX": 142,
+        "minY": 120,
+        "maxX": 1053,
+        "maxY": 686
+      },
+      "drawCalls": 4,
+      "triangles": 7308,
+      "bounds": {
+        "min": [
+          -1.0549999475479126,
+          -8.344650304081824e-9,
+          -2.084285020828247
+        ],
+        "max": [
+          1.0549999475479126,
+          1.5170514583587646,
+          2.084285020828247
+        ]
+      },
+      "width": 1200,
+      "height": 800,
+      "file": "docs/assets/3d-qa-3-4b/hatchback-front.png",
+      "pixelCheck": "PASS"
+    },
+    {
+      "type": "hatchback",
+      "view": "side",
+      "nonBackgroundPixels": 243282,
+      "pixelBounds": {
+        "minX": 84,
+        "minY": 193,
+        "maxX": 1115,
+        "maxY": 612
+      },
+      "drawCalls": 4,
+      "triangles": 7308,
+      "bounds": {
+        "min": [
+          -1.0549999475479126,
+          -8.344650304081824e-9,
+          -2.084285020828247
+        ],
+        "max": [
+          1.0549999475479126,
+          1.5170514583587646,
+          2.084285020828247
+        ]
+      },
+      "width": 1200,
+      "height": 800,
+      "file": "docs/assets/3d-qa-3-4b/hatchback-side.png",
+      "pixelCheck": "PASS"
+    },
+    {
+      "type": "hatchback",
+      "view": "rear",
+      "nonBackgroundPixels": 241940,
+      "pixelBounds": {
+        "minX": 142,
+        "minY": 190,
+        "maxX": 1053,
+        "maxY": 685
+      },
+      "drawCalls": 4,
+      "triangles": 7308,
+      "bounds": {
+        "min": [
+          -1.0549999475479126,
+          -8.344650304081824e-9,
+          -2.084285020828247
+        ],
+        "max": [
+          1.0549999475479126,
+          1.5170514583587646,
+          2.084285020828247
+        ]
+      },
+      "width": 1200,
+      "height": 800,
+      "file": "docs/assets/3d-qa-3-4b/hatchback-rear.png",
+      "pixelCheck": "PASS"
+    },
+    {
+      "type": "hatchback",
+      "view": "top",
+      "nonBackgroundPixels": 184893,
+      "pixelBounds": {
+        "minX": 426,
+        "minY": 56,
+        "maxX": 773,
+        "maxY": 743
+      },
+      "drawCalls": 4,
+      "triangles": 7308,
+      "bounds": {
+        "min": [
+          -1.0549999475479126,
+          -8.344650304081824e-9,
+          -2.084285020828247
+        ],
+        "max": [
+          1.0549999475479126,
+          1.5170514583587646,
+          2.084285020828247
+        ]
+      },
+      "width": 1200,
+      "height": 800,
+      "file": "docs/assets/3d-qa-3-4b/hatchback-top.png",
+      "pixelCheck": "PASS"
+    }
+  ]
+}

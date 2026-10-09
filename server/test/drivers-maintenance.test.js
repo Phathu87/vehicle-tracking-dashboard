@@ -77,7 +77,7 @@ test("maintenance add, update, complete, history, and delete use persisted task 
 test("assignment rejects missing vehicles without changing the driver", async () => {
   const driver = await authorized("get", "/api/drivers/DRV-001").expect(200);
   const before = driver.body.assignedVehicleCount;
-  const response = await authorized("put", "/api/drivers/DRV-001/vehicles").send({ vehicleIds: ["DOES-NOT-EXIST"] }).expect(404);
+  const response = await authorized("put", "/api/drivers/DRV-001/vehicles").send({ vehicleIds: ["VH-DOES-NOT-EXIST"] }).expect(404);
   assert.equal(response.body.error.code, "VEHICLE_NOT_FOUND");
   const after = await authorized("get", "/api/drivers/DRV-001").expect(200);
   assert.equal(after.body.assignedVehicleCount, before);

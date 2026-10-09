@@ -86,7 +86,11 @@ export function buildDashboardModel(response, related = {}) {
   const driverMap = new Map();
   vehicles.forEach((vehicle) => {
     if (!vehicle.driver) return;
-    const current = driverMap.get(vehicle.driver) || { name: vehicle.driver, vehicleCount: 0, totalSpeed: 0, activeCount: 0 };
+    const current = driverMap.get(vehicle.driver) || {
+      id: vehicle.currentDriver?.name === vehicle.driver ? vehicle.currentDriver.id
+        : related.drivers?.find((driver) => driver.name === vehicle.driver)?.id,
+      name: vehicle.driver, vehicleCount: 0, totalSpeed: 0, activeCount: 0,
+    };
     current.vehicleCount += 1;
     current.totalSpeed += vehicle.speed;
     if (ACTIVE_STATUSES.has(vehicle.status)) current.activeCount += 1;

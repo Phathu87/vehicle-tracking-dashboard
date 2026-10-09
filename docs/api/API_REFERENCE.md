@@ -58,27 +58,32 @@ Public registration cannot assign the `admin` role.
 
 ### Vehicle
 
-The implemented endpoint currently returns this shape. `lastSeen` is Unix epoch
-milliseconds and status values are title-cased (`Online`, `Idle`, `Offline`).
+Vehicle responses include the persisted vehicle identity, location and latest
+telemetry projection. `driverId` and `driver` are a deprecated single-driver
+compatibility projection. They identify one active assignment for older
+consumers; they do not identify who is driving the vehicle now. Vehicle detail
+also returns `assignedDrivers`, the complete active authorisation set.
 
 ```json
 {
   "id": "VH-JO-100",
-  "driver": "Driver 1",
+  "driverId": "DRV-001",
+  "driver": "Example Driver",
   "make": "Toyota",
   "model": "Corolla",
   "plate": "AB 12 CD GP",
   "city": "Johannesburg",
   "province": "Gauteng",
-  "road": [{ "lat": -26.2041, "lng": 28.0473 }],
-  "roadIndex": 0,
   "lat": -26.2041,
   "lng": 28.0473,
+  "heading": 143,
   "speed": 63,
-  "status": "Online",
-  "lastSeen": 1789977600000,
-  "history": [],
-  "progress": 0
+  "status": "moving",
+  "currentDriver": {
+    "id": "DRV-001",
+    "name": "Example Driver"
+  },
+  "lastSeen": "2026-09-28T08:00:00.000Z"
 }
 ```
 
@@ -87,15 +92,40 @@ milliseconds and status values are title-cased (`Online`, `Idle`, `Offline`).
 ```json
 {
   "id": "DRV-001",
-  "name": "Demo Driver",
-  "license": "LIC-001",
-  "contact": "+27 10 000 0000",
-  "assignedVehicle": "VH-JO-100"
+  "name": "Example Driver",
+  "licenceNumber": "SA-70000000",
+  "licenceExpiry": "2028-12-01",
+  "phone": "+27 00 000 0001",
+  "email": "driver-001@example.com",
+  "assignedVehicleCount": 13,
+  "assignedPlates": ["AB 12 CD GP"],
+  "assignedVehicles": [],
+  "currentVehicle": {
+    "id": "VH-JO-100",
+    "plate": "AB 12 CD GP",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "lat": -26.2041,
+    "lng": 28.0473,
+    "heading": 143,
+    "lastSeen": "2026-09-28T08:00:00.000Z"
+  },
+  "currentLocation": {
+    "lat": -26.2041,
+    "lng": 28.0473,
+    "heading": 143,
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "lastSeen": "2026-09-28T08:00:00.000Z"
+  }
 }
 ```
 
-The API uses the Postman spelling `license`. original design prototype screens currently use
-`licence`; a frontend adapter will be required when those screens are connected.
+`assignedVehicles` means vehicles the driver is assigned or authorised to
+operate. It does not represent a current trip, shift, or actively operated
+vehicle. `currentVehicle` is the explicitly persisted current operation and is
+null when the driver has none. `currentLocation` is derived from that vehicle's
+latest stored state; it is never inferred from assignment order.
 
 ### Telemetry point
 
@@ -104,14 +134,20 @@ The API uses the Postman spelling `license`. original design prototype screens c
   "lat": -26.2041,
   "lng": 28.0473,
   "speed": 63,
+  "heading": 143,
   "mileage": 125430,
   "fuel": 72,
   "recordedAt": "2026-09-21T08:00:00.000Z"
 }
 ```
 
-`mileage`, `fuel`, and `recordedAt` are optional. The server supplies
-`recordedAt` when omitted.
+`heading`, `mileage`, `fuel`, and `recordedAt` are optional. Heading is a
+navigation bearing in degrees relative to true north in the range
+`0 <= heading < 360`. A valid supplied heading takes precedence. Otherwise the
+server derives movement heading when the position changes by at least 3 metres,
+preserves the last valid heading for stationary or jitter-only updates, and
+uses `null` when no heading is available. The server supplies `recordedAt` when
+omitted. Historical telemetry with `heading: null` remains valid.
 
 ### Maintenance task
 
@@ -250,15 +286,17 @@ Unknown routes outside the documented API still return Express's default HTML
 - **Success:** `200` with a raw `Vehicle[]` array.
 - **Errors:** no route-specific error responses.
 - **Known limitations:** returns a raw array for compatibility; pagination and
-  sorting are currently handled by the frontend.
+  sorting are currently handled by the frontend. Each list item includes a
+  minimal `currentDriver` summary or null from the explicit current-operation
+  relationship; deprecated `driverId` is assignment compatibility only.
 - **Frontend consumers:** Dashboard and `/app/vehicles`.
 
 ### `POST /api/vehicles` - IMPLEMENTED
 
 - **Authentication / roles:** bearer JWT; authenticated Demo user.
 - **Params / query:** none.
-- **Body:** `id`, `make`, `model`, and `plate` are required. Driver, location,
-  current telemetry, service interval, and status fields are optional.
+- **Body:** `id`, `make`, `model`, and `plate` are required. `driverId`, location,
+  latest telemetry projection, service interval, and status fields are optional.
 - **Success:** `201` with `Vehicle`.
 - **Errors:** `400` invalid body, `401`, `409` duplicate ID or plate.
 - **Known limitations:** no vehicle-create UI is exposed in WP8.
@@ -270,8 +308,9 @@ Unknown routes outside the documented API still return Express's default HTML
 - **Params:** `id` vehicle ID. **Query / body:** none.
 - **Success:** `200` with `Vehicle`.
 - **Errors:** `401`, `403`, `404` vehicle not found.
-- **Known limitations:** includes maintenance and alerts but not a separate
-  driver entity.
+- **Known limitations:** includes maintenance, alerts, `assignedDrivers`, and
+  `currentDriver`. An assigned driver is authorised for the vehicle;
+  `currentDriver` is the explicitly persisted operator or null.
 - **Frontend consumers:** `/app/vehicles/:id`.
 
 ### `PUT /api/vehicles/:id` - IMPLEMENTED
@@ -299,7 +338,8 @@ Unknown routes outside the documented API still return Express's default HTML
 
 - **Authentication / roles:** bearer JWT; authenticated Demo producer.
 - **Params:** `id` vehicle ID. **Query:** none.
-- **Body:** `Telemetry point`; `lat`, `lng`, and `speed` required.
+- **Body:** `Telemetry point`; `lat`, `lng`, and `speed` required. `heading` is
+  optional and, when present, must be a finite JSON number in `0 <= heading < 360`.
 - **Success:** `201` with `{ "vehicleId": string, "telemetry": TelemetryPoint }`.
 - **Errors:** `400`, `401`, `404`.
 - **Known limitations:** JWT authentication identifies the Demo producer; a
@@ -310,10 +350,12 @@ Unknown routes outside the documented API still return Express's default HTML
 
 - **Authentication / roles:** bearer JWT; `admin`, `user`.
 - **Params:** `id` vehicle ID. **Query / body:** none.
-- **Success:** `200` with vehicle ID, status, speed, mileage, fuel, coordinates,
-  geofence status, and last-seen timestamp.
+- **Success:** `200` with vehicle ID, status, speed, telemetry heading, mileage,
+  fuel, coordinates, geofence status, and last-seen timestamp.
 - **Errors:** `401`, `404`.
-- **Known limitations:** status is the latest accepted telemetry point.
+- **Known limitations:** status is the latest accepted telemetry projection;
+  `lastSeen` is its timestamp. Heading is movement/device telemetry, not a claim
+  of compass hardware.
 - **Frontend consumers:** available for dashboard and detail polling.
 
 ### `GET /api/vehicles/:id/history` - IMPLEMENTED
@@ -325,6 +367,8 @@ Unknown routes outside the documented API still return Express's default HTML
 - **Success:** `200` with `{ "vehicleId": string, "history": TelemetryPoint[] }`.
 - **Errors:** `401`, `404`.
 - **Known limitations:** `limit` is clamped to `1..500`; no cursor pagination.
+  Each point includes `heading`, which can be `null` for historical or
+  first-point records.
 - **Frontend consumers:** `/app/vehicles/:id` map and telemetry table.
 
 ## Driver endpoints
@@ -356,7 +400,11 @@ Unknown routes outside the documented API still return Express's default HTML
 - **Params:** `id` driver ID. **Query / body:** none.
 - **Success:** `200` with `Driver`.
 - **Errors:** `401`, `404`.
-- **Known limitations:** assigned vehicles are current state, not shift history.
+- **Known limitations:** `assignedVehicles` is the active authorisation set from
+  `driver_vehicle_assignments`; it is not current-operation or shift state.
+  `currentVehicle` and `currentLocation` come from the separate current-operation
+  relationship and are null when no operation is active. `currentVehicle.heading`
+  and `currentLocation.heading` expose the latest vehicle telemetry heading.
 - **Frontend consumers:** `/app/drivers/:id`.
 
 ### `PUT /api/drivers/:id` - IMPLEMENTED
@@ -385,9 +433,34 @@ Unknown routes outside the documented API still return Express's default HTML
 - **Params:** `id` driver ID. **Body:** `{ "vehicleIds": string[] }`.
 - **Success:** `200` with the updated driver and assigned vehicles.
 - **Errors:** `400`, `401`, `404` driver or vehicle not found.
-- **Known limitations:** replaces the complete assignment set; one vehicle can
-  have only one current driver.
+- **Known limitations:** replaces this driver's complete active authorisation
+  set. The relationship is many-to-many. Removing the current vehicle from this
+  set automatically clears that driver's current operation.
 - **Frontend consumers:** `/app/drivers/:id` assignment dialog.
+
+### `PUT /api/drivers/:id/current-vehicle` - IMPLEMENTED
+
+- **Authentication / roles:** bearer JWT; shared Demo mutation policy applies.
+- **Params:** `id` driver ID. **Query:** none.
+- **Body:** `{ "vehicleId": string }`.
+- **Success:** `200` with the updated `Driver`, including `currentVehicle` and
+  `currentLocation`.
+- **Errors:** `400` malformed ID/body, `401`, `403`, `404` driver or vehicle not
+  found, `409` vehicle is not assigned to the driver or is already current for
+  another driver.
+- **Known limitations:** switches one persisted current operation atomically;
+  it does not change the driver's authorised assignment pool.
+- **Frontend consumers:** no management UI in Phase 2.4.
+
+### `DELETE /api/drivers/:id/current-vehicle` - IMPLEMENTED
+
+- **Authentication / roles:** bearer JWT; shared Demo mutation policy applies.
+- **Params:** `id` driver ID. **Query / body:** none.
+- **Success:** `200` with the updated `Driver` and `currentVehicle: null`.
+- **Errors:** `400` malformed driver ID, `401`, `403`, `404` driver not found.
+- **Known limitations:** idempotently clears operation state without removing
+  assignments or changing driver/vehicle identity.
+- **Frontend consumers:** no management UI in Phase 2.4.
 
 ## Maintenance endpoints
 
@@ -454,11 +527,14 @@ Unknown routes outside the documented API still return Express's default HTML
 - **Authentication / roles:** bearer JWT; authenticated Demo user.
 - **Params / body:** none.
 - **Query:** optional `severity`, `type`, `state`, and `vehicleId` filters.
-- **Success:** `200` with persisted alerts containing `id`, vehicle and driver
-  identity, `type`, `severity`, `message`, `state`, and `recordedAt`.
+- **Success:** `200` with persisted alerts containing `id`, vehicle and current
+  driver identity, `type`, `severity`, `message`, `state`, and `recordedAt`.
 - **Errors:** `401`.
 - **Known limitations:** state is currently read-only; acknowledgement is not
   implemented. Alerts are created only by supported telemetry and geofence rules.
+  Driver fields come from the explicit current operation at read time and are
+  null when the vehicle has no current driver; legacy assignment projection is
+  not treated as alert attribution.
 - **Frontend consumers:** `/app/alerts` and dashboard recent alerts.
 
 ### `GET /api/alerts/types` - IMPLEMENTED
@@ -546,7 +622,9 @@ Unknown routes outside the documented API still return Express's default HTML
 - **Success:** `200` with simulation configuration and runtime state, including
   `enabled`, `running`, `active`, `scenario`, participating/offline vehicle IDs,
   accepted telemetry count, `tickCount`, `lastTickAt`, and a safe error message
-  when startup or telemetry delivery failed.
+  when startup or telemetry delivery failed. `participants` contains only
+  `{ "vehicleId", "currentDriverId" }` diagnostics; `currentDriverId` is null
+  for vehicle-only participants.
 - **Errors:** `401` missing or invalid token.
 - **Known limitations:** read-only status only. Runtime start, stop, and scenario
   controls are intentionally not exposed over HTTP.

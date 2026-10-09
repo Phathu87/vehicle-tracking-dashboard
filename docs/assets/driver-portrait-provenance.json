@@ -1,0 +1,747 @@
+[
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-001",
+    "driverName": "Ayanda Dlamini",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-001.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-001_Ayanda_Dlamini.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "48a79bc1367bc8ecfb9117348bf64f4a129987bd6a78e2ef0eb12f25b1b211e9",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": true,
+    "cropBox": [
+      87,
+      0,
+      1167,
+      1080
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 25578,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-002",
+    "driverName": "Siyabonga Naidoo",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-002.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-002_Siyabonga_Naidoo.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "888412f744e05e6b56e1f6f614784d3a805aa4769514308ddba337ca9552bf4f",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": true,
+    "cropBox": [
+      87,
+      0,
+      1167,
+      1080
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 29772,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-003",
+    "driverName": "Thandi Mokoena",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-003.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-003_Thandi_Mokoena.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "921b2ab46549eda6223be05a73f5ba114a82996666c28ad5e3457c9077fa051d",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": false,
+    "cropBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 40322,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-004",
+    "driverName": "Lerato Nkosi",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-004.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-004_Lerato_Nkosi.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "c0c8b5b0ec896eb3a4c49574ab78053a93b8e7769e763e4057f6c4d6fbc73f7f",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": false,
+    "cropBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 34894,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-005",
+    "driverName": "Amahle Khumalo",
+    "priority": "C",
+    "file": "/assets/drivers/DRV-005.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-005_Lerato_Khumalo.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "437bef7670d8936cba8ca3574395e368ce5c2a4b47cececfb260e7401915975a",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": true,
+    "cropBox": [
+      97,
+      0,
+      1157,
+      1060
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 30802,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-006",
+    "driverName": "Riyaad Ahmed",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-006.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-006_Riyaad_Ahmed.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "f980c171fb3daf4344d54bd2f2a18c78e0886d7b67b7cbf885229e6ca3f125df",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": false,
+    "cropBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 33726,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-007",
+    "driverName": "Jenna Smith",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-007.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-007_Carmen_Botha.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "5a84460ce754cebf109ce16baa91deaee1514a03b2ce0a336315e9cb046d2463",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": false,
+    "cropBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 34038,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-008",
+    "driverName": "Zanele Daniels",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-008.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-008_Sipho_Ndlovu.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "d608ed563838a865c6a306a8cd5b7c9064aa966e7e4fef369b95a54f9606e586",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": false,
+    "cropBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 36370,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-009",
+    "driverName": "Kavish Patel",
+    "priority": "B",
+    "file": "/assets/drivers/DRV-009.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-009_Naledi_Peters.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "ae5279333b72891d891028780f561456c2380b50db2acab3334763ccfaa2591b",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": true,
+    "cropBox": [
+      330,
+      0,
+      1254,
+      924
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 31018,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-010",
+    "driverName": "Nandi Ndlovu",
+    "priority": "C",
+    "file": "/assets/drivers/DRV-010.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-010_Johan_van-der_Merwe.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "04446570ab35c1fc6686a1adb7dce2a1690510e792f3d8317b5279fcf6866ad0",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": false,
+    "cropBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 33488,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-011",
+    "driverName": "Fhulufhelo Makhale",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-011.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-011_Musa_Nkomo.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "b4376dcafd98cd7d5fae8084c4a19330ee16a9bbc038c436c77c1528a4333724",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": false,
+    "cropBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 30878,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-012",
+    "driverName": "Palesa Mthembu",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-012.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-012_Leah_Jacobs.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "73464a5ad59757e2b403279c2c33e9ecee7ffea77503106cd91394a9bda034e4",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": true,
+    "cropBox": [
+      0,
+      0,
+      975,
+      975
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 31026,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-013",
+    "driverName": "Charlene van der Merwe",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-013.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-013_Fhulufhelo_Makhale.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "e39298d195e2cffe3441e198998bf36bddec6aebea58fe9c52a43ca2469d3b33",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": false,
+    "cropBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 37196,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-014",
+    "driverName": "Lwazi van Wyk",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-014.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-014_Zanele_Sithole.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "682a66040a59c5cfff4753f7590747d0c777ac92a66bb4a66aa73c7e157ed675",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": false,
+    "cropBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 36748,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-015",
+    "driverName": "Tshifhiwa Netshanda",
+    "priority": "B",
+    "file": "/assets/drivers/DRV-015.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "DRV-015_Tshifhiwa_Netshandama.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-05",
+    "sourceSha256": "b30454aad1f83cf27f011e81d3da0a21c33936a711c7bc9b308165ed68d1c640",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": false,
+    "cropBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 28964,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-016",
+    "driverName": "Sipho Sithole",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-016.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "sourceFilename": "DRV-016_Sipho_Sithole.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-07",
+    "sourceSha256": "2df71dac5ac6e546bc33b637c84066cb6778c8c724a8d5ecef374c9c4236c3a7",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": false,
+    "cropBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 34338,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-017",
+    "driverName": "Refilwe Mokoena",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-017.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "sourceFilename": "DRV-017_Refilwe_Mokoena.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-07",
+    "sourceSha256": "311c3f5db801b73e57abaa1a86e25d0e602436e3c9765d4027de5298dd9dc1b2",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": false,
+    "cropBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 35564,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-019",
+    "driverName": "Dineo Naidoo",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-019.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "sourceFilename": "DRV-019_Dineo_Naidoo.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-07",
+    "sourceSha256": "dcf63424116188750b2311d04e01f3f0b480840eb48b310e412cb3029ea3c493",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": false,
+    "cropBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 38432,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  },
+  {
+    "assetType": "DRIVER_PORTRAIT",
+    "driverId": "DRV-024",
+    "driverName": "Jared Jacobs",
+    "priority": "A",
+    "file": "/assets/drivers/DRV-024.webp",
+    "sourceType": "GENERATED",
+    "sourceReference": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "sourceFilename": "DRV-024_Jared_Jacobs.png",
+    "creator": "OWNER_SUPPLIED_GENERATED_ASSET",
+    "license": "PROJECT_ASSET",
+    "commercialUseAllowed": true,
+    "modificationAllowed": true,
+    "attributionRequired": false,
+    "exactness": "FICTIONAL_DRIVER_REPRESENTATION",
+    "integratedAt": "2026-10-07",
+    "sourceSha256": "4f3d83d6dcd3bac22b0b96d60fe7c0a5d8e4d9092d51449e7c7fb69af9e6a0a9",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "sourceFormat": "PNG",
+    "sourceAlpha": false,
+    "sourceValid": true,
+    "sourceTextPresent": false,
+    "cropBox": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "cropSuccessful": true,
+    "finalDimensions": [
+      512,
+      512
+    ],
+    "finalBytes": 38874,
+    "finalTextFree": true,
+    "notes": "Owner-approved fictional representation. Mapping uses driver ID; filename and image labels do not overwrite database identity. Crop/resize/WebP encoding only. Original PNG preserved."
+  }
+]

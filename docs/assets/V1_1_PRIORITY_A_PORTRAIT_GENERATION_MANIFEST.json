@@ -1,0 +1,315 @@
+{
+  "collection": {
+    "name": "Fleet Drive AI Demo Priority A Drivers",
+    "fictional": true,
+    "count": 15,
+    "aspectRatio": "1:1",
+    "targetDimensions": "512x512",
+    "minimumDimensions": "512x512",
+    "finalFormat": "webp",
+    "visualFoundation": "Realistic professional fleet-workplace profile photography with consistent head-and-shoulders framing, eye-level camera, soft natural professional lighting, natural expression, practical unbranded clothing, subtle uncluttered fleet or logistics context, and circular-avatar safe composition.",
+    "identityPolicy": "Driver names are fictional application identifiers only. Appearance variation is assigned independently of names and must not be treated as a depiction of a real person or as an inference about protected or sensitive characteristics.",
+    "variationPolicy": "Keep one coherent photographic system while varying fictional facial appearance, hairstyle, age presentation, practical wardrobe, pose, and subtle workplace background detail independently of each driver name."
+  },
+  "postFreezeAmendments": [
+    {
+      "phase": "3.2B",
+      "driverId": "DRV-015",
+      "driverName": "Tshifhiwa Netshanda",
+      "priority": "B",
+      "targetFilename": "DRV-015.webp",
+      "targetPath": "public/assets/drivers/DRV-015.webp",
+      "portraitSourceState": "OWNER_SUPPLIED_PNG_OUTSIDE_APPLICATION_TREE",
+      "integrationStatus": "NOT_INTEGRATED",
+      "generationRequired": false,
+      "notes": "Controlled post-freeze identity and current-vehicle reconciliation. This does not change the 15-driver Priority A simulator set."
+    }
+  ],
+  "drivers": [
+    {
+      "driverId": "DRV-001",
+      "driverName": "Ayanda Dlamini",
+      "targetFilename": "DRV-001.webp",
+      "targetPath": "public/assets/drivers/DRV-001.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a natural calm expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a mid-career presentation, short textured hair, a plain navy polo, and a softly blurred fleet-depot office background. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    },
+    {
+      "driverId": "DRV-002",
+      "driverName": "Siyabonga Naidoo",
+      "targetFilename": "DRV-002.webp",
+      "targetPath": "public/assets/drivers/DRV-002.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a natural friendly expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a younger-adult presentation, close-cropped hair, a plain charcoal work shirt, and a softly blurred logistics-facility corridor background. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    },
+    {
+      "driverId": "DRV-003",
+      "driverName": "Thandi Mokoena",
+      "targetFilename": "DRV-003.webp",
+      "targetPath": "public/assets/drivers/DRV-003.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a composed natural expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a mid-career presentation, shoulder-length natural curls, a plain slate work jacket over a neutral shirt, and a softly blurred fleet-operations office background. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    },
+    {
+      "driverId": "DRV-004",
+      "driverName": "Lerato Nkosi",
+      "targetFilename": "DRV-004.webp",
+      "targetPath": "public/assets/drivers/DRV-004.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a relaxed professional expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a younger-adult presentation, a neat braided hairstyle, a plain dark-teal polo, and a softly blurred neutral depot reception background. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    },
+    {
+      "driverId": "DRV-006",
+      "driverName": "Riyaad Ahmed",
+      "targetFilename": "DRV-006.webp",
+      "targetPath": "public/assets/drivers/DRV-006.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a confident natural expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a mature-adult presentation, short salt-and-pepper hair, a plain grey polo beneath a light unbranded work jacket, and a softly blurred fleet control-room background. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    },
+    {
+      "driverId": "DRV-007",
+      "driverName": "Jenna Smith",
+      "targetFilename": "DRV-007.webp",
+      "targetPath": "public/assets/drivers/DRV-007.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a warm natural expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a mid-career presentation, chin-length wavy hair, a plain light-blue work shirt, and a softly blurred vehicle-yard office background with no identifiable vehicle. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    },
+    {
+      "driverId": "DRV-008",
+      "driverName": "Zanele Daniels",
+      "targetFilename": "DRV-008.webp",
+      "targetPath": "public/assets/drivers/DRV-008.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a calm attentive expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a younger-adult presentation, medium-length hair tied back, a plain olive work shirt, and a softly blurred logistics dispatch desk background. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    },
+    {
+      "driverId": "DRV-011",
+      "driverName": "Fhulufhelo Makhale",
+      "targetFilename": "DRV-011.webp",
+      "targetPath": "public/assets/drivers/DRV-011.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a thoughtful natural expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a mature-adult presentation, close-cut greying hair, a plain navy overshirt over a neutral top, and a softly blurred fleet maintenance reception background. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    },
+    {
+      "driverId": "DRV-012",
+      "driverName": "Palesa Mthembu",
+      "targetFilename": "DRV-012.webp",
+      "targetPath": "public/assets/drivers/DRV-012.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a bright but professional expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a younger-adult presentation, short curly hair, a plain sand-grey work shirt, and a softly blurred fleet scheduling office background. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    },
+    {
+      "driverId": "DRV-013",
+      "driverName": "Charlene van der Merwe",
+      "targetFilename": "DRV-013.webp",
+      "targetPath": "public/assets/drivers/DRV-013.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a composed friendly expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a mid-career presentation, long hair tied in a low practical style, a plain charcoal polo, and a softly blurred neutral fleet-depot walkway background. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    },
+    {
+      "driverId": "DRV-014",
+      "driverName": "Lwazi van Wyk",
+      "targetFilename": "DRV-014.webp",
+      "targetPath": "public/assets/drivers/DRV-014.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a steady natural expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a mature-adult presentation, a neatly shaved hairstyle, a plain blue-grey work jacket, and a softly blurred fleet yard entrance background with no identifiable vehicle. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    },
+    {
+      "driverId": "DRV-016",
+      "driverName": "Sipho Sithole",
+      "targetFilename": "DRV-016.webp",
+      "targetPath": "public/assets/drivers/DRV-016.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a natural focused expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a mid-career presentation, short straight hair, a plain deep-green polo under a neutral utility jacket, and a softly blurred logistics operations room background. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    },
+    {
+      "driverId": "DRV-017",
+      "driverName": "Refilwe Mokoena",
+      "targetFilename": "DRV-017.webp",
+      "targetPath": "public/assets/drivers/DRV-017.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a calm open expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a younger-adult presentation, close-cropped hair, a clean unbranded high-visibility vest over a plain dark shirt, and a softly blurred depot safety area background. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    },
+    {
+      "driverId": "DRV-019",
+      "driverName": "Dineo Naidoo",
+      "targetFilename": "DRV-019.webp",
+      "targetPath": "public/assets/drivers/DRV-019.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a relaxed confident expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a mature-adult presentation, shoulder-length curls, a plain muted-blue work shirt, and a softly blurred fleet administration office background. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    },
+    {
+      "driverId": "DRV-024",
+      "driverName": "Jared Jacobs",
+      "targetFilename": "DRV-024.webp",
+      "targetPath": "public/assets/drivers/DRV-024.webp",
+      "generationPrompt": "Create a realistic square professional profile photograph of a wholly fictional adult fleet professional for a fleet-management Demo. This is not a real person and must not resemble a celebrity or public figure. Use head-and-shoulders framing, an eye-level camera, a natural professional expression, soft even professional lighting, and circular-avatar safe margins. Give this fictional variation a mid-career presentation, short wavy hair, a plain graphite polo, and a softly blurred fleet dispatch window background. Keep the face as the clear focus. Use no text, logos, branding, licence cards, watermarks, identifiable vehicle model, or dramatic cinematic styling.",
+      "negativeConstraints": [
+        "no real-person or celebrity resemblance",
+        "no text, logos, company branding, or watermark",
+        "no visible licence, ID card, badge, or name tag",
+        "no police, military, government uniform, or insignia",
+        "no identifiable assigned vehicle or readable third-party advertising",
+        "no cartoon, illustration, fashion editorial, passport-photo, or cinematic treatment",
+        "no exaggerated expression, cluttered background, or anatomy artifacts"
+      ],
+      "crop": "head and shoulders with circular-avatar safe area",
+      "aspectRatio": "1:1",
+      "targetDimensions": "512x512"
+    }
+  ]
+}

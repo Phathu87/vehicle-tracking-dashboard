@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { after, afterEach, before, test } from "node:test";
 import request from "supertest";
 import app from "../app.js";
+import { setCurrentVehicle } from "../services/assignmentService.js";
 import { readDemoSimulationConfig } from "../services/demoSimulationConfig.js";
 import {
   createVehicleSimulationState,
@@ -16,7 +17,8 @@ import { resetUsers } from "../services/userService.js";
 
 process.env.JWT_SECRET = "test-only-secret-with-at-least-32-characters";
 
-const vehicleId = "000-SIMULATOR-TEST";
+const vehicleId = "VH-SIMULATOR-TEST";
+const driverId = "DRV-SIMULATOR-TEST";
 let token;
 let vehicle;
 let geofenceId;
@@ -30,14 +32,22 @@ before(async () => {
   resetUsers();
   const registration = await request(app).post("/api/auth/register").send({ username: "simulator.tester", password: "ValidPass123!", name: "Simulator Tester" }).expect(201);
   token = registration.body.token;
-  const created = await authorized("post", "/api/vehicles").send({ id: vehicleId, plate: "SIM 011 GP", make: "Toyota", model: "Hilux", city: "Johannesburg", province: "Gauteng", lat: -26.2041, lng: 28.0473, mileage: 10_000, fuel: 60 }).expect(201);
-  vehicle = created.body;
+  await authorized("post", "/api/drivers").send({
+    id: driverId,
+    name: "Simulator Test Driver",
+    licenceNumber: "SA-SIMULATOR-TEST",
+    licenceExpiry: "2028-12-31",
+  }).expect(201);
+  const created = await authorized("post", "/api/vehicles").send({ id: vehicleId, plate: "SIM 011 GP", make: "Toyota", model: "Hilux", driverId, city: "Johannesburg", province: "Gauteng", lat: -26.2041, lng: 28.0473, mileage: 10_000, fuel: 60 }).expect(201);
+  setCurrentVehicle(driverId, vehicleId);
+  vehicle = (await authorized("get", `/api/vehicles/${vehicleId}`).expect(200)).body;
 });
 
 after(async () => {
   stopDemoFleetSimulator();
   if (geofenceId) await authorized("delete", `/api/geofences/${geofenceId}`);
   await authorized("delete", `/api/vehicles/${vehicleId}`);
+  await authorized("delete", `/api/drivers/${driverId}`);
 });
 
 afterEach(() => stopDemoFleetSimulator());
@@ -64,6 +74,7 @@ test("generated telemetry preserves state, mileage, fuel, coordinates, and offli
   const moving = nextSimulatedTelemetry(vehicle, state, config, 0, new Date("2026-09-22T10:00:30Z"));
   assert.equal(moving.operationalState, "overspeed");
   assert.notEqual(moving.telemetry.lat, vehicle.lat);
+  assert.equal(Object.hasOwn(moving.telemetry, "heading"), false);
   assert.ok(moving.telemetry.mileage >= stopped.telemetry.mileage);
   assert.ok(moving.telemetry.fuel >= 0 && moving.telemetry.fuel <= 100);
   const offlineState = createVehicleSimulationState(vehicle, config, 9);
@@ -78,10 +89,10 @@ test("generated telemetry preserves state, mileage, fuel, coordinates, and offli
 
 test("participant selection is geographically balanced and deterministic", () => {
   const candidates = [
-    { id: "B-2", city: "Bloemfontein", lat: -29.1, lng: 26.2 },
-    { id: "B-1", city: "Bloemfontein", lat: -29.1, lng: 26.2 },
-    { id: "J-1", city: "Johannesburg", lat: -26.2, lng: 28.0 },
-    { id: "P-1", city: "Pretoria", lat: -25.7, lng: 28.2 },
+    { id: "B-2", city: "Bloemfontein", lat: -29.1, lng: 26.2, currentDriver: null },
+    { id: "B-1", city: "Bloemfontein", lat: -29.1, lng: 26.2, currentDriver: { id: "DRV-B" } },
+    { id: "J-1", city: "Johannesburg", lat: -26.2, lng: 28.0, currentDriver: { id: "DRV-J" } },
+    { id: "P-1", city: "Pretoria", lat: -25.7, lng: 28.2, currentDriver: { id: "DRV-P" } },
   ];
   assert.deepEqual(selectSimulationVehicles(candidates, 3).map((item) => item.id), ["B-1", "J-1", "P-1"]);
   assert.equal(selectSimulationVehicles(candidates, 1, "GEOFENCE_DEMO")[0].id, "J-1");
@@ -116,6 +127,7 @@ test("simulator lifecycle feeds the authenticated telemetry API without duplicat
   assert.equal(started.running, true);
   assert.equal(started.active, true);
   assert.deepEqual(started.participatingVehicles, [vehicleId]);
+  assert.deepEqual(started.participants, [{ vehicleId, currentDriverId: driverId }]);
   await startDemoFleetSimulator({ config, adapter, setTimer, clearTimer });
   assert.equal(timerCount, 1);
 
@@ -154,7 +166,7 @@ test("simulator lifecycle feeds the authenticated telemetry API without duplicat
   const statusEndpoint = await authorized("get", "/api/demo/status").expect(200);
   assert.equal(statusEndpoint.body.running, true);
   assert.ok(statusEndpoint.body.tickCount >= 5);
-  const driverBeforeReset = (await authorized("get", `/api/vehicles/${vehicleId}`).expect(200)).body.driver;
+  const driverBeforeReset = (await authorized("get", `/api/vehicles/${vehicleId}`).expect(200)).body.currentDriver;
   const reset = resetDemoFleetSimulator();
   assert.equal(reset.running, true);
   assert.equal(reset.tickCount, 0);
@@ -162,8 +174,8 @@ test("simulator lifecycle feeds the authenticated telemetry API without duplicat
   assert.equal(timerCount, 1);
   await timerCallback();
   const vehicleAfterReset = (await authorized("get", `/api/vehicles/${vehicleId}`).expect(200)).body;
-  const driverAfterReset = vehicleAfterReset.driver;
-  assert.equal(driverAfterReset, driverBeforeReset);
+  const driverAfterReset = vehicleAfterReset.currentDriver;
+  assert.deepEqual(driverAfterReset, driverBeforeReset);
   assert.equal(vehicleAfterReset.plate, vehicle.plate);
   assert.equal(vehicleAfterReset.make, vehicle.make);
   await authorized("get", "/api/auth/me").expect(200);

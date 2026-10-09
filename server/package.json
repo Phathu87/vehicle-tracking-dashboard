@@ -6,7 +6,9 @@
   "scripts": {
     "test": "node scripts/runTests.js",
     "start": "node server.js",
-    "telemetry": "node scripts/telemetryProducer.js"
+    "telemetry": "node scripts/telemetryProducer.js",
+    "validate:data": "node scripts/validateFleetData.js",
+    "verify:seed": "node scripts/verifyDeterministicSeed.js"
   },
   "keywords": [],
   "author": "",

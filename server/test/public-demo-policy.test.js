@@ -62,6 +62,9 @@ test("production Demo users cannot mutate shared fleet state", async () => {
   assert.equal(denied.body.error.code, "DEMO_MUTATION_FORBIDDEN");
 
   await authorized(userToken, "delete", `/api/vehicles/${vehicle.id}`).expect(403);
+  await authorized(userToken, "put", "/api/drivers/DRV-001/current-vehicle")
+    .send({ vehicleId: "VH-CA-100" })
+    .expect(403);
   await authorized(userToken, "post", `/api/vehicles/${vehicle.id}/telemetry`).send({
     lat: vehicle.lat,
     lng: vehicle.lng,

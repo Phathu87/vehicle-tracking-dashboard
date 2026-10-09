@@ -1,0 +1,66 @@
+{
+  "phase": "3.3B",
+  "canvas": {
+    "width": 1200,
+    "height": 800
+  },
+  "specifications": [
+    {
+      "visualKeys": [
+        "2022-volkswagen-polo",
+        "2023-volkswagen-polo"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: Fleet Drive AI Demo vehicle catalog asset, not manufacturer photography. Generate ONE photorealistic representative 2022/2023 Volkswagen Polo sixth-generation 2021-facelift FIVE-DOOR HATCHBACK, European/South African model-family proportions (not Polo Vivo, not sedan, not GTI or R-Line). Standard restrained bumpers, narrow facelift LED headlamps, ordinary modest wheels, no sport package or trim badges. Metallic silver is VISUAL PRESENTATION only; actual fleet colour and trim unknown. Front three-quarter view from slightly above headlamp height, nose toward left, entire vehicle including all visible tires, ample margins, centered landscape 3:2 composition 1536x1024. Isolated on genuinely transparent background, soft realistic studio illumination with subtle contact shadow suitable over dark UI. No people, no scenery, no dealership overlays, no captions, no text anywhere, no watermark, no registration/license plate: empty unlettered front mounting recess only. No invented trim/engine badges. Brand emblem may be realistic but no lettering. This is a generated model-family representation, do not imply exact trim. Save generated master for project conversion.",
+      "sourceMaster": "exec-da7fda54-e482-499e-8614-7c163293fd76.png",
+      "tool": "BUILT_IN_IMAGEGEN",
+      "sourceType": "GENERATED",
+      "exactness": "GENERATED_REPRESENTATIVE",
+      "createdAt": "2026-10-07",
+      "colourRole": "VISUAL_PRESENTATION",
+      "colourExactness": "UNKNOWN",
+      "variant": null
+    },
+    {
+      "visualKeys": [
+        "2020-volkswagen-passat"
+      ],
+      "prompt": "Use case: product-mockup. Create ONE photorealistic GENERATED_REPRESENTATIVE 2020 Volkswagen Passat four-door SEDAN, European B8 2019-facelift model family. Not American NMS, not Chinese long-wheelbase, not Variant wagon, not Alltrack, not R-Line. Restrained horizontal chrome grille, facelift angular headlamps, long family-sedan proportions, ordinary modest silver wheels; no variant/engine/trim lettering. Silver paint is presentation only, real colour and trim unknown; exact SA derivative unverified. Entire vehicle, nose left, consistent front three-quarter camera at headlamp height, centered landscape 1536x1024 3:2 composition with generous margins. Photorealistic clean studio product render, soft light with subtle contact shadow, genuinely transparent background suitable for dark fleet dashboard. No text, captions, people, watermark, dealership, environment. No registration plate or plate characters; blank unlettered mounting recess. No sports modifications, no invented trim badges. Brand emblem acceptable without lettering. This is not manufacturer photography.",
+      "sourceMaster": "exec-5c130a01-e315-4f8b-9af1-cda83d4253d1.png",
+      "tool": "BUILT_IN_IMAGEGEN",
+      "sourceType": "GENERATED",
+      "exactness": "GENERATED_REPRESENTATIVE",
+      "createdAt": "2026-10-07",
+      "colourRole": "VISUAL_PRESENTATION",
+      "colourExactness": "UNKNOWN",
+      "variant": null
+    },
+    {
+      "visualKeys": [
+        "2020-mercedes-benz-c-class"
+      ],
+      "prompt": "Use case: product-mockup. Create ONE photorealistic GENERATED_REPRESENTATIVE 2020 Mercedes-Benz C-Class W205 facelift FOUR-DOOR SEDAN (2018-update body). Distinctly W205, NOT W206 2021-new generation, not E-Class, not coupe or wagon. Broad rounded facelift headlamp housings, restrained conventional grille with a central star and horizontal slats, ordinary modest wheels, comfortable unmodified factory stance. No AMG, AMG-Line, sport package, trim/engine badges or lettering. Silver colour and individual equipment are VISUAL PRESENTATION only; authoritative trim and colour unknown. Entire vehicle nose toward left front three-quarter camera at headlamp height, centered landscape 1536x1024 3:2 with generous margins. Soft studio product lighting, realistic paint and rubber, subtle contact shadow, genuinely transparent background for dark fleet UI. No people, scenery, watermark, text anywhere, dealer logos, captions, pricing. No registration plate/characters: unlettered empty front mounting recess. This is generated representative artwork, not manufacturer photography.",
+      "sourceMaster": "exec-b66c6ca8-3f62-4d51-901a-f91a9cb6c785.png",
+      "tool": "BUILT_IN_IMAGEGEN",
+      "sourceType": "GENERATED",
+      "exactness": "GENERATED_REPRESENTATIVE",
+      "createdAt": "2026-10-07",
+      "colourRole": "VISUAL_PRESENTATION",
+      "colourExactness": "UNKNOWN",
+      "variant": null
+    },
+    {
+      "visualKeys": [
+        "2023-mercedes-benz-c-class"
+      ],
+      "prompt": "Use case: product-mockup. Create ONE photorealistic GENERATED_REPRESENTATIVE 2023 Mercedes-Benz C-Class W206 FOUR-DOOR SEDAN, new generation introduced 2021. NOT older W205, not E-Class, not coupe/wagon. W206 narrow tapered headlamp housings, long hood with subtle two power domes, cab-backward proportions, smooth restrained body surfacing. Conventional standard grille with central star and horizontal slat, simple restrained lower bumper openings, modest ordinary silver wheels. NOT AMG or AMG-Line sport bumper or diamond-star grille, no body kit, no trim/engine lettering or invented badges. Silver paint is visual presentation only; exact market package, colour and trim unknown. Entire vehicle nose left, front three-quarter eye level at headlamps, landscape centered 1536x1024 3:2 with safe generous margins. Clean realistic studio product render with soft lighting and subtle contact shadow, genuinely transparent background suitable for dark UI. NO TEXT ANYWHERE, no watermark, no people/scenery/dealership overlays. No registration plate or any plate characters, blank empty front mounting recess only. Not manufacturer photography.",
+      "sourceMaster": "exec-617a0182-b6e7-4a97-9870-f73c2c033129.png",
+      "tool": "BUILT_IN_IMAGEGEN",
+      "sourceType": "GENERATED",
+      "exactness": "GENERATED_REPRESENTATIVE",
+      "createdAt": "2026-10-07",
+      "colourRole": "VISUAL_PRESENTATION",
+      "colourExactness": "UNKNOWN",
+      "variant": null
+    }
+  ]
+}

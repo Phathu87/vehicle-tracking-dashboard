@@ -1,0 +1,79 @@
+{
+  "phase": "3.3D",
+  "canvas": {
+    "width": 1200,
+    "height": 800
+  },
+  "specifications": [
+    {
+      "visualKeys": [
+        "2022-nissan-np200"
+      ],
+      "prompt": "Use case: product-mockup. Fleet Drive AI Demo GENERATED_REPRESENTATIVE catalog artwork, not manufacturer photography or exact trim evidence. ONE vehicle, silver paint presentation only, actual colour/trim/engine/equipment unknown. Entire vehicle and all tires visible, nose left, front three-quarter view at headlamp height, centered landscape 1536x1024 3:2 canvas with generous margins. Consistent clean photorealistic studio materials, soft reflections and contact shadow, genuinely transparent alpha background for dark navy UI. NO TEXT ANYWHERE, no people, watermarks, advertising, dealer overlays, scenery, registration/license plate or characters. Empty unlettered mounting recess. No invented trim/engine badges or model lettering. Emblem shape acceptable, no endorsement. South African Nissan NP200 light commercial small car-derived SINGLE CAB two-door pickup with short passenger-car nose, swept oval-ish headlights, simple horizontal grille, narrow low body and long open cargo bed. NOT Navara, Frontier, doublecab, SUV or box truck. Basic ordinary wheels, no canopy, rollbar, bullbar or aftermarket accessories.",
+      "tool": "BUILT_IN_IMAGEGEN",
+      "sourceType": "GENERATED",
+      "exactness": "GENERATED_REPRESENTATIVE",
+      "createdAt": "2026-10-08",
+      "colourRole": "VISUAL_PRESENTATION",
+      "colourExactness": "UNKNOWN",
+      "variant": null,
+      "sourceMaster": "exec-6efb8b5b-7a88-4da7-852e-08353a6bb810.png"
+    },
+    {
+      "visualKeys": [
+        "2021-nissan-x-trail"
+      ],
+      "prompt": "Use case: product-mockup. Fleet Drive AI Demo GENERATED_REPRESENTATIVE catalog artwork, not manufacturer photography or exact trim evidence. ONE vehicle, silver paint presentation only, actual colour/trim/engine/equipment unknown. Entire vehicle and all tires visible, nose left, front three-quarter view at headlamp height, centered landscape 1536x1024 3:2 canvas with generous margins. Consistent clean photorealistic studio materials, soft reflections and contact shadow, genuinely transparent alpha background for dark navy UI. NO TEXT ANYWHERE, no people, watermarks, advertising, dealer overlays, scenery, registration/license plate or characters. Empty unlettered mounting recess. No invented trim/engine badges or model lettering. Emblem shape acceptable, no endorsement. 2021-era Nissan X-Trail T32 third-generation 2017-facelift-oriented five-door SUV: rounded closed-body crossover silhouette, V-motion grille and conventional unified headlamps. NOT new T33 split-headlight model, not Qashqai, Juke or Patrol. No Nismo or offroad accessories. Exact regional facelift/trim unknown.",
+      "tool": "BUILT_IN_IMAGEGEN",
+      "sourceType": "GENERATED",
+      "exactness": "GENERATED_REPRESENTATIVE",
+      "createdAt": "2026-10-08",
+      "colourRole": "VISUAL_PRESENTATION",
+      "colourExactness": "UNKNOWN",
+      "variant": null,
+      "sourceMaster": "exec-1071f4c1-f51c-43e5-a899-aeebd543ae1f.png"
+    },
+    {
+      "visualKeys": [
+        "2021-ford-focus"
+      ],
+      "prompt": "Use case: product-mockup. Fleet Drive AI Demo GENERATED_REPRESENTATIVE catalog artwork, not manufacturer photography or exact trim evidence. ONE vehicle, silver paint presentation only, actual colour/trim/engine/equipment unknown. Entire vehicle and all tires visible, nose left, front three-quarter view at headlamp height, centered landscape 1536x1024 3:2 canvas with generous margins. Consistent clean photorealistic studio materials, soft reflections and contact shadow, genuinely transparent alpha background for dark navy UI. NO TEXT ANYWHERE, no people, watermarks, advertising, dealer overlays, scenery, registration/license plate or characters. Empty unlettered mounting recess. No invented trim/engine badges or model lettering. Emblem shape acceptable, no endorsement. 2021-era Ford Focus fourth-generation C2 pre-late-2021-facelift family FIVE-DOOR HATCHBACK with short rear hatch, compact low hood, swept headlamps and conventional restrained grille. NOT sedan, wagon, SUV, Fiesta or Focus RS/ST/Active. Ordinary modest wheels and bumpers. No sporty spoilers or trim letters. European family presentation only; precise SA market/year version unverified.",
+      "tool": "BUILT_IN_IMAGEGEN",
+      "sourceType": "GENERATED",
+      "exactness": "GENERATED_REPRESENTATIVE",
+      "createdAt": "2026-10-08",
+      "colourRole": "VISUAL_PRESENTATION",
+      "colourExactness": "UNKNOWN",
+      "variant": null,
+      "sourceMaster": "exec-658654df-87cc-4f4b-b56e-1f6c5d68ed8f.png"
+    },
+    {
+      "visualKeys": [
+        "2023-chevrolet-spark"
+      ],
+      "prompt": "Use case: product-mockup. Fleet Drive AI Demo GENERATED_REPRESENTATIVE catalog artwork, not manufacturer photography or exact trim evidence. ONE vehicle, silver paint presentation only, actual colour/trim/engine/equipment unknown. Entire vehicle and all tires visible, nose left, front three-quarter view at headlamp height, centered landscape 1536x1024 3:2 canvas with generous margins. Consistent clean photorealistic studio materials, soft reflections and contact shadow, genuinely transparent alpha background for dark navy UI. NO TEXT ANYWHERE, no people, watermarks, advertising, dealer overlays, scenery, registration/license plate or characters. Empty unlettered mounting recess. No invented trim/engine badges or model lettering. Emblem shape acceptable, no endorsement. Chevrolet Spark M400 last-generation facelift-era COMPACT FIVE-DOOR HATCHBACK, short upright city-car silhouette, compact hood, swept headlights and two-level grille. NOT Sonic sedan, Aveo, electric crossover or Matiz. Plain factory-style wheels, no ACTIV/RS package. Canonical Demo year is 2023 but production/market/year fit is NOT certified; depict Spark family, not an invented 2023 redesign.",
+      "tool": "BUILT_IN_IMAGEGEN",
+      "sourceType": "GENERATED",
+      "exactness": "GENERATED_REPRESENTATIVE",
+      "createdAt": "2026-10-08",
+      "colourRole": "VISUAL_PRESENTATION",
+      "colourExactness": "UNKNOWN",
+      "variant": null,
+      "sourceMaster": "exec-a154ca93-e687-4f6d-bdc6-6a52e16836bb.png"
+    },
+    {
+      "visualKeys": [
+        "2021-scania-r-series"
+      ],
+      "prompt": "Use case: product-mockup. Fleet Drive AI Demo GENERATED_REPRESENTATIVE catalog artwork, not manufacturer photography or exact trim evidence. ONE vehicle, silver paint presentation only, actual colour/trim/engine/equipment unknown. Entire vehicle and all tires visible, nose left, front three-quarter view at headlamp height, centered landscape 1536x1024 3:2 canvas with generous margins. Consistent clean photorealistic studio materials, soft reflections and contact shadow, genuinely transparent alpha background for dark navy UI. NO TEXT ANYWHERE, no people, watermarks, advertising, dealer overlays, scenery, registration/license plate or characters. Empty unlettered mounting recess. No invented trim/engine badges or model lettering. Emblem shape acceptable, no endorsement. 2021-era Scania R-series 2016 new-generation HEAVY COMMERCIAL TRUCK cab-over tractor unit, tall broad R-family cab, recognizable stacked horizontal grille and lower headlamps, full cab plus entire bare rear chassis, fifth-wheel and rear wheels visible. No trailer. Two-axle tractor is VISUAL_PRESENTATION only; canonical axle count/body configuration/engine/cab height unknown. NOT S-series flatfloor flagship or pickup. No R450/V8/Super or SCANIA text. Preserve entire truck silhouette with ample top and rear margin; do not crop cab roof/chassis or imitate passenger-car height. CRITICAL FRAMING: vehicle occupies at most 75 percent canvas height. Leave 100 pixels of actual transparent empty margin above ALL antennas and roof, and 80 pixels below wheels. ALL aerials must end visibly inside frame. Camera slightly farther away; no part touches canvas edge.",
+      "tool": "BUILT_IN_IMAGEGEN",
+      "sourceType": "GENERATED",
+      "exactness": "GENERATED_REPRESENTATIVE",
+      "createdAt": "2026-10-08",
+      "colourRole": "VISUAL_PRESENTATION",
+      "colourExactness": "UNKNOWN",
+      "variant": null,
+      "sourceMaster": "exec-3ebce6fb-7277-45eb-a94e-c10c1ee02677.png"
+    }
+  ]
+}

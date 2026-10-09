@@ -276,7 +276,7 @@
                 "{{vehicle_id}}"
               ]
             },
-            "description": "IMPLEMENTED. Returns vehicle detail with maintenance and alerts."
+            "description": "IMPLEMENTED. Returns vehicle detail with maintenance, alerts, assignedDrivers, and the explicit currentDriver (or null). Assigned drivers are authorised; currentDriver comes only from driver_current_vehicles."
           },
           "response": []
         },
@@ -346,7 +346,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"lat\": -26.2041,\n  \"lng\": 28.0473,\n  \"speed\": 45,\n  \"mileage\": 1001,\n  \"fuel\": 79,\n  \"recordedAt\": \"2026-09-23T10:00:00.000Z\"\n}",
+              "raw": "{\n  \"lat\": -26.2041,\n  \"lng\": 28.0473,\n  \"speed\": 45,\n  \"heading\": 143,\n  \"mileage\": 1001,\n  \"fuel\": 79,\n  \"recordedAt\": \"2026-09-23T10:00:00.000Z\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -365,7 +365,7 @@
                 "telemetry"
               ]
             },
-            "description": "IMPLEMENTED. Persists telemetry and invokes existing alert/geofence/maintenance processing."
+            "description": "IMPLEMENTED. Persists telemetry and invokes existing alert/geofence/maintenance processing. Optional heading is a navigation bearing in degrees, 0 <= heading < 360; omit it to use backend movement derivation."
           },
           "response": []
         },
@@ -484,7 +484,7 @@
                 "{{driver_id}}"
               ]
             },
-            "description": "IMPLEMENTED. Returns driver detail and assigned vehicles."
+            "description": "IMPLEMENTED. Returns driver detail with assignedVehicles, explicit currentVehicle (or null), and currentLocation derived from the current vehicle's latest stored state."
           },
           "response": []
         },
@@ -554,6 +554,62 @@
               ]
             },
             "description": "IMPLEMENTED. Replaces verified vehicle assignments."
+          },
+          "response": []
+        },
+        {
+          "name": "Set Current Vehicle",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"vehicleId\": \"{{vehicle_id}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/drivers/{{driver_id}}/current-vehicle",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "drivers",
+                "{{driver_id}}",
+                "current-vehicle"
+              ]
+            },
+            "description": "IMPLEMENTED. Sets one explicit current vehicle from the driver's active assigned pool. Conflicts are rejected."
+          },
+          "response": []
+        },
+        {
+          "name": "Clear Current Vehicle",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/drivers/{{driver_id}}/current-vehicle",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "drivers",
+                "{{driver_id}}",
+                "current-vehicle"
+              ]
+            },
+            "description": "IMPLEMENTED. Clears current operation without removing authorised assignments."
           },
           "response": []
         },
@@ -1055,7 +1111,7 @@
                 "status"
               ]
             },
-            "description": "IMPLEMENTED. Returns safe authenticated simulator runtime status. No mutation controls are exposed."
+            "description": "IMPLEMENTED. Returns safe authenticated simulator runtime status. Participant diagnostics include vehicleId and explicit currentDriverId (or null). No mutation controls are exposed."
           },
           "response": []
         }

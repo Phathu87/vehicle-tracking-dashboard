@@ -1,0 +1,5893 @@
+{
+  "schemaVersion": "1.0",
+  "source": "AUTHORITATIVE_RUNTIME_FLEET",
+  "verifiedAt": "2026-10-07",
+  "vehicles": [
+    {
+      "id": "VH-BL-100",
+      "plate": "FS 1808 MW",
+      "year": 2020,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-hyundai-elantra"
+    },
+    {
+      "id": "VH-BL-101",
+      "plate": "FS 9392 GO",
+      "year": 2021,
+      "make": "Volvo",
+      "model": "S60",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-volvo-s60"
+    },
+    {
+      "id": "VH-BL-102",
+      "plate": "FS 2413 NU",
+      "year": 2022,
+      "make": "Scania",
+      "model": "R-Series",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2022-scania-r-series"
+    },
+    {
+      "id": "VH-BL-103",
+      "plate": "FS 8348 RX",
+      "year": 2023,
+      "make": "Scania",
+      "model": "S-Series",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2023-scania-s-series"
+    },
+    {
+      "id": "VH-BL-104",
+      "plate": "FS 6954 IN",
+      "year": 2024,
+      "make": "Volvo",
+      "model": "XC90",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-volvo-xc90"
+    },
+    {
+      "id": "VH-BL-105",
+      "plate": "FS 1680 CF",
+      "year": 2020,
+      "make": "Volkswagen",
+      "model": "Golf",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2020-volkswagen-golf"
+    },
+    {
+      "id": "VH-BL-106",
+      "plate": "FS 3648 QU",
+      "year": 2021,
+      "make": "Nissan",
+      "model": "NP200",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2021-nissan-np200"
+    },
+    {
+      "id": "VH-BL-107",
+      "plate": "FS 7912 AG",
+      "year": 2022,
+      "make": "Honda",
+      "model": "Civic",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-honda-civic"
+    },
+    {
+      "id": "VH-BL-108",
+      "plate": "FS 3832 QA",
+      "year": 2023,
+      "make": "Scania",
+      "model": "S-Series",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2023-scania-s-series"
+    },
+    {
+      "id": "VH-BL-109",
+      "plate": "FS 6719 RQ",
+      "year": 2024,
+      "make": "Ford",
+      "model": "Ranger",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2024-ford-ranger"
+    },
+    {
+      "id": "VH-BL-110",
+      "plate": "FS 2180 AK",
+      "year": 2020,
+      "make": "Chevrolet",
+      "model": "Cruze",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-chevrolet-cruze"
+    },
+    {
+      "id": "VH-BL-111",
+      "plate": "FS 1290 KP",
+      "year": 2021,
+      "make": "Ford",
+      "model": "Ranger",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2021-ford-ranger"
+    },
+    {
+      "id": "VH-BL-112",
+      "plate": "FS 4733 NO",
+      "year": 2022,
+      "make": "BMW",
+      "model": "X5",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-bmw-x5"
+    },
+    {
+      "id": "VH-BL-113",
+      "plate": "FS 4032 LK",
+      "year": 2023,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-mercedes-benz-c-class"
+    },
+    {
+      "id": "VH-BL-114",
+      "plate": "FS 8332 EV",
+      "year": 2024,
+      "make": "Volvo",
+      "model": "S60",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-volvo-s60"
+    },
+    {
+      "id": "VH-BL-115",
+      "plate": "FS 8697 RS",
+      "year": 2020,
+      "make": "Isuzu",
+      "model": "KB",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-isuzu-kb"
+    },
+    {
+      "id": "VH-BL-116",
+      "plate": "FS 2932 ZQ",
+      "year": 2021,
+      "make": "Scania",
+      "model": "S-Series",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2021-scania-s-series"
+    },
+    {
+      "id": "VH-BL-117",
+      "plate": "FS 7431 WN",
+      "year": 2022,
+      "make": "Volkswagen",
+      "model": "Golf",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2022-volkswagen-golf"
+    },
+    {
+      "id": "VH-BL-118",
+      "plate": "FS 6501 BK",
+      "year": 2023,
+      "make": "Toyota",
+      "model": "Hilux",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2023-toyota-hilux"
+    },
+    {
+      "id": "VH-BL-119",
+      "plate": "FS 1411 DP",
+      "year": 2024,
+      "make": "Kia",
+      "model": "Seltos",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2024-kia-seltos"
+    },
+    {
+      "id": "VH-BL-120",
+      "plate": "FS 2593 OU",
+      "year": 2020,
+      "make": "Chevrolet",
+      "model": "Trailblazer",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2020-chevrolet-trailblazer"
+    },
+    {
+      "id": "VH-BL-121",
+      "plate": "FS 9656 TI",
+      "year": 2021,
+      "make": "Honda",
+      "model": "CR-V",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-honda-cr-v"
+    },
+    {
+      "id": "VH-BL-122",
+      "plate": "FS 4255 JD",
+      "year": 2022,
+      "make": "Chevrolet",
+      "model": "Spark",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2022-chevrolet-spark"
+    },
+    {
+      "id": "VH-BL-123",
+      "plate": "FS 6875 MG",
+      "year": 2023,
+      "make": "Kia",
+      "model": "Seltos",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2023-kia-seltos"
+    },
+    {
+      "id": "VH-BL-124",
+      "plate": "FS 9713 AL",
+      "year": 2024,
+      "make": "Mazda",
+      "model": "3",
+      "city": "Bloemfontein",
+      "province": "Free State",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2024-mazda-3"
+    },
+    {
+      "id": "VH-CA-100",
+      "plate": "WC 6880 WL",
+      "year": 2020,
+      "make": "Toyota",
+      "model": "Corolla",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-toyota-corolla"
+    },
+    {
+      "id": "VH-CA-101",
+      "plate": "WC 1729 AV",
+      "year": 2021,
+      "make": "Hyundai",
+      "model": "H1",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "MINIBUS",
+      "visualKey": "2021-hyundai-h1"
+    },
+    {
+      "id": "VH-CA-102",
+      "plate": "WC 6155 NR",
+      "year": 2022,
+      "make": "Ford",
+      "model": "EcoSport",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2022-ford-ecosport"
+    },
+    {
+      "id": "VH-CA-103",
+      "plate": "WC 7117 UX",
+      "year": 2023,
+      "make": "Toyota",
+      "model": "Hilux",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2023-toyota-hilux"
+    },
+    {
+      "id": "VH-CA-104",
+      "plate": "WC 8002 QO",
+      "year": 2024,
+      "make": "Nissan",
+      "model": "NP200",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2024-nissan-np200"
+    },
+    {
+      "id": "VH-CA-105",
+      "plate": "WC 8522 PQ",
+      "year": 2020,
+      "make": "Volvo",
+      "model": "XC60",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2020-volvo-xc60"
+    },
+    {
+      "id": "VH-CA-106",
+      "plate": "WC 1816 IE",
+      "year": 2021,
+      "make": "Scania",
+      "model": "S-Series",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2021-scania-s-series"
+    },
+    {
+      "id": "VH-CA-107",
+      "plate": "WC 1087 WM",
+      "year": 2022,
+      "make": "Scania",
+      "model": "R-Series",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2022-scania-r-series"
+    },
+    {
+      "id": "VH-CA-108",
+      "plate": "WC 1049 WO",
+      "year": 2023,
+      "make": "Honda",
+      "model": "CR-V",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-honda-cr-v"
+    },
+    {
+      "id": "VH-CA-109",
+      "plate": "WC 6501 EF",
+      "year": 2024,
+      "make": "Volkswagen",
+      "model": "Polo",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2024-volkswagen-polo"
+    },
+    {
+      "id": "VH-CA-110",
+      "plate": "WC 5728 TF",
+      "year": 2020,
+      "make": "Scania",
+      "model": "S-Series",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2020-scania-s-series"
+    },
+    {
+      "id": "VH-CA-111",
+      "plate": "WC 8621 UM",
+      "year": 2021,
+      "make": "Chevrolet",
+      "model": "Cruze",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-chevrolet-cruze"
+    },
+    {
+      "id": "VH-CA-112",
+      "plate": "WC 2491 WA",
+      "year": 2022,
+      "make": "Toyota",
+      "model": "Corolla",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-toyota-corolla"
+    },
+    {
+      "id": "VH-CA-113",
+      "plate": "WC 9597 TZ",
+      "year": 2023,
+      "make": "Isuzu",
+      "model": "D-Max",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2023-isuzu-d-max"
+    },
+    {
+      "id": "VH-CA-114",
+      "plate": "WC 7767 VW",
+      "year": 2024,
+      "make": "Volvo",
+      "model": "S60",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-volvo-s60"
+    },
+    {
+      "id": "VH-CA-115",
+      "plate": "WC 7236 TX",
+      "year": 2020,
+      "make": "Volkswagen",
+      "model": "Passat",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-volkswagen-passat"
+    },
+    {
+      "id": "VH-CA-116",
+      "plate": "WC 7128 EO",
+      "year": 2021,
+      "make": "Chevrolet",
+      "model": "Spark",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2021-chevrolet-spark"
+    },
+    {
+      "id": "VH-CA-117",
+      "plate": "WC 9551 DO",
+      "year": 2022,
+      "make": "Hyundai",
+      "model": "Tucson",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-hyundai-tucson"
+    },
+    {
+      "id": "VH-CA-118",
+      "plate": "WC 9074 WM",
+      "year": 2023,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-kia-sportage"
+    },
+    {
+      "id": "VH-CA-119",
+      "plate": "WC 3320 KM",
+      "year": 2024,
+      "make": "Mazda",
+      "model": "CX-5",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-mazda-cx-5"
+    },
+    {
+      "id": "VH-CA-120",
+      "plate": "WC 1178 MT",
+      "year": 2020,
+      "make": "Volvo",
+      "model": "XC90",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2020-volvo-xc90"
+    },
+    {
+      "id": "VH-CA-121",
+      "plate": "WC 1491 ET",
+      "year": 2021,
+      "make": "Kia",
+      "model": "Seltos",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2021-kia-seltos"
+    },
+    {
+      "id": "VH-CA-122",
+      "plate": "WC 4099 CX",
+      "year": 2022,
+      "make": "Mazda",
+      "model": "3",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2022-mazda-3"
+    },
+    {
+      "id": "VH-CA-123",
+      "plate": "WC 5984 WX",
+      "year": 2023,
+      "make": "Scania",
+      "model": "S-Series",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2023-scania-s-series"
+    },
+    {
+      "id": "VH-CA-124",
+      "plate": "WC 1790 WF",
+      "year": 2024,
+      "make": "Ford",
+      "model": "Focus",
+      "city": "Cape Town",
+      "province": "Western Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2024-ford-focus"
+    },
+    {
+      "id": "VH-DU-100",
+      "plate": "KZN 2549 QX",
+      "year": 2020,
+      "make": "BMW",
+      "model": "X3",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2020-bmw-x3"
+    },
+    {
+      "id": "VH-DU-101",
+      "plate": "KZN 5573 CL",
+      "year": 2021,
+      "make": "Ford",
+      "model": "EcoSport",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2021-ford-ecosport"
+    },
+    {
+      "id": "VH-DU-102",
+      "plate": "KZN 2386 SQ",
+      "year": 2022,
+      "make": "Toyota",
+      "model": "Hilux",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2022-toyota-hilux"
+    },
+    {
+      "id": "VH-DU-103",
+      "plate": "KZN 2109 DU",
+      "year": 2023,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-kia-sportage"
+    },
+    {
+      "id": "VH-DU-104",
+      "plate": "KZN 1945 KV",
+      "year": 2024,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-mercedes-benz-c-class"
+    },
+    {
+      "id": "VH-DU-105",
+      "plate": "KZN 9581 BU",
+      "year": 2020,
+      "make": "Volkswagen",
+      "model": "Polo",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2020-volkswagen-polo"
+    },
+    {
+      "id": "VH-DU-106",
+      "plate": "KZN 9114 QR",
+      "year": 2021,
+      "make": "Ford",
+      "model": "EcoSport",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2021-ford-ecosport"
+    },
+    {
+      "id": "VH-DU-107",
+      "plate": "KZN 3252 KW",
+      "year": 2022,
+      "make": "Volvo",
+      "model": "S60",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-volvo-s60"
+    },
+    {
+      "id": "VH-DU-108",
+      "plate": "KZN 7100 PQ",
+      "year": 2023,
+      "make": "Mazda",
+      "model": "6",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-mazda-6"
+    },
+    {
+      "id": "VH-DU-109",
+      "plate": "KZN 9246 ZS",
+      "year": 2024,
+      "make": "Ford",
+      "model": "Focus",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2024-ford-focus"
+    },
+    {
+      "id": "VH-DU-110",
+      "plate": "KZN 8401 ES",
+      "year": 2020,
+      "make": "Mazda",
+      "model": "6",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-mazda-6"
+    },
+    {
+      "id": "VH-DU-111",
+      "plate": "KZN 4830 JP",
+      "year": 2021,
+      "make": "Volkswagen",
+      "model": "Polo",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2021-volkswagen-polo"
+    },
+    {
+      "id": "VH-DU-112",
+      "plate": "KZN 6212 DD",
+      "year": 2022,
+      "make": "Ford",
+      "model": "Ranger",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2022-ford-ranger"
+    },
+    {
+      "id": "VH-DU-113",
+      "plate": "KZN 4647 XW",
+      "year": 2023,
+      "make": "Mazda",
+      "model": "3",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2023-mazda-3"
+    },
+    {
+      "id": "VH-DU-114",
+      "plate": "KZN 1361 ZB",
+      "year": 2024,
+      "make": "Ford",
+      "model": "EcoSport",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2024-ford-ecosport"
+    },
+    {
+      "id": "VH-DU-115",
+      "plate": "KZN 8871 QF",
+      "year": 2020,
+      "make": "Nissan",
+      "model": "NP200",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-nissan-np200"
+    },
+    {
+      "id": "VH-DU-116",
+      "plate": "KZN 1692 GV",
+      "year": 2021,
+      "make": "Scania",
+      "model": "R-Series",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2021-scania-r-series"
+    },
+    {
+      "id": "VH-DU-117",
+      "plate": "KZN 6123 RZ",
+      "year": 2022,
+      "make": "Nissan",
+      "model": "Navara",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2022-nissan-navara"
+    },
+    {
+      "id": "VH-DU-118",
+      "plate": "KZN 1309 WX",
+      "year": 2023,
+      "make": "Ford",
+      "model": "EcoSport",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2023-ford-ecosport"
+    },
+    {
+      "id": "VH-DU-119",
+      "plate": "KZN 6051 JE",
+      "year": 2024,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-kia-sportage"
+    },
+    {
+      "id": "VH-DU-120",
+      "plate": "KZN 5049 OP",
+      "year": 2020,
+      "make": "Scania",
+      "model": "R-Series",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2020-scania-r-series"
+    },
+    {
+      "id": "VH-DU-121",
+      "plate": "KZN 9397 OG",
+      "year": 2021,
+      "make": "Ford",
+      "model": "Ranger",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2021-ford-ranger"
+    },
+    {
+      "id": "VH-DU-122",
+      "plate": "KZN 5229 WY",
+      "year": 2022,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-kia-sportage"
+    },
+    {
+      "id": "VH-DU-123",
+      "plate": "KZN 8735 GO",
+      "year": 2023,
+      "make": "Isuzu",
+      "model": "D-Max",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2023-isuzu-d-max"
+    },
+    {
+      "id": "VH-DU-124",
+      "plate": "KZN 8294 WZ",
+      "year": 2024,
+      "make": "Volkswagen",
+      "model": "Polo",
+      "city": "Durban",
+      "province": "KwaZulu-Natal",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2024-volkswagen-polo"
+    },
+    {
+      "id": "VH-GQ-100",
+      "plate": "EC 2611 PW",
+      "year": 2020,
+      "make": "Nissan",
+      "model": "Navara",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-nissan-navara"
+    },
+    {
+      "id": "VH-GQ-101",
+      "plate": "EC 3810 VQ",
+      "year": 2021,
+      "make": "Honda",
+      "model": "Jazz",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2021-honda-jazz"
+    },
+    {
+      "id": "VH-GQ-102",
+      "plate": "EC 4163 BK",
+      "year": 2022,
+      "make": "Hyundai",
+      "model": "H1",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "MINIBUS",
+      "visualKey": "2022-hyundai-h1"
+    },
+    {
+      "id": "VH-GQ-103",
+      "plate": "EC 8932 XW",
+      "year": 2023,
+      "make": "Toyota",
+      "model": "Fortuner",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-toyota-fortuner"
+    },
+    {
+      "id": "VH-GQ-104",
+      "plate": "EC 1145 FX",
+      "year": 2024,
+      "make": "Honda",
+      "model": "Jazz",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2024-honda-jazz"
+    },
+    {
+      "id": "VH-GQ-105",
+      "plate": "EC 1705 XG",
+      "year": 2020,
+      "make": "Honda",
+      "model": "Jazz",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2020-honda-jazz"
+    },
+    {
+      "id": "VH-GQ-106",
+      "plate": "EC 5119 IP",
+      "year": 2021,
+      "make": "Kia",
+      "model": "Seltos",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2021-kia-seltos"
+    },
+    {
+      "id": "VH-GQ-107",
+      "plate": "EC 4754 YO",
+      "year": 2022,
+      "make": "Volvo",
+      "model": "S60",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-volvo-s60"
+    },
+    {
+      "id": "VH-GQ-108",
+      "plate": "EC 8370 JK",
+      "year": 2023,
+      "make": "Scania",
+      "model": "R-Series",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2023-scania-r-series"
+    },
+    {
+      "id": "VH-GQ-109",
+      "plate": "EC 7408 XT",
+      "year": 2024,
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-mercedes-benz-e-class"
+    },
+    {
+      "id": "VH-GQ-110",
+      "plate": "EC 2057 KR",
+      "year": 2020,
+      "make": "Chevrolet",
+      "model": "Spark",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2020-chevrolet-spark"
+    },
+    {
+      "id": "VH-GQ-111",
+      "plate": "EC 8797 BU",
+      "year": 2021,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-hyundai-elantra"
+    },
+    {
+      "id": "VH-GQ-112",
+      "plate": "EC 7145 SN",
+      "year": 2022,
+      "make": "Volvo",
+      "model": "S60",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-volvo-s60"
+    },
+    {
+      "id": "VH-GQ-113",
+      "plate": "EC 6124 VA",
+      "year": 2023,
+      "make": "Volvo",
+      "model": "XC90",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-volvo-xc90"
+    },
+    {
+      "id": "VH-GQ-114",
+      "plate": "EC 8961 BA",
+      "year": 2024,
+      "make": "Toyota",
+      "model": "Fortuner",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-toyota-fortuner"
+    },
+    {
+      "id": "VH-GQ-115",
+      "plate": "EC 9001 SB",
+      "year": 2020,
+      "make": "Toyota",
+      "model": "Hilux",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-toyota-hilux"
+    },
+    {
+      "id": "VH-GQ-116",
+      "plate": "EC 6032 EQ",
+      "year": 2021,
+      "make": "Chevrolet",
+      "model": "Spark",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2021-chevrolet-spark"
+    },
+    {
+      "id": "VH-GQ-117",
+      "plate": "EC 1882 CJ",
+      "year": 2022,
+      "make": "Volvo",
+      "model": "XC90",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-volvo-xc90"
+    },
+    {
+      "id": "VH-GQ-118",
+      "plate": "EC 5453 FL",
+      "year": 2023,
+      "make": "Chevrolet",
+      "model": "Spark",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2023-chevrolet-spark"
+    },
+    {
+      "id": "VH-GQ-119",
+      "plate": "EC 4550 XS",
+      "year": 2024,
+      "make": "Mazda",
+      "model": "3",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2024-mazda-3"
+    },
+    {
+      "id": "VH-GQ-120",
+      "plate": "EC 1758 CM",
+      "year": 2020,
+      "make": "Kia",
+      "model": "Seltos",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2020-kia-seltos"
+    },
+    {
+      "id": "VH-GQ-121",
+      "plate": "EC 6536 VQ",
+      "year": 2021,
+      "make": "Volkswagen",
+      "model": "Golf",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2021-volkswagen-golf"
+    },
+    {
+      "id": "VH-GQ-122",
+      "plate": "EC 5972 TL",
+      "year": 2022,
+      "make": "Volkswagen",
+      "model": "Golf",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2022-volkswagen-golf"
+    },
+    {
+      "id": "VH-GQ-123",
+      "plate": "EC 9822 DN",
+      "year": 2023,
+      "make": "Mercedes-Benz",
+      "model": "Sprinter",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "VAN",
+      "visualKey": "2023-mercedes-benz-sprinter"
+    },
+    {
+      "id": "VH-GQ-124",
+      "plate": "EC 7504 UT",
+      "year": 2024,
+      "make": "Volvo",
+      "model": "XC90",
+      "city": "Gqeberha",
+      "province": "Eastern Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-volvo-xc90"
+    },
+    {
+      "id": "VH-JO-100",
+      "plate": "GP 2461 YO",
+      "year": 2020,
+      "make": "Hyundai",
+      "model": "H1",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "MINIBUS",
+      "visualKey": "2020-hyundai-h1"
+    },
+    {
+      "id": "VH-JO-101",
+      "plate": "GP 3417 EK",
+      "year": 2021,
+      "make": "Volkswagen",
+      "model": "Passat",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-volkswagen-passat"
+    },
+    {
+      "id": "VH-JO-102",
+      "plate": "GP 2138 MU",
+      "year": 2022,
+      "make": "Mazda",
+      "model": "6",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-mazda-6"
+    },
+    {
+      "id": "VH-JO-103",
+      "plate": "GP 4219 UD",
+      "year": 2023,
+      "make": "Toyota",
+      "model": "Hilux",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2023-toyota-hilux"
+    },
+    {
+      "id": "VH-JO-104",
+      "plate": "GP 7651 JI",
+      "year": 2024,
+      "make": "Chevrolet",
+      "model": "Spark",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2024-chevrolet-spark"
+    },
+    {
+      "id": "VH-JO-105",
+      "plate": "GP 4887 XW",
+      "year": 2020,
+      "make": "Nissan",
+      "model": "NP200",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-nissan-np200"
+    },
+    {
+      "id": "VH-JO-106",
+      "plate": "GP 2503 PD",
+      "year": 2021,
+      "make": "Chevrolet",
+      "model": "Spark",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2021-chevrolet-spark"
+    },
+    {
+      "id": "VH-JO-107",
+      "plate": "GP 2728 CB",
+      "year": 2022,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-kia-sportage"
+    },
+    {
+      "id": "VH-JO-108",
+      "plate": "GP 8268 JC",
+      "year": 2023,
+      "make": "Audi",
+      "model": "A4",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-audi-a4"
+    },
+    {
+      "id": "VH-JO-109",
+      "plate": "GP 1552 NT",
+      "year": 2024,
+      "make": "Honda",
+      "model": "Jazz",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2024-honda-jazz"
+    },
+    {
+      "id": "VH-JO-110",
+      "plate": "GP 3362 AK",
+      "year": 2020,
+      "make": "Toyota",
+      "model": "Hilux",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-toyota-hilux"
+    },
+    {
+      "id": "VH-JO-111",
+      "plate": "GP 3436 EH",
+      "year": 2021,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-hyundai-elantra"
+    },
+    {
+      "id": "VH-JO-112",
+      "plate": "GP 9137 DF",
+      "year": 2022,
+      "make": "Chevrolet",
+      "model": "Trailblazer",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-chevrolet-trailblazer"
+    },
+    {
+      "id": "VH-JO-113",
+      "plate": "GP 6386 SJ",
+      "year": 2023,
+      "make": "Hyundai",
+      "model": "H1",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "MINIBUS",
+      "visualKey": "2023-hyundai-h1"
+    },
+    {
+      "id": "VH-JO-114",
+      "plate": "GP 7973 TB",
+      "year": 2024,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-hyundai-elantra"
+    },
+    {
+      "id": "VH-JO-115",
+      "plate": "GP 5938 ZJ",
+      "year": 2020,
+      "make": "Honda",
+      "model": "CR-V",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2020-honda-cr-v"
+    },
+    {
+      "id": "VH-JO-116",
+      "plate": "GP 2711 AC",
+      "year": 2021,
+      "make": "Honda",
+      "model": "Jazz",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2021-honda-jazz"
+    },
+    {
+      "id": "VH-JO-117",
+      "plate": "GP 7438 TS",
+      "year": 2022,
+      "make": "Volkswagen",
+      "model": "Golf",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2022-volkswagen-golf"
+    },
+    {
+      "id": "VH-JO-118",
+      "plate": "GP 7556 EB",
+      "year": 2023,
+      "make": "Mercedes-Benz",
+      "model": "Sprinter",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "VAN",
+      "visualKey": "2023-mercedes-benz-sprinter"
+    },
+    {
+      "id": "VH-JO-119",
+      "plate": "GP 4564 XA",
+      "year": 2024,
+      "make": "Toyota",
+      "model": "Hilux",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2024-toyota-hilux"
+    },
+    {
+      "id": "VH-JO-120",
+      "plate": "GP 5994 GD",
+      "year": 2020,
+      "make": "Ford",
+      "model": "Focus",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2020-ford-focus"
+    },
+    {
+      "id": "VH-JO-121",
+      "plate": "GP 2619 EN",
+      "year": 2021,
+      "make": "Isuzu",
+      "model": "KB",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2021-isuzu-kb"
+    },
+    {
+      "id": "VH-JO-122",
+      "plate": "GP 4050 WH",
+      "year": 2022,
+      "make": "Mazda",
+      "model": "6",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-mazda-6"
+    },
+    {
+      "id": "VH-JO-123",
+      "plate": "GP 9212 GJ",
+      "year": 2023,
+      "make": "Ford",
+      "model": "Focus",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2023-ford-focus"
+    },
+    {
+      "id": "VH-JO-124",
+      "plate": "GP 2211 XQ",
+      "year": 2024,
+      "make": "Volkswagen",
+      "model": "Passat",
+      "city": "Johannesburg",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-volkswagen-passat"
+    },
+    {
+      "id": "VH-KI-100",
+      "plate": "NC 7088 GG",
+      "year": 2020,
+      "make": "Honda",
+      "model": "Civic",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-honda-civic"
+    },
+    {
+      "id": "VH-KI-101",
+      "plate": "NC 8754 RG",
+      "year": 2021,
+      "make": "Mazda",
+      "model": "6",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-mazda-6"
+    },
+    {
+      "id": "VH-KI-102",
+      "plate": "NC 7450 JQ",
+      "year": 2022,
+      "make": "Scania",
+      "model": "S-Series",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2022-scania-s-series"
+    },
+    {
+      "id": "VH-KI-103",
+      "plate": "NC 9023 YP",
+      "year": 2023,
+      "make": "Hyundai",
+      "model": "H1",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "MINIBUS",
+      "visualKey": "2023-hyundai-h1"
+    },
+    {
+      "id": "VH-KI-104",
+      "plate": "NC 3911 PK",
+      "year": 2024,
+      "make": "Honda",
+      "model": "CR-V",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-honda-cr-v"
+    },
+    {
+      "id": "VH-KI-105",
+      "plate": "NC 4067 BP",
+      "year": 2020,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-hyundai-elantra"
+    },
+    {
+      "id": "VH-KI-106",
+      "plate": "NC 1721 OH",
+      "year": 2021,
+      "make": "Toyota",
+      "model": "Fortuner",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-toyota-fortuner"
+    },
+    {
+      "id": "VH-KI-107",
+      "plate": "NC 1972 ZC",
+      "year": 2022,
+      "make": "Honda",
+      "model": "Civic",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-honda-civic"
+    },
+    {
+      "id": "VH-KI-108",
+      "plate": "NC 3815 CA",
+      "year": 2023,
+      "make": "Mercedes-Benz",
+      "model": "Sprinter",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "VAN",
+      "visualKey": "2023-mercedes-benz-sprinter"
+    },
+    {
+      "id": "VH-KI-109",
+      "plate": "NC 7138 MF",
+      "year": 2024,
+      "make": "BMW",
+      "model": "X3",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-bmw-x3"
+    },
+    {
+      "id": "VH-KI-110",
+      "plate": "NC 4797 HQ",
+      "year": 2020,
+      "make": "Nissan",
+      "model": "NP200",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-nissan-np200"
+    },
+    {
+      "id": "VH-KI-111",
+      "plate": "NC 7924 QT",
+      "year": 2021,
+      "make": "Nissan",
+      "model": "Navara",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2021-nissan-navara"
+    },
+    {
+      "id": "VH-KI-112",
+      "plate": "NC 9113 KB",
+      "year": 2022,
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-mercedes-benz-e-class"
+    },
+    {
+      "id": "VH-KI-113",
+      "plate": "NC 1774 FX",
+      "year": 2023,
+      "make": "BMW",
+      "model": "X3",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-bmw-x3"
+    },
+    {
+      "id": "VH-KI-114",
+      "plate": "NC 3809 EM",
+      "year": 2024,
+      "make": "Volkswagen",
+      "model": "Golf",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2024-volkswagen-golf"
+    },
+    {
+      "id": "VH-KI-115",
+      "plate": "NC 9333 GN",
+      "year": 2020,
+      "make": "Chevrolet",
+      "model": "Cruze",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-chevrolet-cruze"
+    },
+    {
+      "id": "VH-KI-116",
+      "plate": "NC 9637 JU",
+      "year": 2021,
+      "make": "Scania",
+      "model": "R-Series",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2021-scania-r-series"
+    },
+    {
+      "id": "VH-KI-117",
+      "plate": "NC 2344 NC",
+      "year": 2022,
+      "make": "Toyota",
+      "model": "Corolla",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-toyota-corolla"
+    },
+    {
+      "id": "VH-KI-118",
+      "plate": "NC 6069 QP",
+      "year": 2023,
+      "make": "Volvo",
+      "model": "S60",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-volvo-s60"
+    },
+    {
+      "id": "VH-KI-119",
+      "plate": "NC 8410 CK",
+      "year": 2024,
+      "make": "Ford",
+      "model": "Focus",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2024-ford-focus"
+    },
+    {
+      "id": "VH-KI-120",
+      "plate": "NC 7878 YM",
+      "year": 2020,
+      "make": "Ford",
+      "model": "Focus",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2020-ford-focus"
+    },
+    {
+      "id": "VH-KI-121",
+      "plate": "NC 3503 XN",
+      "year": 2021,
+      "make": "Hyundai",
+      "model": "H1",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "MINIBUS",
+      "visualKey": "2021-hyundai-h1"
+    },
+    {
+      "id": "VH-KI-122",
+      "plate": "NC 2375 VH",
+      "year": 2022,
+      "make": "Isuzu",
+      "model": "KB",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2022-isuzu-kb"
+    },
+    {
+      "id": "VH-KI-123",
+      "plate": "NC 3923 WI",
+      "year": 2023,
+      "make": "BMW",
+      "model": "X3",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-bmw-x3"
+    },
+    {
+      "id": "VH-KI-124",
+      "plate": "NC 8990 ZI",
+      "year": 2024,
+      "make": "Scania",
+      "model": "R-Series",
+      "city": "Kimberley",
+      "province": "Northern Cape",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2024-scania-r-series"
+    },
+    {
+      "id": "VH-LO-100",
+      "plate": "LP 4971 QA",
+      "year": 2020,
+      "make": "Mercedes-Benz",
+      "model": "Sprinter",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "VAN",
+      "visualKey": "2020-mercedes-benz-sprinter"
+    },
+    {
+      "id": "VH-LO-101",
+      "plate": "LP 6213 YK",
+      "year": 2021,
+      "make": "Toyota",
+      "model": "Fortuner",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-toyota-fortuner"
+    },
+    {
+      "id": "VH-LO-102",
+      "plate": "LP 8424 FA",
+      "year": 2022,
+      "make": "Isuzu",
+      "model": "KB",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2022-isuzu-kb"
+    },
+    {
+      "id": "VH-LO-103",
+      "plate": "LP 7267 YL",
+      "year": 2023,
+      "make": "Honda",
+      "model": "Jazz",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2023-honda-jazz"
+    },
+    {
+      "id": "VH-LO-104",
+      "plate": "LP 3428 AX",
+      "year": 2024,
+      "make": "Volvo",
+      "model": "XC60",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-volvo-xc60"
+    },
+    {
+      "id": "VH-LO-105",
+      "plate": "LP 3823 SA",
+      "year": 2020,
+      "make": "Toyota",
+      "model": "Hilux",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-toyota-hilux"
+    },
+    {
+      "id": "VH-LO-106",
+      "plate": "LP 8173 RZ",
+      "year": 2021,
+      "make": "Nissan",
+      "model": "X-Trail",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-nissan-x-trail"
+    },
+    {
+      "id": "VH-LO-107",
+      "plate": "LP 3614 SM",
+      "year": 2022,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-hyundai-elantra"
+    },
+    {
+      "id": "VH-LO-108",
+      "plate": "LP 7868 IU",
+      "year": 2023,
+      "make": "Ford",
+      "model": "EcoSport",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2023-ford-ecosport"
+    },
+    {
+      "id": "VH-LO-109",
+      "plate": "LP 2243 ST",
+      "year": 2024,
+      "make": "Volkswagen",
+      "model": "Passat",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-volkswagen-passat"
+    },
+    {
+      "id": "VH-LO-110",
+      "plate": "LP 4861 QL",
+      "year": 2020,
+      "make": "Isuzu",
+      "model": "KB",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-isuzu-kb"
+    },
+    {
+      "id": "VH-LO-111",
+      "plate": "LP 6427 HA",
+      "year": 2021,
+      "make": "Audi",
+      "model": "Q7",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-audi-q7"
+    },
+    {
+      "id": "VH-LO-112",
+      "plate": "LP 6136 LP",
+      "year": 2022,
+      "make": "Audi",
+      "model": "Q7",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-audi-q7"
+    },
+    {
+      "id": "VH-LO-113",
+      "plate": "LP 1334 HQ",
+      "year": 2023,
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-mercedes-benz-e-class"
+    },
+    {
+      "id": "VH-LO-114",
+      "plate": "LP 9509 NT",
+      "year": 2024,
+      "make": "Toyota",
+      "model": "Corolla",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-toyota-corolla"
+    },
+    {
+      "id": "VH-LO-115",
+      "plate": "LP 7743 KL",
+      "year": 2020,
+      "make": "Volkswagen",
+      "model": "Polo",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2020-volkswagen-polo"
+    },
+    {
+      "id": "VH-LO-116",
+      "plate": "LP 7745 SV",
+      "year": 2021,
+      "make": "Volkswagen",
+      "model": "Golf",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2021-volkswagen-golf"
+    },
+    {
+      "id": "VH-LO-117",
+      "plate": "LP 4630 CF",
+      "year": 2022,
+      "make": "BMW",
+      "model": "X5",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-bmw-x5"
+    },
+    {
+      "id": "VH-LO-118",
+      "plate": "LP 6707 BL",
+      "year": 2023,
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-mercedes-benz-e-class"
+    },
+    {
+      "id": "VH-LO-119",
+      "plate": "LP 3961 MF",
+      "year": 2024,
+      "make": "Isuzu",
+      "model": "KB",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2024-isuzu-kb"
+    },
+    {
+      "id": "VH-LO-120",
+      "plate": "LP 4142 MR",
+      "year": 2020,
+      "make": "Mazda",
+      "model": "CX-5",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2020-mazda-cx-5"
+    },
+    {
+      "id": "VH-LO-121",
+      "plate": "LP 1943 GI",
+      "year": 2021,
+      "make": "Hyundai",
+      "model": "H1",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "MINIBUS",
+      "visualKey": "2021-hyundai-h1"
+    },
+    {
+      "id": "VH-LO-122",
+      "plate": "LP 9084 UK",
+      "year": 2022,
+      "make": "Hyundai",
+      "model": "Tucson",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-hyundai-tucson"
+    },
+    {
+      "id": "VH-LO-123",
+      "plate": "LP 6523 EJ",
+      "year": 2023,
+      "make": "Ford",
+      "model": "Focus",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2023-ford-focus"
+    },
+    {
+      "id": "VH-LO-124",
+      "plate": "LP 9947 VW",
+      "year": 2024,
+      "make": "Volkswagen",
+      "model": "Golf",
+      "city": "Louis Trichardt",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2024-volkswagen-golf"
+    },
+    {
+      "id": "VH-MA-100",
+      "plate": "NW 8304 RV",
+      "year": 2020,
+      "make": "Chevrolet",
+      "model": "Trailblazer",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2020-chevrolet-trailblazer"
+    },
+    {
+      "id": "VH-MA-101",
+      "plate": "NW 4688 PK",
+      "year": 2021,
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-mercedes-benz-e-class"
+    },
+    {
+      "id": "VH-MA-102",
+      "plate": "NW 3940 PC",
+      "year": 2022,
+      "make": "Scania",
+      "model": "S-Series",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2022-scania-s-series"
+    },
+    {
+      "id": "VH-MA-103",
+      "plate": "NW 3474 JY",
+      "year": 2023,
+      "make": "Kia",
+      "model": "Seltos",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2023-kia-seltos"
+    },
+    {
+      "id": "VH-MA-104",
+      "plate": "NW 2590 EG",
+      "year": 2024,
+      "make": "Audi",
+      "model": "A4",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-audi-a4"
+    },
+    {
+      "id": "VH-MA-105",
+      "plate": "NW 3752 ZH",
+      "year": 2020,
+      "make": "Hyundai",
+      "model": "Tucson",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2020-hyundai-tucson"
+    },
+    {
+      "id": "VH-MA-106",
+      "plate": "NW 6164 FJ",
+      "year": 2021,
+      "make": "BMW",
+      "model": "320i",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-bmw-320i"
+    },
+    {
+      "id": "VH-MA-107",
+      "plate": "NW 1736 CO",
+      "year": 2022,
+      "make": "Nissan",
+      "model": "NP200",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2022-nissan-np200"
+    },
+    {
+      "id": "VH-MA-108",
+      "plate": "NW 5257 PL",
+      "year": 2023,
+      "make": "Hyundai",
+      "model": "Tucson",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-hyundai-tucson"
+    },
+    {
+      "id": "VH-MA-109",
+      "plate": "NW 4509 UW",
+      "year": 2024,
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-mercedes-benz-e-class"
+    },
+    {
+      "id": "VH-MA-110",
+      "plate": "NW 1651 QG",
+      "year": 2020,
+      "make": "Chevrolet",
+      "model": "Spark",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2020-chevrolet-spark"
+    },
+    {
+      "id": "VH-MA-111",
+      "plate": "NW 3166 OG",
+      "year": 2021,
+      "make": "Nissan",
+      "model": "Navara",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2021-nissan-navara"
+    },
+    {
+      "id": "VH-MA-112",
+      "plate": "NW 9742 AT",
+      "year": 2022,
+      "make": "Toyota",
+      "model": "Corolla",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-toyota-corolla"
+    },
+    {
+      "id": "VH-MA-113",
+      "plate": "NW 6138 SP",
+      "year": 2023,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-mercedes-benz-c-class"
+    },
+    {
+      "id": "VH-MA-114",
+      "plate": "NW 9991 OT",
+      "year": 2024,
+      "make": "Toyota",
+      "model": "Hilux",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2024-toyota-hilux"
+    },
+    {
+      "id": "VH-MA-115",
+      "plate": "NW 9051 MA",
+      "year": 2020,
+      "make": "Audi",
+      "model": "A6",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-audi-a6"
+    },
+    {
+      "id": "VH-MA-116",
+      "plate": "NW 3787 SZ",
+      "year": 2021,
+      "make": "Kia",
+      "model": "Seltos",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2021-kia-seltos"
+    },
+    {
+      "id": "VH-MA-117",
+      "plate": "NW 5627 NF",
+      "year": 2022,
+      "make": "Honda",
+      "model": "Jazz",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2022-honda-jazz"
+    },
+    {
+      "id": "VH-MA-118",
+      "plate": "NW 8891 PW",
+      "year": 2023,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-hyundai-elantra"
+    },
+    {
+      "id": "VH-MA-119",
+      "plate": "NW 5673 DN",
+      "year": 2024,
+      "make": "Scania",
+      "model": "S-Series",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2024-scania-s-series"
+    },
+    {
+      "id": "VH-MA-120",
+      "plate": "NW 7109 CR",
+      "year": 2020,
+      "make": "Chevrolet",
+      "model": "Spark",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2020-chevrolet-spark"
+    },
+    {
+      "id": "VH-MA-121",
+      "plate": "NW 9615 RF",
+      "year": 2021,
+      "make": "Hyundai",
+      "model": "H1",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "MINIBUS",
+      "visualKey": "2021-hyundai-h1"
+    },
+    {
+      "id": "VH-MA-122",
+      "plate": "NW 4072 VS",
+      "year": 2022,
+      "make": "Audi",
+      "model": "Q7",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-audi-q7"
+    },
+    {
+      "id": "VH-MA-123",
+      "plate": "NW 3423 TP",
+      "year": 2023,
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-mercedes-benz-e-class"
+    },
+    {
+      "id": "VH-MA-124",
+      "plate": "NW 2672 SA",
+      "year": 2024,
+      "make": "Audi",
+      "model": "A6",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-audi-a6"
+    },
+    {
+      "id": "VH-MF-100",
+      "plate": "NW 7820 QU",
+      "year": 2020,
+      "make": "Isuzu",
+      "model": "KB",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-isuzu-kb"
+    },
+    {
+      "id": "VH-MF-101",
+      "plate": "NW 6090 LX",
+      "year": 2021,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-mercedes-benz-c-class"
+    },
+    {
+      "id": "VH-MF-102",
+      "plate": "NW 8500 QZ",
+      "year": 2022,
+      "make": "Mazda",
+      "model": "6",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-mazda-6"
+    },
+    {
+      "id": "VH-MF-103",
+      "plate": "NW 8171 LE",
+      "year": 2023,
+      "make": "Chevrolet",
+      "model": "Spark",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2023-chevrolet-spark"
+    },
+    {
+      "id": "VH-MF-104",
+      "plate": "NW 3359 HG",
+      "year": 2024,
+      "make": "Honda",
+      "model": "CR-V",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-honda-cr-v"
+    },
+    {
+      "id": "VH-MF-105",
+      "plate": "NW 4733 EU",
+      "year": 2020,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-mercedes-benz-c-class"
+    },
+    {
+      "id": "VH-MF-106",
+      "plate": "NW 9235 LK",
+      "year": 2021,
+      "make": "Hyundai",
+      "model": "Tucson",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-hyundai-tucson"
+    },
+    {
+      "id": "VH-MF-107",
+      "plate": "NW 4522 IG",
+      "year": 2022,
+      "make": "Volvo",
+      "model": "XC90",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-volvo-xc90"
+    },
+    {
+      "id": "VH-MF-108",
+      "plate": "NW 5348 JO",
+      "year": 2023,
+      "make": "Toyota",
+      "model": "Fortuner",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-toyota-fortuner"
+    },
+    {
+      "id": "VH-MF-109",
+      "plate": "NW 4184 IP",
+      "year": 2024,
+      "make": "Ford",
+      "model": "Focus",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2024-ford-focus"
+    },
+    {
+      "id": "VH-MF-110",
+      "plate": "NW 9524 RZ",
+      "year": 2020,
+      "make": "Mercedes-Benz",
+      "model": "Sprinter",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "VAN",
+      "visualKey": "2020-mercedes-benz-sprinter"
+    },
+    {
+      "id": "VH-MF-111",
+      "plate": "NW 8282 UJ",
+      "year": 2021,
+      "make": "Nissan",
+      "model": "Navara",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2021-nissan-navara"
+    },
+    {
+      "id": "VH-MF-112",
+      "plate": "NW 5085 DW",
+      "year": 2022,
+      "make": "Audi",
+      "model": "A6",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-audi-a6"
+    },
+    {
+      "id": "VH-MF-113",
+      "plate": "NW 1623 VH",
+      "year": 2023,
+      "make": "Mazda",
+      "model": "3",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2023-mazda-3"
+    },
+    {
+      "id": "VH-MF-114",
+      "plate": "NW 1618 PI",
+      "year": 2024,
+      "make": "Volvo",
+      "model": "XC60",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-volvo-xc60"
+    },
+    {
+      "id": "VH-MF-115",
+      "plate": "NW 5200 BO",
+      "year": 2020,
+      "make": "Honda",
+      "model": "Civic",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-honda-civic"
+    },
+    {
+      "id": "VH-MF-116",
+      "plate": "NW 2632 MS",
+      "year": 2021,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-hyundai-elantra"
+    },
+    {
+      "id": "VH-MF-117",
+      "plate": "NW 6675 SQ",
+      "year": 2022,
+      "make": "Toyota",
+      "model": "Corolla",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-toyota-corolla"
+    },
+    {
+      "id": "VH-MF-118",
+      "plate": "NW 9559 VW",
+      "year": 2023,
+      "make": "Volvo",
+      "model": "XC90",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-volvo-xc90"
+    },
+    {
+      "id": "VH-MF-119",
+      "plate": "NW 4546 HK",
+      "year": 2024,
+      "make": "Volvo",
+      "model": "XC90",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-volvo-xc90"
+    },
+    {
+      "id": "VH-MF-120",
+      "plate": "NW 4981 AD",
+      "year": 2020,
+      "make": "Audi",
+      "model": "A4",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-audi-a4"
+    },
+    {
+      "id": "VH-MF-121",
+      "plate": "NW 8811 JC",
+      "year": 2021,
+      "make": "Honda",
+      "model": "Jazz",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2021-honda-jazz"
+    },
+    {
+      "id": "VH-MF-122",
+      "plate": "NW 9102 XP",
+      "year": 2022,
+      "make": "BMW",
+      "model": "320i",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-bmw-320i"
+    },
+    {
+      "id": "VH-MF-123",
+      "plate": "NW 8724 MN",
+      "year": 2023,
+      "make": "Chevrolet",
+      "model": "Spark",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2023-chevrolet-spark"
+    },
+    {
+      "id": "VH-MF-124",
+      "plate": "NW 8076 QV",
+      "year": 2024,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Mahikeng",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-kia-sportage"
+    },
+    {
+      "id": "VH-PH-100",
+      "plate": "LP 4231 WZ",
+      "year": 2020,
+      "make": "Nissan",
+      "model": "X-Trail",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2020-nissan-x-trail"
+    },
+    {
+      "id": "VH-PH-101",
+      "plate": "LP 4828 PH",
+      "year": 2021,
+      "make": "Nissan",
+      "model": "Navara",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2021-nissan-navara"
+    },
+    {
+      "id": "VH-PH-102",
+      "plate": "LP 6952 NR",
+      "year": 2022,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-kia-sportage"
+    },
+    {
+      "id": "VH-PH-103",
+      "plate": "LP 5848 PH",
+      "year": 2023,
+      "make": "Honda",
+      "model": "Civic",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-honda-civic"
+    },
+    {
+      "id": "VH-PH-104",
+      "plate": "LP 9850 LA",
+      "year": 2024,
+      "make": "Honda",
+      "model": "Civic",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-honda-civic"
+    },
+    {
+      "id": "VH-PH-105",
+      "plate": "LP 4354 CI",
+      "year": 2020,
+      "make": "Scania",
+      "model": "S-Series",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2020-scania-s-series"
+    },
+    {
+      "id": "VH-PH-106",
+      "plate": "LP 9877 YK",
+      "year": 2021,
+      "make": "Volkswagen",
+      "model": "Passat",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-volkswagen-passat"
+    },
+    {
+      "id": "VH-PH-107",
+      "plate": "LP 8161 PB",
+      "year": 2022,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-hyundai-elantra"
+    },
+    {
+      "id": "VH-PH-108",
+      "plate": "LP 6712 HG",
+      "year": 2023,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-kia-sportage"
+    },
+    {
+      "id": "VH-PH-109",
+      "plate": "LP 1426 BK",
+      "year": 2024,
+      "make": "Ford",
+      "model": "Ranger",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2024-ford-ranger"
+    },
+    {
+      "id": "VH-PH-110",
+      "plate": "LP 8798 SJ",
+      "year": 2020,
+      "make": "Toyota",
+      "model": "Fortuner",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2020-toyota-fortuner"
+    },
+    {
+      "id": "VH-PH-111",
+      "plate": "LP 5460 FF",
+      "year": 2021,
+      "make": "Hyundai",
+      "model": "H1",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "MINIBUS",
+      "visualKey": "2021-hyundai-h1"
+    },
+    {
+      "id": "VH-PH-112",
+      "plate": "LP 8585 RM",
+      "year": 2022,
+      "make": "Mazda",
+      "model": "3",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2022-mazda-3"
+    },
+    {
+      "id": "VH-PH-113",
+      "plate": "LP 3235 VZ",
+      "year": 2023,
+      "make": "Volkswagen",
+      "model": "Golf",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2023-volkswagen-golf"
+    },
+    {
+      "id": "VH-PH-114",
+      "plate": "LP 4535 HI",
+      "year": 2024,
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-mercedes-benz-e-class"
+    },
+    {
+      "id": "VH-PH-115",
+      "plate": "LP 1572 PK",
+      "year": 2020,
+      "make": "Toyota",
+      "model": "Hilux",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-toyota-hilux"
+    },
+    {
+      "id": "VH-PH-116",
+      "plate": "LP 2527 XQ",
+      "year": 2021,
+      "make": "Ford",
+      "model": "EcoSport",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2021-ford-ecosport"
+    },
+    {
+      "id": "VH-PH-117",
+      "plate": "LP 3330 RI",
+      "year": 2022,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-kia-sportage"
+    },
+    {
+      "id": "VH-PH-118",
+      "plate": "LP 2554 WR",
+      "year": 2023,
+      "make": "Volvo",
+      "model": "S60",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-volvo-s60"
+    },
+    {
+      "id": "VH-PH-119",
+      "plate": "LP 6932 WT",
+      "year": 2024,
+      "make": "Scania",
+      "model": "S-Series",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2024-scania-s-series"
+    },
+    {
+      "id": "VH-PH-120",
+      "plate": "LP 7387 UK",
+      "year": 2020,
+      "make": "Nissan",
+      "model": "Navara",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-nissan-navara"
+    },
+    {
+      "id": "VH-PH-121",
+      "plate": "LP 5211 VO",
+      "year": 2021,
+      "make": "BMW",
+      "model": "X3",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-bmw-x3"
+    },
+    {
+      "id": "VH-PH-122",
+      "plate": "LP 3515 LO",
+      "year": 2022,
+      "make": "BMW",
+      "model": "320i",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-bmw-320i"
+    },
+    {
+      "id": "VH-PH-123",
+      "plate": "LP 1029 FY",
+      "year": 2023,
+      "make": "Toyota",
+      "model": "Fortuner",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-toyota-fortuner"
+    },
+    {
+      "id": "VH-PH-124",
+      "plate": "LP 7603 KH",
+      "year": 2024,
+      "make": "Ford",
+      "model": "Ranger",
+      "city": "Phalaborwa",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2024-ford-ranger"
+    },
+    {
+      "id": "VH-PO-100",
+      "plate": "LP 2683 DI",
+      "year": 2020,
+      "make": "Honda",
+      "model": "Civic",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-honda-civic"
+    },
+    {
+      "id": "VH-PO-101",
+      "plate": "LP 5304 UK",
+      "year": 2021,
+      "make": "Toyota",
+      "model": "Corolla",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-toyota-corolla"
+    },
+    {
+      "id": "VH-PO-102",
+      "plate": "LP 8806 HC",
+      "year": 2022,
+      "make": "Kia",
+      "model": "Seltos",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2022-kia-seltos"
+    },
+    {
+      "id": "VH-PO-103",
+      "plate": "LP 2287 UY",
+      "year": 2023,
+      "make": "Mazda",
+      "model": "3",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2023-mazda-3"
+    },
+    {
+      "id": "VH-PO-104",
+      "plate": "LP 3271 IN",
+      "year": 2024,
+      "make": "Nissan",
+      "model": "NP200",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2024-nissan-np200"
+    },
+    {
+      "id": "VH-PO-105",
+      "plate": "LP 2084 MU",
+      "year": 2020,
+      "make": "Isuzu",
+      "model": "D-Max",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-isuzu-d-max"
+    },
+    {
+      "id": "VH-PO-106",
+      "plate": "LP 3356 BV",
+      "year": 2021,
+      "make": "Honda",
+      "model": "Civic",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-honda-civic"
+    },
+    {
+      "id": "VH-PO-107",
+      "plate": "LP 7818 WQ",
+      "year": 2022,
+      "make": "Audi",
+      "model": "A4",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-audi-a4"
+    },
+    {
+      "id": "VH-PO-108",
+      "plate": "LP 2976 CD",
+      "year": 2023,
+      "make": "Audi",
+      "model": "A6",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-audi-a6"
+    },
+    {
+      "id": "VH-PO-109",
+      "plate": "LP 1648 RE",
+      "year": 2024,
+      "make": "Chevrolet",
+      "model": "Trailblazer",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-chevrolet-trailblazer"
+    },
+    {
+      "id": "VH-PO-110",
+      "plate": "LP 2562 RR",
+      "year": 2020,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-mercedes-benz-c-class"
+    },
+    {
+      "id": "VH-PO-111",
+      "plate": "LP 5441 LZ",
+      "year": 2021,
+      "make": "BMW",
+      "model": "X3",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-bmw-x3"
+    },
+    {
+      "id": "VH-PO-112",
+      "plate": "LP 7571 GZ",
+      "year": 2022,
+      "make": "Mazda",
+      "model": "CX-5",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-mazda-cx-5"
+    },
+    {
+      "id": "VH-PO-113",
+      "plate": "LP 6947 UH",
+      "year": 2023,
+      "make": "Ford",
+      "model": "Focus",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2023-ford-focus"
+    },
+    {
+      "id": "VH-PO-114",
+      "plate": "LP 3384 JB",
+      "year": 2024,
+      "make": "Honda",
+      "model": "CR-V",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-honda-cr-v"
+    },
+    {
+      "id": "VH-PO-115",
+      "plate": "LP 5921 SA",
+      "year": 2020,
+      "make": "Honda",
+      "model": "CR-V",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2020-honda-cr-v"
+    },
+    {
+      "id": "VH-PO-116",
+      "plate": "LP 2542 FT",
+      "year": 2021,
+      "make": "Volkswagen",
+      "model": "Golf",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2021-volkswagen-golf"
+    },
+    {
+      "id": "VH-PO-117",
+      "plate": "LP 1234 TQ",
+      "year": 2022,
+      "make": "Hyundai",
+      "model": "H1",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "MINIBUS",
+      "visualKey": "2022-hyundai-h1"
+    },
+    {
+      "id": "VH-PO-118",
+      "plate": "LP 5640 HO",
+      "year": 2023,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-kia-sportage"
+    },
+    {
+      "id": "VH-PO-119",
+      "plate": "LP 4927 TG",
+      "year": 2024,
+      "make": "Nissan",
+      "model": "Navara",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2024-nissan-navara"
+    },
+    {
+      "id": "VH-PO-120",
+      "plate": "LP 7580 HF",
+      "year": 2020,
+      "make": "Toyota",
+      "model": "Hilux",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-toyota-hilux"
+    },
+    {
+      "id": "VH-PO-121",
+      "plate": "LP 6042 TI",
+      "year": 2021,
+      "make": "Honda",
+      "model": "CR-V",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-honda-cr-v"
+    },
+    {
+      "id": "VH-PO-122",
+      "plate": "LP 4793 MP",
+      "year": 2022,
+      "make": "Scania",
+      "model": "S-Series",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2022-scania-s-series"
+    },
+    {
+      "id": "VH-PO-123",
+      "plate": "LP 4370 UW",
+      "year": 2023,
+      "make": "BMW",
+      "model": "320i",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-bmw-320i"
+    },
+    {
+      "id": "VH-PO-124",
+      "plate": "LP 4661 JU",
+      "year": 2024,
+      "make": "Mercedes-Benz",
+      "model": "Sprinter",
+      "city": "Polokwane",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "VAN",
+      "visualKey": "2024-mercedes-benz-sprinter"
+    },
+    {
+      "id": "VH-PR-100",
+      "plate": "GP 2175 JQ",
+      "year": 2020,
+      "make": "Mazda",
+      "model": "3",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2020-mazda-3"
+    },
+    {
+      "id": "VH-PR-101",
+      "plate": "GP 6157 GR",
+      "year": 2021,
+      "make": "Hyundai",
+      "model": "Tucson",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-hyundai-tucson"
+    },
+    {
+      "id": "VH-PR-102",
+      "plate": "GP 5526 CO",
+      "year": 2022,
+      "make": "Audi",
+      "model": "Q7",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-audi-q7"
+    },
+    {
+      "id": "VH-PR-103",
+      "plate": "GP 9915 XB",
+      "year": 2023,
+      "make": "Volkswagen",
+      "model": "Polo",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2023-volkswagen-polo"
+    },
+    {
+      "id": "VH-PR-104",
+      "plate": "GP 4603 VA",
+      "year": 2024,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-hyundai-elantra"
+    },
+    {
+      "id": "VH-PR-105",
+      "plate": "GP 4271 YE",
+      "year": 2020,
+      "make": "Ford",
+      "model": "Ranger",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-ford-ranger"
+    },
+    {
+      "id": "VH-PR-106",
+      "plate": "GP 9884 UZ",
+      "year": 2021,
+      "make": "Scania",
+      "model": "R-Series",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2021-scania-r-series"
+    },
+    {
+      "id": "VH-PR-107",
+      "plate": "GP 3085 HS",
+      "year": 2022,
+      "make": "Scania",
+      "model": "R-Series",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2022-scania-r-series"
+    },
+    {
+      "id": "VH-PR-108",
+      "plate": "GP 7426 EM",
+      "year": 2023,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-hyundai-elantra"
+    },
+    {
+      "id": "VH-PR-109",
+      "plate": "GP 3110 TP",
+      "year": 2024,
+      "make": "Mercedes-Benz",
+      "model": "Sprinter",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "VAN",
+      "visualKey": "2024-mercedes-benz-sprinter"
+    },
+    {
+      "id": "VH-PR-110",
+      "plate": "GP 4896 YY",
+      "year": 2020,
+      "make": "Mazda",
+      "model": "CX-5",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2020-mazda-cx-5"
+    },
+    {
+      "id": "VH-PR-111",
+      "plate": "GP 3310 HB",
+      "year": 2021,
+      "make": "Volvo",
+      "model": "XC90",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-volvo-xc90"
+    },
+    {
+      "id": "VH-PR-112",
+      "plate": "GP 8200 JZ",
+      "year": 2022,
+      "make": "Honda",
+      "model": "Jazz",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2022-honda-jazz"
+    },
+    {
+      "id": "VH-PR-113",
+      "plate": "GP 1512 YV",
+      "year": 2023,
+      "make": "Audi",
+      "model": "Q7",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-audi-q7"
+    },
+    {
+      "id": "VH-PR-114",
+      "plate": "GP 5083 KI",
+      "year": 2024,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-mercedes-benz-c-class"
+    },
+    {
+      "id": "VH-PR-115",
+      "plate": "GP 2398 KZ",
+      "year": 2020,
+      "make": "Volvo",
+      "model": "S60",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-volvo-s60"
+    },
+    {
+      "id": "VH-PR-116",
+      "plate": "GP 6988 OF",
+      "year": 2021,
+      "make": "Nissan",
+      "model": "Navara",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2021-nissan-navara"
+    },
+    {
+      "id": "VH-PR-117",
+      "plate": "GP 1781 XW",
+      "year": 2022,
+      "make": "Chevrolet",
+      "model": "Cruze",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-chevrolet-cruze"
+    },
+    {
+      "id": "VH-PR-118",
+      "plate": "GP 6851 XP",
+      "year": 2023,
+      "make": "Chevrolet",
+      "model": "Trailblazer",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-chevrolet-trailblazer"
+    },
+    {
+      "id": "VH-PR-119",
+      "plate": "GP 1093 WU",
+      "year": 2024,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-kia-sportage"
+    },
+    {
+      "id": "VH-PR-120",
+      "plate": "GP 8752 HU",
+      "year": 2020,
+      "make": "Ford",
+      "model": "Focus",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2020-ford-focus"
+    },
+    {
+      "id": "VH-PR-121",
+      "plate": "GP 9000 DI",
+      "year": 2021,
+      "make": "Scania",
+      "model": "R-Series",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2021-scania-r-series"
+    },
+    {
+      "id": "VH-PR-122",
+      "plate": "GP 5186 HR",
+      "year": 2022,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2022-kia-sportage"
+    },
+    {
+      "id": "VH-PR-123",
+      "plate": "GP 2635 RY",
+      "year": 2023,
+      "make": "BMW",
+      "model": "320i",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-bmw-320i"
+    },
+    {
+      "id": "VH-PR-124",
+      "plate": "GP 2511 TJ",
+      "year": 2024,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-kia-sportage"
+    },
+    {
+      "id": "VH-RU-100",
+      "plate": "NW 5938 YM",
+      "year": 2020,
+      "make": "Hyundai",
+      "model": "Tucson",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2020-hyundai-tucson"
+    },
+    {
+      "id": "VH-RU-101",
+      "plate": "NW 9750 JR",
+      "year": 2021,
+      "make": "BMW",
+      "model": "X5",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-bmw-x5"
+    },
+    {
+      "id": "VH-RU-102",
+      "plate": "NW 4346 DM",
+      "year": 2022,
+      "make": "Isuzu",
+      "model": "D-Max",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2022-isuzu-d-max"
+    },
+    {
+      "id": "VH-RU-103",
+      "plate": "NW 8718 SL",
+      "year": 2023,
+      "make": "Mercedes-Benz",
+      "model": "Sprinter",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "VAN",
+      "visualKey": "2023-mercedes-benz-sprinter"
+    },
+    {
+      "id": "VH-RU-104",
+      "plate": "NW 9093 BF",
+      "year": 2024,
+      "make": "Volkswagen",
+      "model": "Polo",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2024-volkswagen-polo"
+    },
+    {
+      "id": "VH-RU-105",
+      "plate": "NW 6613 KS",
+      "year": 2020,
+      "make": "Mazda",
+      "model": "6",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-mazda-6"
+    },
+    {
+      "id": "VH-RU-106",
+      "plate": "NW 7259 HH",
+      "year": 2021,
+      "make": "Scania",
+      "model": "R-Series",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2021-scania-r-series"
+    },
+    {
+      "id": "VH-RU-107",
+      "plate": "NW 5585 ZN",
+      "year": 2022,
+      "make": "Mazda",
+      "model": "6",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-mazda-6"
+    },
+    {
+      "id": "VH-RU-108",
+      "plate": "NW 4695 IY",
+      "year": 2023,
+      "make": "BMW",
+      "model": "X5",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2023-bmw-x5"
+    },
+    {
+      "id": "VH-RU-109",
+      "plate": "NW 6246 PY",
+      "year": 2024,
+      "make": "Volvo",
+      "model": "S60",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-volvo-s60"
+    },
+    {
+      "id": "VH-RU-110",
+      "plate": "NW 9725 XB",
+      "year": 2020,
+      "make": "Isuzu",
+      "model": "D-Max",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-isuzu-d-max"
+    },
+    {
+      "id": "VH-RU-111",
+      "plate": "NW 3062 ML",
+      "year": 2021,
+      "make": "Ford",
+      "model": "Focus",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2021-ford-focus"
+    },
+    {
+      "id": "VH-RU-112",
+      "plate": "NW 8350 CH",
+      "year": 2022,
+      "make": "Chevrolet",
+      "model": "Cruze",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-chevrolet-cruze"
+    },
+    {
+      "id": "VH-RU-113",
+      "plate": "NW 2421 MM",
+      "year": 2023,
+      "make": "Ford",
+      "model": "EcoSport",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2023-ford-ecosport"
+    },
+    {
+      "id": "VH-RU-114",
+      "plate": "NW 5050 EC",
+      "year": 2024,
+      "make": "Hyundai",
+      "model": "H1",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "MINIBUS",
+      "visualKey": "2024-hyundai-h1"
+    },
+    {
+      "id": "VH-RU-115",
+      "plate": "NW 8094 LV",
+      "year": 2020,
+      "make": "BMW",
+      "model": "320i",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-bmw-320i"
+    },
+    {
+      "id": "VH-RU-116",
+      "plate": "NW 8271 KF",
+      "year": 2021,
+      "make": "Mazda",
+      "model": "3",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2021-mazda-3"
+    },
+    {
+      "id": "VH-RU-117",
+      "plate": "NW 6831 EW",
+      "year": 2022,
+      "make": "Volkswagen",
+      "model": "Passat",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-volkswagen-passat"
+    },
+    {
+      "id": "VH-RU-118",
+      "plate": "NW 9749 MK",
+      "year": 2023,
+      "make": "Scania",
+      "model": "S-Series",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2023-scania-s-series"
+    },
+    {
+      "id": "VH-RU-119",
+      "plate": "NW 1155 QN",
+      "year": 2024,
+      "make": "Mazda",
+      "model": "6",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-mazda-6"
+    },
+    {
+      "id": "VH-RU-120",
+      "plate": "NW 3016 BD",
+      "year": 2020,
+      "make": "Mercedes-Benz",
+      "model": "Sprinter",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "VAN",
+      "visualKey": "2020-mercedes-benz-sprinter"
+    },
+    {
+      "id": "VH-RU-121",
+      "plate": "NW 7597 DU",
+      "year": 2021,
+      "make": "Mazda",
+      "model": "6",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-mazda-6"
+    },
+    {
+      "id": "VH-RU-122",
+      "plate": "NW 3401 MB",
+      "year": 2022,
+      "make": "Ford",
+      "model": "EcoSport",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2022-ford-ecosport"
+    },
+    {
+      "id": "VH-RU-123",
+      "plate": "NW 8994 YI",
+      "year": 2023,
+      "make": "Nissan",
+      "model": "Navara",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2023-nissan-navara"
+    },
+    {
+      "id": "VH-RU-124",
+      "plate": "NW 2648 AA",
+      "year": 2024,
+      "make": "Mercedes-Benz",
+      "model": "Sprinter",
+      "city": "Rustenburg",
+      "province": "North West",
+      "variant": null,
+      "vehicleType": "VAN",
+      "visualKey": "2024-mercedes-benz-sprinter"
+    },
+    {
+      "id": "VH-TH-100",
+      "plate": "LP 5660 PL",
+      "year": 2020,
+      "make": "Audi",
+      "model": "A4",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-audi-a4"
+    },
+    {
+      "id": "VH-TH-101",
+      "plate": "LP 5726 FN",
+      "year": 2021,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-mercedes-benz-c-class"
+    },
+    {
+      "id": "VH-TH-102",
+      "plate": "LP 8702 SX",
+      "year": 2022,
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-mercedes-benz-e-class"
+    },
+    {
+      "id": "VH-TH-103",
+      "plate": "LP 4466 CI",
+      "year": 2023,
+      "make": "Volkswagen",
+      "model": "Golf",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2023-volkswagen-golf"
+    },
+    {
+      "id": "VH-TH-104",
+      "plate": "LP 3465 BK",
+      "year": 2024,
+      "make": "Scania",
+      "model": "R-Series",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2024-scania-r-series"
+    },
+    {
+      "id": "VH-TH-105",
+      "plate": "LP 4117 HQ",
+      "year": 2020,
+      "make": "Kia",
+      "model": "Seltos",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2020-kia-seltos"
+    },
+    {
+      "id": "VH-TH-106",
+      "plate": "LP 2572 QY",
+      "year": 2021,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-kia-sportage"
+    },
+    {
+      "id": "VH-TH-107",
+      "plate": "LP 3028 TF",
+      "year": 2022,
+      "make": "Volvo",
+      "model": "S60",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-volvo-s60"
+    },
+    {
+      "id": "VH-TH-108",
+      "plate": "LP 8212 KG",
+      "year": 2023,
+      "make": "Volkswagen",
+      "model": "Golf",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2023-volkswagen-golf"
+    },
+    {
+      "id": "VH-TH-109",
+      "plate": "LP 7662 RI",
+      "year": 2024,
+      "make": "Scania",
+      "model": "S-Series",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "TRUCK",
+      "visualKey": "2024-scania-s-series"
+    },
+    {
+      "id": "VH-TH-110",
+      "plate": "LP 5916 UP",
+      "year": 2020,
+      "make": "Nissan",
+      "model": "NP200",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-nissan-np200"
+    },
+    {
+      "id": "VH-TH-111",
+      "plate": "LP 1456 VB",
+      "year": 2021,
+      "make": "Audi",
+      "model": "A6",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2021-audi-a6"
+    },
+    {
+      "id": "VH-TH-112",
+      "plate": "LP 8635 VL",
+      "year": 2022,
+      "make": "Volkswagen",
+      "model": "Polo",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2022-volkswagen-polo"
+    },
+    {
+      "id": "VH-TH-113",
+      "plate": "LP 4756 IW",
+      "year": 2023,
+      "make": "Ford",
+      "model": "Ranger",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2023-ford-ranger"
+    },
+    {
+      "id": "VH-TH-114",
+      "plate": "LP 1127 GM",
+      "year": 2024,
+      "make": "Kia",
+      "model": "Sportage",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2024-kia-sportage"
+    },
+    {
+      "id": "VH-TH-115",
+      "plate": "LP 5955 XF",
+      "year": 2020,
+      "make": "Isuzu",
+      "model": "D-Max",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2020-isuzu-d-max"
+    },
+    {
+      "id": "VH-TH-116",
+      "plate": "LP 3833 HP",
+      "year": 2021,
+      "make": "Toyota",
+      "model": "Fortuner",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-toyota-fortuner"
+    },
+    {
+      "id": "VH-TH-117",
+      "plate": "LP 4957 VO",
+      "year": 2022,
+      "make": "Chevrolet",
+      "model": "Cruze",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2022-chevrolet-cruze"
+    },
+    {
+      "id": "VH-TH-118",
+      "plate": "LP 4626 WH",
+      "year": 2023,
+      "make": "Ford",
+      "model": "Ranger",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "PICKUP",
+      "visualKey": "2023-ford-ranger"
+    },
+    {
+      "id": "VH-TH-119",
+      "plate": "LP 3569 GN",
+      "year": 2024,
+      "make": "Volkswagen",
+      "model": "Passat",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2024-volkswagen-passat"
+    },
+    {
+      "id": "VH-TH-120",
+      "plate": "LP 6672 DI",
+      "year": 2020,
+      "make": "Chevrolet",
+      "model": "Cruze",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2020-chevrolet-cruze"
+    },
+    {
+      "id": "VH-TH-121",
+      "plate": "LP 9298 NF",
+      "year": 2021,
+      "make": "Volvo",
+      "model": "XC90",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SUV",
+      "visualKey": "2021-volvo-xc90"
+    },
+    {
+      "id": "VH-TH-122",
+      "plate": "LP 4398 ZO",
+      "year": 2022,
+      "make": "Ford",
+      "model": "Focus",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "HATCHBACK",
+      "visualKey": "2022-ford-focus"
+    },
+    {
+      "id": "VH-TH-123",
+      "plate": "LP 1953 VB",
+      "year": 2023,
+      "make": "Volkswagen",
+      "model": "Passat",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "SEDAN",
+      "visualKey": "2023-volkswagen-passat"
+    },
+    {
+      "id": "VH-TH-124",
+      "plate": "LP 1181 MD",
+      "year": 2024,
+      "make": "Kia",
+      "model": "Seltos",
+      "city": "Thohoyandou",
+      "province": "Limpopo",
+      "variant": null,
+      "vehicleType": "CROSSOVER",
+      "visualKey": "2024-kia-seltos"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "DRV-001",
+      "name": "Ayanda Dlamini",
+      "licenceNumber": "SA-70000000",
+      "licenceExpiry": "2026-08-23",
+      "phone": "+27 00 000 0001",
+      "email": "driver-001@example.com"
+    },
+    {
+      "id": "DRV-002",
+      "name": "Siyabonga Naidoo",
+      "licenceNumber": "SA-70000137",
+      "licenceExpiry": "2027-06-06",
+      "phone": "+27 00 000 0002",
+      "email": "driver-002@example.com"
+    },
+    {
+      "id": "DRV-003",
+      "name": "Thandi Mokoena",
+      "licenceNumber": "SA-70000274",
+      "licenceExpiry": "2027-06-23",
+      "phone": "+27 00 000 0003",
+      "email": "driver-003@example.com"
+    },
+    {
+      "id": "DRV-004",
+      "name": "Lerato Nkosi",
+      "licenceNumber": "SA-70000411",
+      "licenceExpiry": "2027-07-10",
+      "phone": "+27 00 000 0004",
+      "email": "driver-004@example.com"
+    },
+    {
+      "id": "DRV-005",
+      "name": "Amahle Khumalo",
+      "licenceNumber": "SA-70000548",
+      "licenceExpiry": "2027-07-27",
+      "phone": "+27 00 000 0005",
+      "email": "driver-005@example.com"
+    },
+    {
+      "id": "DRV-006",
+      "name": "Riyaad Ahmed",
+      "licenceNumber": "SA-70000685",
+      "licenceExpiry": "2027-08-13",
+      "phone": "+27 00 000 0006",
+      "email": "driver-006@example.com"
+    },
+    {
+      "id": "DRV-007",
+      "name": "Jenna Smith",
+      "licenceNumber": "SA-70000822",
+      "licenceExpiry": "2027-08-30",
+      "phone": "+27 00 000 0007",
+      "email": "driver-007@example.com"
+    },
+    {
+      "id": "DRV-008",
+      "name": "Zanele Daniels",
+      "licenceNumber": "SA-70000959",
+      "licenceExpiry": "2026-10-27",
+      "phone": "+27 00 000 0008",
+      "email": "driver-008@example.com"
+    },
+    {
+      "id": "DRV-009",
+      "name": "Kavish Patel",
+      "licenceNumber": "SA-70001096",
+      "licenceExpiry": "2027-10-03",
+      "phone": "+27 00 000 0009",
+      "email": "driver-009@example.com"
+    },
+    {
+      "id": "DRV-010",
+      "name": "Nandi Ndlovu",
+      "licenceNumber": "SA-70001233",
+      "licenceExpiry": "2026-08-23",
+      "phone": "+27 00 000 0010",
+      "email": "driver-010@example.com"
+    },
+    {
+      "id": "DRV-011",
+      "name": "Fhulufhelo Makhale",
+      "licenceNumber": "SA-70001370",
+      "licenceExpiry": "2027-11-06",
+      "phone": "+27 00 000 0011",
+      "email": "driver-011@example.com"
+    },
+    {
+      "id": "DRV-012",
+      "name": "Palesa Mthembu",
+      "licenceNumber": "SA-70001507",
+      "licenceExpiry": "2027-11-23",
+      "phone": "+27 00 000 0012",
+      "email": "driver-012@example.com"
+    },
+    {
+      "id": "DRV-013",
+      "name": "Charlene van der Merwe",
+      "licenceNumber": "SA-70001644",
+      "licenceExpiry": "2027-12-10",
+      "phone": "+27 00 000 0013",
+      "email": "driver-013@example.com"
+    },
+    {
+      "id": "DRV-014",
+      "name": "Lwazi van Wyk",
+      "licenceNumber": "SA-70001781",
+      "licenceExpiry": "2027-12-27",
+      "phone": "+27 00 000 0014",
+      "email": "driver-014@example.com"
+    },
+    {
+      "id": "DRV-015",
+      "name": "Tshifhiwa Netshanda",
+      "licenceNumber": "SA-70001918",
+      "licenceExpiry": "2026-10-27",
+      "phone": "+27 00 000 0015",
+      "email": "driver-015@example.com"
+    },
+    {
+      "id": "DRV-016",
+      "name": "Sipho Sithole",
+      "licenceNumber": "SA-70002055",
+      "licenceExpiry": "2028-01-30",
+      "phone": "+27 00 000 0016",
+      "email": "driver-016@example.com"
+    },
+    {
+      "id": "DRV-017",
+      "name": "Refilwe Mokoena",
+      "licenceNumber": "SA-70002192",
+      "licenceExpiry": "2028-02-16",
+      "phone": "+27 00 000 0017",
+      "email": "driver-017@example.com"
+    },
+    {
+      "id": "DRV-018",
+      "name": "Unarine Netswera",
+      "licenceNumber": "SA-70002329",
+      "licenceExpiry": "2028-03-04",
+      "phone": "+27 00 000 0018",
+      "email": "driver-018@example.com"
+    },
+    {
+      "id": "DRV-019",
+      "name": "Dineo Naidoo",
+      "licenceNumber": "SA-70002466",
+      "licenceExpiry": "2026-08-23",
+      "phone": "+27 00 000 0019",
+      "email": "driver-019@example.com"
+    },
+    {
+      "id": "DRV-020",
+      "name": "Mia Botha",
+      "licenceNumber": "SA-70002603",
+      "licenceExpiry": "2028-04-07",
+      "phone": "+27 00 000 0020",
+      "email": "driver-020@example.com"
+    },
+    {
+      "id": "DRV-021",
+      "name": "Gugu Mabena",
+      "licenceNumber": "SA-70002740",
+      "licenceExpiry": "2028-04-24",
+      "phone": "+27 00 000 0021",
+      "email": "driver-021@example.com"
+    },
+    {
+      "id": "DRV-022",
+      "name": "Hlumelo Radebe",
+      "licenceNumber": "SA-70002877",
+      "licenceExpiry": "2026-10-27",
+      "phone": "+27 00 000 0022",
+      "email": "driver-022@example.com"
+    },
+    {
+      "id": "DRV-023",
+      "name": "Imani Mthembu",
+      "licenceNumber": "SA-70003014",
+      "licenceExpiry": "2028-05-28",
+      "phone": "+27 00 000 0023",
+      "email": "driver-023@example.com"
+    },
+    {
+      "id": "DRV-024",
+      "name": "Jared Jacobs",
+      "licenceNumber": "SA-70003151",
+      "licenceExpiry": "2028-06-14",
+      "phone": "+27 00 000 0024",
+      "email": "driver-024@example.com"
+    },
+    {
+      "id": "DRV-025",
+      "name": "Karabo Petersen",
+      "licenceNumber": "SA-70003288",
+      "licenceExpiry": "2028-07-01",
+      "phone": "+27 00 000 0025",
+      "email": "driver-025@example.com"
+    }
+  ],
+  "assignments": [
+    {
+      "driverId": "DRV-001",
+      "vehicleId": "VH-CA-100"
+    },
+    {
+      "driverId": "DRV-001",
+      "vehicleId": "VH-DU-100"
+    },
+    {
+      "driverId": "DRV-001",
+      "vehicleId": "VH-GQ-100"
+    },
+    {
+      "driverId": "DRV-001",
+      "vehicleId": "VH-JO-100"
+    },
+    {
+      "driverId": "DRV-001",
+      "vehicleId": "VH-KI-100"
+    },
+    {
+      "driverId": "DRV-001",
+      "vehicleId": "VH-LO-100"
+    },
+    {
+      "driverId": "DRV-001",
+      "vehicleId": "VH-MA-100"
+    },
+    {
+      "driverId": "DRV-001",
+      "vehicleId": "VH-MF-100"
+    },
+    {
+      "driverId": "DRV-001",
+      "vehicleId": "VH-PH-100"
+    },
+    {
+      "driverId": "DRV-001",
+      "vehicleId": "VH-PO-100"
+    },
+    {
+      "driverId": "DRV-001",
+      "vehicleId": "VH-PR-100"
+    },
+    {
+      "driverId": "DRV-001",
+      "vehicleId": "VH-RU-100"
+    },
+    {
+      "driverId": "DRV-001",
+      "vehicleId": "VH-TH-100"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-BL-101"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-CA-101"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-DU-101"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-GQ-101"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-JO-101"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-KI-101"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-LO-101"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-MA-101"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-MF-101"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-PH-101"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-PO-101"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-PR-101"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-RU-101"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-TH-101"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-BL-102"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-CA-102"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-DU-102"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-GQ-102"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-JO-102"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-KI-102"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-LO-102"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-MA-102"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-MF-102"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-PH-102"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-PO-102"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-PR-102"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-RU-102"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-TH-102"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-BL-103"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-CA-103"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-DU-103"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-GQ-103"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-JO-103"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-KI-103"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-LO-103"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-MA-103"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-MF-103"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-PH-103"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-PO-103"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-PR-103"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-RU-103"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-TH-103"
+    },
+    {
+      "driverId": "DRV-005",
+      "vehicleId": "VH-BL-104"
+    },
+    {
+      "driverId": "DRV-005",
+      "vehicleId": "VH-CA-104"
+    },
+    {
+      "driverId": "DRV-005",
+      "vehicleId": "VH-DU-104"
+    },
+    {
+      "driverId": "DRV-005",
+      "vehicleId": "VH-GQ-104"
+    },
+    {
+      "driverId": "DRV-005",
+      "vehicleId": "VH-JO-104"
+    },
+    {
+      "driverId": "DRV-005",
+      "vehicleId": "VH-KI-104"
+    },
+    {
+      "driverId": "DRV-005",
+      "vehicleId": "VH-LO-104"
+    },
+    {
+      "driverId": "DRV-005",
+      "vehicleId": "VH-MA-104"
+    },
+    {
+      "driverId": "DRV-005",
+      "vehicleId": "VH-MF-104"
+    },
+    {
+      "driverId": "DRV-005",
+      "vehicleId": "VH-PH-104"
+    },
+    {
+      "driverId": "DRV-005",
+      "vehicleId": "VH-PO-104"
+    },
+    {
+      "driverId": "DRV-005",
+      "vehicleId": "VH-PR-104"
+    },
+    {
+      "driverId": "DRV-005",
+      "vehicleId": "VH-RU-104"
+    },
+    {
+      "driverId": "DRV-005",
+      "vehicleId": "VH-TH-104"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-BL-105"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-CA-105"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-DU-105"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-GQ-105"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-JO-105"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-KI-105"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-LO-105"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-MA-105"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-MF-105"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-PH-105"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-PO-105"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-PR-105"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-RU-105"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-TH-105"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-BL-106"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-CA-106"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-DU-106"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-GQ-106"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-JO-106"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-KI-106"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-LO-106"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-MA-106"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-MF-106"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-PH-106"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-PO-106"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-PR-106"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-RU-106"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-TH-106"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-BL-107"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-CA-107"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-DU-107"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-GQ-107"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-JO-107"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-KI-107"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-LO-107"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-MA-107"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-MF-107"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-PH-107"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-PO-107"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-PR-107"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-RU-107"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-TH-107"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-BL-108"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-CA-108"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-DU-108"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-GQ-108"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-JO-108"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-KI-108"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-LO-108"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-MA-108"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-MF-108"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-PH-108"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-PO-108"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-PR-108"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-RU-108"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-TH-108"
+    },
+    {
+      "driverId": "DRV-010",
+      "vehicleId": "VH-BL-109"
+    },
+    {
+      "driverId": "DRV-010",
+      "vehicleId": "VH-CA-109"
+    },
+    {
+      "driverId": "DRV-010",
+      "vehicleId": "VH-DU-109"
+    },
+    {
+      "driverId": "DRV-010",
+      "vehicleId": "VH-GQ-109"
+    },
+    {
+      "driverId": "DRV-010",
+      "vehicleId": "VH-JO-109"
+    },
+    {
+      "driverId": "DRV-010",
+      "vehicleId": "VH-KI-109"
+    },
+    {
+      "driverId": "DRV-010",
+      "vehicleId": "VH-LO-109"
+    },
+    {
+      "driverId": "DRV-010",
+      "vehicleId": "VH-MA-109"
+    },
+    {
+      "driverId": "DRV-010",
+      "vehicleId": "VH-MF-109"
+    },
+    {
+      "driverId": "DRV-010",
+      "vehicleId": "VH-PH-109"
+    },
+    {
+      "driverId": "DRV-010",
+      "vehicleId": "VH-PO-109"
+    },
+    {
+      "driverId": "DRV-010",
+      "vehicleId": "VH-PR-109"
+    },
+    {
+      "driverId": "DRV-010",
+      "vehicleId": "VH-RU-109"
+    },
+    {
+      "driverId": "DRV-010",
+      "vehicleId": "VH-TH-109"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-BL-110"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-CA-110"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-DU-110"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-GQ-110"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-JO-110"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-KI-110"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-LO-110"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-MA-110"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-MF-110"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-PH-110"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-PO-110"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-PR-110"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-RU-110"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-TH-110"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-BL-111"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-CA-111"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-DU-111"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-GQ-111"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-JO-111"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-KI-111"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-LO-111"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-MA-111"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-MF-111"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-PH-111"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-PO-111"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-PR-111"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-RU-111"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-TH-111"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-BL-112"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-CA-112"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-DU-112"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-GQ-112"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-JO-112"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-KI-112"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-LO-112"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-MA-112"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-MF-112"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-PH-112"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-PO-112"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-PR-112"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-RU-112"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-TH-112"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-BL-113"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-CA-113"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-DU-113"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-GQ-113"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-JO-113"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-KI-113"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-LO-113"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-MA-113"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-MF-113"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-PH-113"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-PO-113"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-PR-113"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-RU-113"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-TH-113"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-BL-114"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-CA-114"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-DU-114"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-GQ-114"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-JO-114"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-KI-114"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-LO-114"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-MA-114"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-MF-114"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-PH-114"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-PO-114"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-PR-114"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-RU-114"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-TH-114"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-BL-115"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-CA-115"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-DU-115"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-GQ-115"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-JO-115"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-KI-115"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-LO-115"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-MA-115"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-MF-115"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-PH-115"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-PO-115"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-PR-115"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-RU-115"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-TH-115"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-BL-116"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-CA-116"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-DU-116"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-GQ-116"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-JO-116"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-KI-116"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-LO-116"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-MA-116"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-MF-116"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-PH-116"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-PO-116"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-PR-116"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-RU-116"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-TH-116"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-BL-117"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-CA-117"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-DU-117"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-GQ-117"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-JO-117"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-KI-117"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-LO-117"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-MA-117"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-MF-117"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-PH-117"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-PO-117"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-PR-117"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-RU-117"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-TH-117"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-BL-118"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-CA-118"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-DU-118"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-GQ-118"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-JO-118"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-KI-118"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-LO-118"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-MA-118"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-MF-118"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-PH-118"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-PO-118"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-PR-118"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-RU-118"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-TH-118"
+    },
+    {
+      "driverId": "DRV-020",
+      "vehicleId": "VH-BL-119"
+    },
+    {
+      "driverId": "DRV-020",
+      "vehicleId": "VH-CA-119"
+    },
+    {
+      "driverId": "DRV-020",
+      "vehicleId": "VH-DU-119"
+    },
+    {
+      "driverId": "DRV-020",
+      "vehicleId": "VH-GQ-119"
+    },
+    {
+      "driverId": "DRV-020",
+      "vehicleId": "VH-JO-119"
+    },
+    {
+      "driverId": "DRV-020",
+      "vehicleId": "VH-KI-119"
+    },
+    {
+      "driverId": "DRV-020",
+      "vehicleId": "VH-LO-119"
+    },
+    {
+      "driverId": "DRV-020",
+      "vehicleId": "VH-MA-119"
+    },
+    {
+      "driverId": "DRV-020",
+      "vehicleId": "VH-MF-119"
+    },
+    {
+      "driverId": "DRV-020",
+      "vehicleId": "VH-PH-119"
+    },
+    {
+      "driverId": "DRV-020",
+      "vehicleId": "VH-PO-119"
+    },
+    {
+      "driverId": "DRV-020",
+      "vehicleId": "VH-PR-119"
+    },
+    {
+      "driverId": "DRV-020",
+      "vehicleId": "VH-RU-119"
+    },
+    {
+      "driverId": "DRV-020",
+      "vehicleId": "VH-TH-119"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-BL-120"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-CA-120"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-DU-120"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-GQ-120"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-JO-120"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-KI-120"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-LO-120"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-MA-120"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-MF-120"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-PH-120"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-PO-120"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-PR-120"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-RU-120"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-TH-120"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-BL-121"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-CA-121"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-DU-121"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-GQ-121"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-JO-121"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-KI-121"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-LO-121"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-MA-121"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-MF-121"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-PH-121"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-PO-121"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-PR-121"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-RU-121"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-TH-121"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-BL-122"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-CA-122"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-DU-122"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-GQ-122"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-JO-122"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-KI-122"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-LO-122"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-MA-122"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-MF-122"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-PH-122"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-PO-122"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-PR-122"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-RU-122"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-TH-122"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-BL-123"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-CA-123"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-DU-123"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-GQ-123"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-JO-123"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-KI-123"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-LO-123"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-MA-123"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-MF-123"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-PH-123"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-PO-123"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-PR-123"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-RU-123"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-TH-123"
+    },
+    {
+      "driverId": "DRV-025",
+      "vehicleId": "VH-BL-124"
+    },
+    {
+      "driverId": "DRV-025",
+      "vehicleId": "VH-CA-124"
+    },
+    {
+      "driverId": "DRV-025",
+      "vehicleId": "VH-DU-124"
+    },
+    {
+      "driverId": "DRV-025",
+      "vehicleId": "VH-GQ-124"
+    },
+    {
+      "driverId": "DRV-025",
+      "vehicleId": "VH-JO-124"
+    },
+    {
+      "driverId": "DRV-025",
+      "vehicleId": "VH-KI-124"
+    },
+    {
+      "driverId": "DRV-025",
+      "vehicleId": "VH-LO-124"
+    },
+    {
+      "driverId": "DRV-025",
+      "vehicleId": "VH-MA-124"
+    },
+    {
+      "driverId": "DRV-025",
+      "vehicleId": "VH-MF-124"
+    },
+    {
+      "driverId": "DRV-025",
+      "vehicleId": "VH-PH-124"
+    },
+    {
+      "driverId": "DRV-025",
+      "vehicleId": "VH-PO-124"
+    },
+    {
+      "driverId": "DRV-025",
+      "vehicleId": "VH-PR-124"
+    },
+    {
+      "driverId": "DRV-025",
+      "vehicleId": "VH-RU-124"
+    },
+    {
+      "driverId": "DRV-025",
+      "vehicleId": "VH-TH-124"
+    }
+  ],
+  "currentOperations": [
+    {
+      "driverId": "DRV-001",
+      "vehicleId": "VH-JO-100"
+    },
+    {
+      "driverId": "DRV-002",
+      "vehicleId": "VH-CA-101"
+    },
+    {
+      "driverId": "DRV-003",
+      "vehicleId": "VH-DU-102"
+    },
+    {
+      "driverId": "DRV-004",
+      "vehicleId": "VH-PR-103"
+    },
+    {
+      "driverId": "DRV-006",
+      "vehicleId": "VH-KI-105"
+    },
+    {
+      "driverId": "DRV-007",
+      "vehicleId": "VH-LO-106"
+    },
+    {
+      "driverId": "DRV-008",
+      "vehicleId": "VH-MA-107"
+    },
+    {
+      "driverId": "DRV-009",
+      "vehicleId": "VH-MF-108"
+    },
+    {
+      "driverId": "DRV-011",
+      "vehicleId": "VH-PO-110"
+    },
+    {
+      "driverId": "DRV-012",
+      "vehicleId": "VH-RU-111"
+    },
+    {
+      "driverId": "DRV-013",
+      "vehicleId": "VH-TH-112"
+    },
+    {
+      "driverId": "DRV-014",
+      "vehicleId": "VH-BL-113"
+    },
+    {
+      "driverId": "DRV-015",
+      "vehicleId": "VH-JO-114"
+    },
+    {
+      "driverId": "DRV-016",
+      "vehicleId": "VH-CA-115"
+    },
+    {
+      "driverId": "DRV-017",
+      "vehicleId": "VH-DU-116"
+    },
+    {
+      "driverId": "DRV-018",
+      "vehicleId": "VH-PR-117"
+    },
+    {
+      "driverId": "DRV-019",
+      "vehicleId": "VH-GQ-118"
+    },
+    {
+      "driverId": "DRV-021",
+      "vehicleId": "VH-LO-120"
+    },
+    {
+      "driverId": "DRV-022",
+      "vehicleId": "VH-MA-121"
+    },
+    {
+      "driverId": "DRV-023",
+      "vehicleId": "VH-MF-122"
+    },
+    {
+      "driverId": "DRV-024",
+      "vehicleId": "VH-PH-123"
+    }
+  ]
+}
