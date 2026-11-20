@@ -2,6 +2,10 @@
   command = "npm run build"
   publish = "dist"
 
+[build.environment]
+  VITE_API_URL = "https://fleet-drive-ai-api.onrender.com/api"
+  VITE_DEMO_ALLOW_USER_MUTATIONS = "false"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"

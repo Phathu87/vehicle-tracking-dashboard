@@ -1,49 +1,40 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { authApi } from '@/api/auth';
-import { getAccessToken, onUnauthorized, setAccessToken } from '@/api/client';
+import { ApiError, getAccessToken, onUnauthorized } from '@/api/client';
+import { clearAuthSession, establishAuthSession, restoreAuthSession } from './authSession.js';
 
 const AuthContext = createContext(null);
 
-function userFromResponse(response) {
-  return response?.user || response?.data?.user || response || null;
-}
-
-function tokenFromResponse(response) {
-  return response?.token || response?.access_token || response?.data?.token || null;
-}
-
 export function AuthProvider({ children }) {
+  const sessionVersion = useRef(0);
   const [user, setUser] = useState(null);
   const [status, setStatus] = useState(() => getAccessToken() ? 'checking' : 'guest');
   const [authError, setAuthError] = useState(null);
 
   const clearSession = useCallback(() => {
-    setAccessToken(null);
+    sessionVersion.current += 1;
+    clearAuthSession();
     setUser(null);
     setStatus('guest');
   }, []);
 
   const checkUserAuth = useCallback(async () => {
+    const version = ++sessionVersion.current;
     if (!getAccessToken()) {
+      setUser(null);
       setStatus('guest');
       return null;
     }
 
     setStatus('checking');
     setAuthError(null);
-    try {
-      const response = await authApi.me();
-      const currentUser = userFromResponse(response);
-      setUser(currentUser);
-      setStatus('authenticated');
-      return currentUser;
-    } catch (error) {
-      if (error.status === 401 || error.status === 403) clearSession();
-      else setStatus('unavailable');
-      setAuthError(error);
-      return null;
-    }
-  }, [clearSession]);
+    const restored = await restoreAuthSession();
+    if (version !== sessionVersion.current) return null;
+    setUser(restored.user);
+    setStatus(restored.status);
+    setAuthError(restored.authError);
+    return restored.user;
+  }, []);
 
   useEffect(() => {
     if (getAccessToken()) checkUserAuth();
@@ -51,10 +42,7 @@ export function AuthProvider({ children }) {
   }, [checkUserAuth, clearSession]);
 
   const establishSession = useCallback((response, { persistent = false } = {}) => {
-    const token = tokenFromResponse(response);
-    const nextUser = userFromResponse(response);
-    if (!token) throw new Error('The authentication response did not include a token.');
-    setAccessToken(token, { persistent });
+    const nextUser = establishAuthSession(response, { persistent });
     setUser(nextUser);
     setStatus('authenticated');
     setAuthError(null);
@@ -62,12 +50,16 @@ export function AuthProvider({ children }) {
   }, []);
 
   const login = useCallback(async (credentials) => {
+    const version = ++sessionVersion.current;
     const response = await authApi.login(credentials);
+    if (version !== sessionVersion.current) throw new ApiError('Sign in was cancelled.', { code: 'ABORTED' });
     return establishSession(response, { persistent: credentials.rememberMe === true });
   }, [establishSession]);
 
   const register = useCallback(async (account) => {
+    const version = ++sessionVersion.current;
     const response = await authApi.register(account);
+    if (version !== sessionVersion.current) throw new ApiError('Registration was cancelled.', { code: 'ABORTED' });
     return establishSession(response);
   }, [establishSession]);
 

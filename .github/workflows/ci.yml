@@ -19,7 +19,7 @@ jobs:
       - run: npm run lint
       - run: npm run build
         env:
-          VITE_API_URL: /api
+          VITE_API_URL: https://fleet-drive-ai-api.onrender.com/api
 
   backend:
     runs-on: ubuntu-latest
