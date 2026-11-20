@@ -23,5 +23,10 @@
   "description": "",
   "devDependencies": {
     "supertest": "^7.2.2"
+  },
+  "overrides": {
+    "body-parser": "2.4.0",
+    "proxy-addr": "2.0.8",
+    "qs": "6.16.1"
   }
 }

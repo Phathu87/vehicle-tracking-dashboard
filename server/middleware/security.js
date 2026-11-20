@@ -23,7 +23,7 @@ export function corsOptions(environment = process.env) {
       return callback(error);
     },
     methods: ["GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Authorization", "Content-Type"],
+    allowedHeaders: ["Authorization", "Content-Type", "X-Registration-Invite"],
     maxAge: 600,
   };
 }

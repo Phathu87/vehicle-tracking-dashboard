@@ -12,7 +12,7 @@ let adminToken;
 let vehicle;
 
 before(async () => {
-  process.env.NODE_ENV = "production";
+  process.env.NODE_ENV = "test";
   process.env.DEMO_SIMULATION_TOKEN = "test-simulator-service-token";
   delete process.env.DEMO_ALLOW_USER_MUTATIONS;
   resetUsers();
@@ -31,6 +31,7 @@ before(async () => {
   }).expect(201);
   db.prepare("UPDATE users SET role = 'admin' WHERE id = ?").run(admin.body.user.id);
   adminToken = admin.body.token;
+  process.env.NODE_ENV = "production";
   vehicle = (await request(app).get("/api/vehicles").expect(200)).body[0];
 });
 

@@ -4,6 +4,7 @@ import {
   verifyCredentials,
 } from "../services/userService.js";
 import { signUserToken } from "../services/tokenService.js";
+import { registrationAllowed } from "../services/registrationAdmission.js";
 
 const USERNAME_PATTERN = /^[a-zA-Z0-9._@+-]{3,64}$/;
 
@@ -44,6 +45,15 @@ function validateCredentials(body, { registration = false } = {}) {
 }
 
 export async function register(req, res, next) {
+  if (!registrationAllowed(req)) {
+    return res.status(403).json({
+      error: {
+        code: "REGISTRATION_UNAVAILABLE",
+        message: "Registration is not available for this request.",
+        details: {},
+      },
+    });
+  }
   const errors = validateCredentials(req.body, { registration: true });
   if (Object.keys(errors).length) {
     return validationError(res, "Registration details are invalid.", errors);
