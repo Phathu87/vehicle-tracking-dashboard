@@ -1,34 +1,25 @@
-const DEFAULT_API_URL = import.meta.env.PROD ? '/api' : 'http://localhost:3001/api';
+import { resolveApiBaseUrl } from './config.js';
+
 const TOKEN_STORAGE_KEY = 'fleet-drive:token';
 const UNAUTHORIZED_EVENT = 'fleet-drive:unauthorized';
-const REQUEST_TIMEOUT_MS = 15_000;
+const REQUEST_TIMEOUT_MS = 75_000;
 
-function normalizeBaseUrl(value) {
-  return value.replace(/\/+$/, '');
-}
-
-function readResponseBody(response) {
-  if (response.status === 204) return Promise.resolve(null);
-
-  return response.text().then((text) => {
-    if (!text) return null;
-
-    const contentType = response.headers.get('content-type') || '';
-    if (contentType.includes('application/json')) {
-      try {
-        return JSON.parse(text);
-      } catch {
-        return text;
-      }
-    }
-
-    return text;
+async function readResponseBody(response) {
+  if (response.status === 204) return null;
+  const mediaType = (response.headers.get('content-type') || '').split(';')[0].trim().toLowerCase();
+  if (mediaType === 'application/json' || /^application\/[\w.+-]+\+json$/.test(mediaType)) {
+    const text = await response.text();
+    try { return JSON.parse(text); } catch { /* Fall through to a safe contract error. */ }
+  }
+  throw new ApiError(response.status >= 500
+    ? 'The Fleet Drive API is temporarily unavailable. Please try again.'
+    : 'The Fleet Drive API returned an unexpected response. Please try again.', {
+    status: response.status,
+    code: 'INVALID_API_RESPONSE',
   });
 }
 
-export const API_BASE_URL = normalizeBaseUrl(
-  import.meta.env.VITE_API_URL?.trim() || DEFAULT_API_URL,
-);
+export const API_BASE_URL = resolveApiBaseUrl(import.meta.env || {});
 
 export class ApiError extends Error {
   constructor(message, { status = 0, code = 'API_ERROR', details = null, body = null } = {}) {
@@ -71,6 +62,7 @@ async function request(path, options = {}) {
   if (token) requestHeaders.set('Authorization', `Bearer ${token}`);
 
   let response;
+  let responseBody;
   const timeoutController = new AbortController();
   const timeoutId = window.setTimeout(() => timeoutController.abort(), REQUEST_TIMEOUT_MS);
   const signal = fetchOptions.signal
@@ -83,35 +75,37 @@ async function request(path, options = {}) {
       signal,
       body: body === undefined || body instanceof FormData ? body : JSON.stringify(body),
     });
+    if (response.status === 401 && getAccessToken() === token) {
+      setAccessToken(null);
+      window.dispatchEvent(new CustomEvent(UNAUTHORIZED_EVENT));
+    }
+    responseBody = await readResponseBody(response);
   } catch (error) {
+    if (error instanceof ApiError) throw error;
     if (timeoutController.signal.aborted && !fetchOptions.signal?.aborted) {
-      throw new ApiError('The Fleet Drive API request timed out.', {
+      throw new ApiError('The demo API may be starting. The request timed out; please try again.', {
         code: 'TIMEOUT',
-        details: `No response within ${REQUEST_TIMEOUT_MS / 1000} seconds.`,
+        details: `No complete API response within ${REQUEST_TIMEOUT_MS / 1000} seconds.`,
       });
+    }
+    if (fetchOptions.signal?.aborted) {
+      throw new ApiError('The API request was cancelled.', { code: 'ABORTED' });
     }
     throw new ApiError('Unable to reach the Fleet Drive API.', {
       code: 'NETWORK_ERROR',
-      details: error instanceof Error ? error.message : null,
     });
   } finally {
     window.clearTimeout(timeoutId);
   }
 
-  const responseBody = await readResponseBody(response);
-
-  if (response.status === 401) {
-    setAccessToken(null);
-    window.dispatchEvent(new CustomEvent(UNAUTHORIZED_EVENT));
-  }
-
   if (!response.ok) {
     const apiError = responseBody?.error;
     throw new ApiError(
-      apiError?.message || response.statusText || 'The API request failed.',
+      (typeof apiError?.message === 'string' && apiError.message)
+        || (response.status >= 500 ? 'The Fleet Drive API is temporarily unavailable. Please try again.' : 'The API request failed.'),
       {
         status: response.status,
-        code: apiError?.code || `HTTP_${response.status}`,
+        code: typeof apiError?.code === 'string' ? apiError.code : `HTTP_${response.status}`,
         details: apiError?.details || null,
         body: responseBody,
       },
